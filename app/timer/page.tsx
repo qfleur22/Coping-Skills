@@ -216,6 +216,14 @@ export default function TimerPage() {
       </div>
 
       <BackButton onClick={handleBack} />
+      {!isComplete && (
+        <button
+          onClick={() => router.push('/gauge-overwhelm')}
+          className="fixed bottom-6 right-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
+        >
+          Continue to Gauge Overwhelm
+        </button>
+      )}
     </div>
   );
 }

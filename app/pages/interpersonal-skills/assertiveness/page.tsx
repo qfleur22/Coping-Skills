@@ -31,7 +31,8 @@ export default function AssertivenessPage() {
     } else {
       setActiveTooltip(tooltipId);
     }
-  };ivenessPage() {
+  };
+
   const router = useRouter();
 
   const handleBack = () => {
@@ -47,13 +48,13 @@ export default function AssertivenessPage() {
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-8 text-center text-green-800">
-            <Link href="/pages/interpersonal-skills/assertiveness" className="text-blue-600 hover:text-blue-800 underline">Assertive Communication</Link>
+            Assertive Communication
           </h1>
 
           <div className="bg-green-50 backdrop-blur-sm rounded-lg border border-green-200 p-8 shadow-lg space-y-6">
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-green-800">
-                What is <Link href="/pages/interpersonal-skills/assertiveness" className="text-blue-600 hover:text-blue-800 underline">Assertive Communication</Link>?
+                What is Assertive Communication?
               </h2>
               <p className="text-gray-700 mb-4">
                 Assertive communication is the DBT "sweet spot" between passivity (giving up your needs) and aggression (violating others' needs). It means expressing your thoughts, feelings, and needs directly and respectfully—while also respecting the other person's right to have their own perspective.
@@ -70,7 +71,7 @@ export default function AssertivenessPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-green-800">
-                When to use <Link href="/pages/interpersonal-skills/assertiveness" className="text-blue-600 hover:text-blue-800 underline">Assertive Communication</Link>
+                When to use Assertive Communication
               </h2>
               <p className="text-gray-700 mb-3">Use assertive communication when:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
@@ -85,10 +86,10 @@ export default function AssertivenessPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-green-800">
-                The <Link href="/pages/interpersonal-skills/assertiveness" className="text-blue-600 hover:text-blue-800 underline">Assertive Communication</Link> Formula
+                The Assertive Communication Formula
               </h2>
               <p className="text-gray-700 mb-4">
-                DBT teaches a simple structure for <Link href="/pages/interpersonal-skills/assertiveness" className="text-blue-600 hover:text-blue-800 underline">assertive communication</Link>:
+                DBT teaches a simple structure for assertive communication:
               </p>
 
               <div className="mb-6 p-4 bg-blue-50 rounded-lg border border-blue-200">
@@ -136,7 +137,7 @@ export default function AssertivenessPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-green-800">
-                Key Components of <Link href="/pages/interpersonal-skills/assertiveness" className="text-blue-600 hover:text-blue-800 underline">Assertive Communication</Link>
+                Key Components of Assertive Communication
               </h2>
 
               <div className="mb-6">
@@ -262,7 +263,7 @@ export default function AssertivenessPage() {
                 Remember
               </h3>
               <p className="text-gray-700 mb-2">
-                <Link href="/pages/interpersonal-skills/assertiveness" className="text-blue-600 hover:text-blue-800 underline">Assertive communication</Link> is a skill that takes practice. Start with small situations and build up. It's okay if it feels awkward at first—that's normal when learning a new skill.
+                Assertive communication is a skill that takes practice. Start with small situations and build up. It's okay if it feels awkward at first—that's normal when learning a new skill.
               </p>
               <p className="text-gray-700">
                 The goal isn't perfection. The goal is expressing your needs while respecting others—and yourself.

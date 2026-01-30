@@ -4,7 +4,13 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-const categories = {
+type Category = {
+  label: string;
+  pages: { label: string; path: string }[];
+  isFlowchart?: boolean;
+};
+
+const categories: Record<string, Category> = {
   mindfulness: {
     label: 'Mindfulness',
     pages: [

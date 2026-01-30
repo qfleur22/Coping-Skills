@@ -95,7 +95,7 @@ export default function SafetyFirstPage() {
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                   <li>Move to a more public or more supported space (near people who are safe)</li>
                   <li>Put distance between you and anything you could use to harm yourself/others</li>
-                  <li>If possible, ask someone to stay with you (in-person > phone > text)</li>
+                  <li>If possible, ask someone to stay with you (in-person &gt; phone &gt; text)</li>
                 </ul>
               </div>
 

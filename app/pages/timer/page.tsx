@@ -10,8 +10,17 @@ export default function TimerPage() {
   const [seconds, setSeconds] = useState<number>(0);
   const [isRunning, setIsRunning] = useState<boolean>(false);
   const [isComplete, setIsComplete] = useState<boolean>(false);
+  const [activeTooltip, setActiveTooltip] = useState<string | null>(null);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
   const timeRef = useRef<{ minutes: number; seconds: number }>({ minutes: 5, seconds: 0 });
+
+  const toggleTooltip = ({ tooltipId }: { tooltipId: string }) => {
+    if (activeTooltip === tooltipId) {
+      setActiveTooltip(null);
+    } else {
+      setActiveTooltip(tooltipId);
+    }
+  };
 
   useEffect(() => {
     timeRef.current = { minutes, seconds };
@@ -204,11 +213,11 @@ export default function TimerPage() {
                 
             <div className="tooltip-container">
               <div className="flex items-center gap-2">
-                <button className="flex-1"
+                <button
                   onClick={() => {
                     router.push('/pages/flowchart/gauge-overwhelm');
                   }}
-                  className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-md"
+                  className="flex-1 px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-md"
                 >
                   Ready to Continue
                 </button>

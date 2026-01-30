@@ -36,7 +36,7 @@ export default function EmotionDriverPage() {
   const router = useRouter();
 
   const handleProblemSolve = () => {
-    router.push('/pages/flowchart/problem-solve');
+    router.push('/pages/flowchart/problem-solve/enough-info');
   };
 
   const handleInterpersonalHub = () => {
@@ -44,7 +44,7 @@ export default function EmotionDriverPage() {
   };
 
   const handleRealityAcceptanceHub = () => {
-    router.push('/pages/flowchart/reality-acceptance-hub');
+    router.push('/pages/flowchart/reality-acceptance-hub/fighting-reality');
   };
 
   const handleBack = () => {
@@ -285,7 +285,7 @@ export default function EmotionDriverPage() {
                     A lot of emotions are combos (ex: grief + conflict, anxiety + logistics). Choose the driver that feels most urgent or most changeable first.
                   </p>
                   <p className="text-gray-700 text-sm italic ml-4">
-                    If you're overwhelmed (7–10/10): do <Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIP</Link>/<Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> first, then come back.
+                    If you're overwhelmed (7–10/10): do <Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>/<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> first, then come back.
                   </p>
                 </div>
               </div>

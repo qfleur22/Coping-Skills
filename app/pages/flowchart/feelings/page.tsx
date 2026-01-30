@@ -24,7 +24,7 @@ export default function FeelingsWheelPage() {
 
   const handleNext = () => {
     const emotionsParam = selectedEmotions.join(',');
-    router.push(`/pages/flowchart/change?emotions=${encodeURIComponent(emotionsParam)}`);
+    router.push(`/pages/flowchart/intensity?emotions=${encodeURIComponent(emotionsParam)}`);
   };
 
   const handleClear = () => {

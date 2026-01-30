@@ -74,17 +74,17 @@ export default function CrisisPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-red-800">
-                Step 1: <Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> for 10 seconds
+                Step 1: <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> for 10 seconds
               </h2>
               <p className="text-gray-700 mb-3">Before you decide anything, do STOP:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-3">
-                <li><Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">Stop</Link> (pause)</li>
+                <li><Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">Stop</Link> (pause)</li>
                 <li>Take a step back (one breath, put the phone down)</li>
                 <li>Observe (what's happening inside + outside)</li>
                 <li>Proceed mindfully (choose what helps, not what hurts)</li>
               </ul>
               <p className="text-gray-700 text-sm italic">
-                If you can't do all of <Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>, do just this: "Pause. One exhale."
+                If you can't do all of <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>, do just this: "Pause. One exhale."
               </p>
             </div>
 
@@ -113,10 +113,30 @@ export default function CrisisPage() {
                 Step 3: Choose your crisis path (pick ONE)
               </h2>
 
+              <div className="mb-4 p-4 bg-red-100 rounded-lg border border-red-300">
+                <p className="text-gray-700 font-semibold mb-2">If you're having self-harm urges:</p>
+                <button
+                  onClick={() => router.push('/pages/self-harm/urge-now')}
+                  className="w-full px-6 py-3 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-colors duration-200 shadow-md mb-2"
+                >
+                  Go to Self-Harm Urges Right Now
+                </button>
+              </div>
+
+              <div className="mb-4 p-4 bg-red-100 rounded-lg border border-red-300">
+                <p className="text-gray-700 font-semibold mb-2">If you're having substance cravings:</p>
+                <button
+                  onClick={() => router.push('/pages/addiction/craving-now')}
+                  className="w-full px-6 py-3 bg-red-700 hover:bg-red-800 text-white font-semibold rounded-lg transition-colors duration-200 shadow-md"
+                >
+                  Go to Cravings Right Now
+                </button>
+              </div>
+
               <div className="mb-4">
-                <p className="text-gray-700 font-semibold mb-2">A) If your body is in full alarm → TIP</p>
+                <p className="text-gray-700 font-semibold mb-2">A) If your body is in full alarm → TIPP</p>
                 <p className="text-gray-700 ml-4">
-                  Use <Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIP</Link> to bring intensity down fast (temperature, intense exercise, paced <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link>, paired muscle relaxation).
+                  Use <Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link> to bring intensity down fast (temperature, intense exercise, paced <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link>, paired muscle relaxation).
                 </p>
               </div>
 
@@ -163,7 +183,7 @@ export default function CrisisPage() {
               <p className="text-gray-700 mb-2 font-medium">Ask: "Did the intensity drop at least 10%?"</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                 <li>Yes: You're moving out of overwhelm. Go to Wise Mind, <Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link>, or <Link href="/pages/flowchart/problem-solve" className="text-blue-600 hover:text-blue-800 underline">Problem Solving</Link> next.</li>
-                <li>No: Stay in crisis skills. Try one different option (TIP → ACCEPTS, or ACCEPTS → <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-Soothe</Link>).</li>
+                <li>No: Stay in crisis skills. Try one different option (TIPP → ACCEPTS, or ACCEPTS → <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-Soothe</Link>).</li>
               </ul>
             </div>
 
@@ -202,7 +222,7 @@ export default function CrisisPage() {
             <div className="tooltip-container">
               <div className="flex items-center gap-2">
                 <button
-                  onClick={() => router.push('/pages/interpersonal-skills/stop')}
+                  onClick={() => router.push('/pages/distress-tolerance/stop')}
                   className="px-4 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors duration-200"
                 >
                   STOP Skill
@@ -238,7 +258,7 @@ export default function CrisisPage() {
               </div>
               {activeTooltip === 'distress-tolerance-stop' && (
                 <div className="mt-2 bg-white rounded-lg shadow-xl p-4 border border-gray-200 tooltip-container">
-                  <p className="text-sm text-gray-700"><Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> skill: <Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">Stop</Link>, Take a step back, Observe, Proceed mindfully. A quick crisis intervention to prevent impulsive actions.</p>
+                  <p className="text-sm text-gray-700"><Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> skill: <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">Stop</Link>, Take a step back, Observe, Proceed mindfully. A quick crisis intervention to prevent impulsive actions.</p>
                   <button
                     onClick={() => {
                       setActiveTooltip(null);
@@ -306,10 +326,10 @@ export default function CrisisPage() {
             <div className="tooltip-container">
               <div className="flex items-center gap-2">
                 <button
-                  onClick={() => router.push('/pages/distress-tolerance/distress-tolerance')}
+                  onClick={() => router.push('/pages/distress-tolerance')}
                   className="px-4 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors duration-200"
                 >
-                  TIP
+                  TIPP
                 </button>
                 <button
                   onClick={() => {
@@ -673,23 +693,19 @@ export default function CrisisPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/Crisis Survival Skills Handout.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Try the Worksheet
-        </a>
+        >Try the Worksheet (pdf)</a>
         <a
           href="/assets/Worksheets/when-to-use-crisis.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          When to use crisis skills
-        </a>
+        >When to use crisis skills (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

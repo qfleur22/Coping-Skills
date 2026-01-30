@@ -327,7 +327,7 @@ export default function SitWithItPage() {
                   DBT often frames this as <Link href="/pages/emotional-regulation/mindful-emotions" className="text-blue-600 hover:text-blue-800 underline">mindfulness of current emotion</Link> / riding the wave—learning that emotions crest and pass.
                 </p>
                 <p className="text-gray-700 mt-2 text-sm">
-                  <strong>Safety note:</strong> If you're near panic, dissociation, or self-harm urges, do <Link href="/pages/distress-tolerance/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">crisis skills</Link> first, then come back.
+                  <strong>Safety note:</strong> If you're near panic, dissociation, or self-harm urges, do <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">crisis skills</Link> first, then come back.
                 </p>
               </div>
 
@@ -388,7 +388,7 @@ export default function SitWithItPage() {
                 <p className="text-gray-700 mb-2"><strong>Best for:</strong> when the emotion is too intense, trauma-linked, or you're at risk of doing something unsafe.</p>
                 <p className="text-gray-700 mb-2"><strong>What happens next (recommended):</strong></p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                  <li>Use <Link href="/pages/distress-tolerance/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link> skills first (<Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>, <Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIP</Link>, <Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link>, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">self-soothe</Link>)</li>
+                  <li>Use <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link> skills first (<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>, <Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>, <Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link>, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">self-soothe</Link>)</li>
                   <li>Then return to /change or /sit-with-it when intensity is lower</li>
                 </ul>
               </div>
@@ -406,7 +406,7 @@ export default function SitWithItPage() {
               </ul>
               <p className="text-gray-700 mb-2 font-semibold">Don't use /sit-with-it as the first move when:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                <li>You're in crisis overwhelm (high impulse risk, unsafe urges). Do <Link href="/pages/distress-tolerance/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">crisis survival</Link> first.</li>
+                <li>You're in crisis overwhelm (high impulse risk, unsafe urges). Do <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">crisis survival</Link> first.</li>
                 <li>You're dissociating heavily or body check-ins feel unsafe (ground externally first).</li>
               </ul>
             </div>
@@ -422,7 +422,7 @@ export default function SitWithItPage() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-semibold mb-1">"What if I start dissociating?"</p>
-                  <p className="text-gray-700 ml-4">Open eyes, name 5 objects, feel your feet, hold something textured/cold, and return to the room. If needed, choose the "not comfortable" option and use <Link href="/pages/distress-tolerance/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">distress tolerance</Link> first.</p>
+                  <p className="text-gray-700 ml-4">Open eyes, name 5 objects, feel your feet, hold something textured/cold, and return to the room. If needed, choose the "not comfortable" option and use <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">distress tolerance</Link> first.</p>
                 </div>
                 <div>
                   <p className="text-gray-700 font-semibold mb-1">"Is self-validation the same as excusing harmful behavior?"</p>
@@ -440,7 +440,7 @@ export default function SitWithItPage() {
               </p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                 <li>If Yes: <Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link> / <Link href="/pages/emotional-regulation/opposite-action" className="text-blue-600 hover:text-blue-800 underline">Opposite Action</Link> / <Link href="/pages/flowchart/problem-solve" className="text-blue-600 hover:text-blue-800 underline">Problem Solving</Link> / <Link href="/pages/emotional-regulation/abc-please" className="text-blue-600 hover:text-blue-800 underline">ABC PLEASE</Link>)</li>
-                <li>If No: /sit-with-it → (Emotion Exposure / Self-Validation / Self-Compassion / Feel it in body / Not safe → <Link href="/pages/distress-tolerance/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link>)</li>
+                <li>If No: /sit-with-it → (Emotion Exposure / Self-Validation / Self-Compassion / Feel it in body / Not safe → <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link>)</li>
               </ul>
             </div>
           </div>

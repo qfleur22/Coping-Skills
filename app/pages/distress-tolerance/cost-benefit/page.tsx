@@ -54,7 +54,7 @@ export default function CostBenefitPage() {
                 <li>stuck in "I don't know if I even want to change"</li>
               </ul>
               <p className="text-gray-700 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
-                If you're in a high crisis state, use <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>/<Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIP</Link> first, then do this once you can think clearly.
+                If you're in a high crisis state, use <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>/<Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link> first, then do this once you can think clearly.
               </p>
             </div>
 
@@ -195,7 +195,7 @@ export default function CostBenefitPage() {
                   <li>"Wait 5 minutes"</li>
                   <li>"Drink water"</li>
                   <li>"Text someone"</li>
-                  <li>"Do <Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIP</Link> for 60 seconds"</li>
+                  <li>"Do <Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link> for 60 seconds"</li>
                   <li>"Move my body for 2 minutes"</li>
                 </ul>
               </div>
@@ -254,7 +254,7 @@ export default function CostBenefitPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={handleReturnToLanding}
-        className="fixed bottom-16 md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50 w-full md:w-auto"
+        className="flex flex-col gap-2 md:fixed md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
       >
         Return to Landing
       </button>

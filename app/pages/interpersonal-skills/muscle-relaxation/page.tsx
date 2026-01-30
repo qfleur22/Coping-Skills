@@ -105,7 +105,7 @@ export default function MuscleRelaxationPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={handleReturnToLanding}
-        className="fixed bottom-6 right-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
+        className="fixed bottom-16 md:bottom-6 md:right-6 right-0 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
       >
         Return to Landing
       </button>

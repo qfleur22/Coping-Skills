@@ -21,20 +21,21 @@ const categories: Record<string, Category> = {
       { label: 'Wise Mind', path: '/pages/mindfulness/wise-mind/wise-mind' },
       { label: 'Meditation', path: '/pages/mindfulness/meditation' },
       { label: 'What Skills', path: '/pages/mindfulness/what' },
+      { label: 'How Skills', path: '/pages/mindfulness/how' },
       { label: 'One-Mindfulness', path: '/pages/mindfulness/one-mindfulness' },
     ],
   },
   'distress-tolerance': {
     label: 'Distress Tolerance',
     pages: [
-      { label: 'Distress Tolerance Overview', path: '/pages/distress-tolerance/distress-tolerance' },
-      { label: 'STOP', path: '/pages/interpersonal-skills/stop' },
-      { label: 'TIP', path: '/pages/distress-tolerance/tip' },
+      { label: 'Distress Tolerance Overview', path: '/pages/distress-tolerance' },
+      { label: 'STOP', path: '/pages/distress-tolerance/stop' },
+      { label: 'TIPP', path: '/pages/distress-tolerance/tipp' },
       { label: 'ACCEPTS', path: '/pages/distress-tolerance/accepts' },
       { label: 'Self-Soothe', path: '/pages/distress-tolerance/soothe' },
       { label: 'IMPROVE', path: '/pages/distress-tolerance/improve' },
       { label: 'Radical Acceptance', path: '/pages/interpersonal-skills/radical-acceptance' },
-      { label: 'Pros & Cons', path: '/pages/distress-tolerance/pros-cons' },
+      { label: 'Pros & Cons', path: '/pages/interpersonal-skills/pros-cons' },
       { label: 'Cost-Benefit Analysis', path: '/pages/distress-tolerance/cost-benefit' },
       { label: 'Effective Rethinking', path: '/pages/distress-tolerance/effective-rethinking' },
       { label: 'Muscle Relaxation', path: '/pages/interpersonal-skills/muscle-relaxation' },
@@ -42,6 +43,8 @@ const categories: Record<string, Category> = {
       { label: 'Turning the Mind', path: '/pages/distress-tolerance/turning-mind' },
       { label: 'Willingness & Half-Smile', path: '/pages/distress-tolerance/willingness-half-smile' },
       { label: 'Nightmare Protocol', path: '/pages/distress-tolerance/nightmare-protocol' },
+      { label: 'Self-Harm Support Hub', path: '/pages/self-harm' },
+      { label: 'Addiction Recovery Hub', path: '/pages/addiction' },
     ],
   },
   'emotional-regulation': {
@@ -80,6 +83,7 @@ const categories: Record<string, Category> = {
       { label: 'Ending Relationships', path: '/pages/interpersonal-skills/ending-relationship' },
       { label: 'Interpersonal Mindfulness', path: '/pages/interpersonal-skills/interpersonal-mindfulness' },
       { label: 'Finding Friends', path: '/pages/interpersonal-skills/finding-friends' },
+      { label: 'Repair / Rupture After Conflict', path: '/pages/interpersonal-skills/repair' },
     ],
   },
   'crisis-skills': {
@@ -88,6 +92,16 @@ const categories: Record<string, Category> = {
       { label: 'Crisis Help Now', path: '/pages/crisis-help-now' },
       { label: 'Am I Overwhelmed?', path: '/pages/crisis' },
       { label: 'Nightmare Protocol', path: '/pages/distress-tolerance/nightmare-protocol' },
+      { label: 'Post-Crisis Debrief', path: '/pages/post-crisis-debrief' },
+      { label: 'Chain Analysis', path: '/pages/chain-analysis' },
+      { label: 'Self-Harm Support Hub', path: '/pages/self-harm' },
+      { label: 'Addiction Recovery Hub', path: '/pages/addiction' },
+    ],
+  },
+  'neurodivergent': {
+    label: 'Neurodivergent Support',
+    pages: [
+      { label: 'Overload Skills Menu', path: '/pages/neurodivergent/overload' },
     ],
   },
   'flowchart': {
@@ -121,6 +135,14 @@ export default function LandingPage() {
             <h1 className="text-4xl font-bold mb-8 text-gray-800">
               I would like to practice...
             </h1>
+            <a
+              href="/assets/Worksheets/DBT-Cheat-Sheet.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 mb-4"
+            >
+              DBT Cheat Sheet (PDF)
+            </a>
           </div>
 
           <div className="space-y-3">
@@ -138,6 +160,8 @@ export default function LandingPage() {
                     return 'bg-green-50 border-green-200 hover:bg-green-100';
                   case 'crisis-skills':
                     return 'bg-red-50 border-red-200 hover:bg-red-100';
+                  case 'neurodivergent':
+                    return 'bg-indigo-50 border-indigo-200 hover:bg-indigo-100';
                   case 'flowchart':
                     return 'bg-white border-gray-200 hover:bg-gray-50';
                   default:
@@ -157,6 +181,8 @@ export default function LandingPage() {
                     return 'text-green-800';
                   case 'crisis-skills':
                     return 'text-red-800';
+                  case 'neurodivergent':
+                    return 'text-indigo-800';
                   default:
                     return 'text-gray-800';
                 }
@@ -174,6 +200,8 @@ export default function LandingPage() {
                     return 'bg-green-600 hover:bg-green-700 text-white';
                   case 'crisis-skills':
                     return 'bg-red-600 hover:bg-red-700 text-white';
+                  case 'neurodivergent':
+                    return 'bg-indigo-600 hover:bg-indigo-700 text-white';
                   default:
                     return 'bg-gray-600 hover:bg-gray-700 text-white';
                 }

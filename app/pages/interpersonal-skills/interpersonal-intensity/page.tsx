@@ -282,7 +282,7 @@ export default function InterpersonalIntensityPage() {
                 </h3>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                   <li>If you freeze/fawn: start with writing the script, then practice out loud once.</li>
-                  <li>If you escalate: do a quick nervous system reset first (<Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>/breath), then use the chart.</li>
+                  <li>If you escalate: do a quick nervous system reset first (<Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>/breath), then use the chart.</li>
                   <li>If you're neurodivergent: it can help to pre-select 2–3 "default scripts" for common situations (plans changing, overstimulation, work asks), so you're not improvising under pressure.</li>
                 </ul>
               </div>
@@ -292,15 +292,13 @@ export default function InterpersonalIntensityPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/int-modulating-intensity.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Try the Worksheet
-        </a>
+        >Try the Worksheet (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

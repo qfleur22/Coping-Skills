@@ -52,7 +52,7 @@ export default function EmotionalRegulationPage() {
                   <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                     <li><Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link> - Separate facts from interpretations</li>
                     <li><Link href="/pages/emotional-regulation/cognitive-vulnerability" className="text-blue-600 hover:text-blue-800 underline">Cognitive Vulnerability</Link> - Notice distorted thoughts</li>
-                    <li><a href="/emotional-regulation/mental-noting" className="text-blue-600 hover:text-blue-800 underline"><Link href="/pages/emotional-regulation/mental-noting" className="text-blue-600 hover:text-blue-800 underline">Mental Noting</Link> & Thought Defusion</a> - Unhook from thoughts</li>
+                    <li><a href="/emotional-regulation/mental-noting" className="text-blue-600 hover:text-blue-800 underline"><Link href="/pages/emotional-regulation/mental-noting" className="text-blue-600 hover:text-blue-800 underline">Mental Noting</Link> & Thought Defusion (pdf)</a> - Unhook from thoughts</li>
                   </ul>
                 </div>
 
@@ -85,7 +85,7 @@ export default function EmotionalRegulationPage() {
                   </h3>
                   <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                     <li><Link href="/pages/emotional-regulation/being-effective" className="text-blue-600 hover:text-blue-800 underline">Being Effective</Link> - Focus on what works</li>
-                    <li><a href="/positive-self-talk" className="text-blue-600 hover:text-blue-800 underline">Positive Self-Talk</a> - Challenge negative thoughts</li>
+                    <li><a href="/positive-self-talk" className="text-blue-600 hover:text-blue-800 underline">Positive Self-Talk (pdf)</a> - Challenge negative thoughts</li>
                   </ul>
                 </div>
               </div>
@@ -115,23 +115,19 @@ export default function EmotionalRegulationPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/er-troubleshooting.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Troubleshooting Emotional Regulation
-        </a>
+        >Troubleshooting Emotional Regulation (pdf)</a>
         <a
           href="/assets/Worksheets/er-troubleshooting-interact.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Troubleshooting Emotional Regulation (Interactive)
-        </a>
+        >Troubleshooting Emotional Regulation (Interactive) (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { BackButton } from '@/components/shared/BackButton';
 
-export default function TipPage() {
+export default function TippPage() {
   const router = useRouter();
 
   const handleBack = () => {
@@ -20,7 +20,7 @@ export default function TipPage() {
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-8 text-center text-orange-800">
-            Distress Tolerance: TIP (Change Your Body Chemistry Fast)
+            Distress Tolerance: TIPP (Change Your Body Chemistry Fast)
           </h1>
 
           <div className="bg-orange-50 backdrop-blur-sm rounded-lg border border-orange-200 p-8 shadow-lg space-y-6">
@@ -29,27 +29,27 @@ export default function TipPage() {
                 1. Introduction
               </h2>
               <p className="text-gray-700 mb-4">
-                When you're overwhelmed, your body can go into full alarm—heart racing, shaking, numb, hot, clenched, or unable to think clearly. In DBT, TIP is a crisis skill for turning the intensity down quickly by working with your physiology (not by arguing with your thoughts). TIP stands for Temperature, Intense Exercise, Paced Breathing, Paired Muscle Relaxation.
+                When you're overwhelmed, your body can go into full alarm—heart racing, shaking, numb, hot, clenched, or unable to think clearly. In DBT, TIPP is a crisis skill for turning the intensity down quickly by working with your physiology (not by arguing with your thoughts). TIPP stands for Temperature, Intense Exercise, Paced Breathing, Paired Muscle Relaxation.
               </p>
               <p className="text-gray-700">
-                Use TIP first when your intensity is high (often 7–10/10), urges feel dangerous, or you can't access Wise Mind yet.
+                Use TIPP first when your intensity is high (often 7–10/10), urges feel dangerous, or you can't access Wise Mind yet.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                2. When to Use TIP (and When Not To)
+                2. When to Use TIPP (and When Not To)
               </h2>
               <div className="mb-4">
-                <p className="text-gray-700 font-semibold mb-2">Use TIP when:</p>
+                <p className="text-gray-700 font-semibold mb-2">Use TIPP when:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                   <li>Your body feels "revved up" (panic, rage, agitation, shutdown-with-alarm).</li>
                   <li>You're at risk of impulsive actions (text-bombing, self-harm urges, substance urges, blowing up).</li>
-                  <li>You need to get just stable enough to do the next step (<Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>, <Link href="/pages/interpersonal-skills/pros-cons" className="text-blue-600 hover:text-blue-800 underline">Pros/Cons</Link>, <Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link>).</li>
+                  <li>You need to get just stable enough to do the next step (<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>, <Link href="/pages/interpersonal-skills/pros-cons" className="text-blue-600 hover:text-blue-800 underline">Pros/Cons</Link>, <Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link>).</li>
                 </ul>
               </div>
               <div>
-                <p className="text-gray-700 font-semibold mb-2">Don't use TIP (or modify it) when:</p>
+                <p className="text-gray-700 font-semibold mb-2">Don't use TIPP (or modify it) when:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                   <li><strong>Temperature:</strong> you have medical reasons to avoid cold exposure (for example certain heart conditions), or cold triggers severe distress. Use paced breathing + muscle relaxation instead.</li>
                   <li><strong>Intense Exercise:</strong> you're injured, faint, medically unsafe to exert, or your body is already overtaxed—choose gentler movement or breathing.</li>
@@ -60,7 +60,7 @@ export default function TipPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                3. The TIP Menu (Pick 1–2, not all 4)
+                3. The TIPP Menu (Pick 1–2, not all 4)
               </h2>
 
               <div className="space-y-6">
@@ -132,7 +132,7 @@ export default function TipPage() {
                     <li>Move through: hands → shoulders → jaw → stomach → legs.</li>
                   </ul>
                   <p className="text-gray-700 text-sm italic">
-                    This pairing (tension then release) is commonly taught with TIP/TIPP worksheets.
+                    This pairing (tension then release) is commonly taught with TIPP worksheets.
                   </p>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function TipPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                4. 2-Minute TIP Protocol (Ultra Simple)
+                4. 2-Minute TIPP Protocol (Ultra Simple)
               </h2>
               <ol className="list-decimal list-inside space-y-2 text-gray-700 ml-4">
                 <li>Name intensity: "I'm at a ___/10."</li>
@@ -155,7 +155,7 @@ export default function TipPage() {
                 <li>Re-rate: "Now I'm at a ___/10."</li>
               </ol>
               <p className="text-gray-700 mt-4">
-                If it dropped 10%, you're winning—go to your next page (<Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> / <Link href="/pages/interpersonal-skills/pros-cons" className="text-blue-600 hover:text-blue-800 underline">Pros&Cons</Link> / <Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link>).
+                If it dropped 10%, you're winning—go to your next page (<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> / <Link href="/pages/interpersonal-skills/pros-cons" className="text-blue-600 hover:text-blue-800 underline">Pros&Cons</Link> / <Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link>).
               </p>
             </div>
 
@@ -167,14 +167,14 @@ export default function TipPage() {
                 <strong>Situation:</strong> You get a text that spikes panic. Intensity 9/10.
               </p>
               <p className="text-gray-700 mb-2">
-                <strong>TIP plan:</strong>
+                <strong>TIPP plan:</strong>
               </p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-3">
                 <li>T: cold pack on cheeks 30 seconds</li>
                 <li>P: 4-in / 6-out breathing for 2 minutes</li>
               </ul>
               <p className="text-gray-700">
-                <strong>Re-check:</strong> intensity drops to 6/10 → now you can do <Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> and choose a wise next step.
+                <strong>Re-check:</strong> intensity drops to 6/10 → now you can do <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> and choose a wise next step.
               </p>
             </div>
 
@@ -190,19 +190,19 @@ export default function TipPage() {
                   </p>
                 </div>
                 <div>
-                  <p className="text-gray-700 font-semibold mb-1">Is TIP "avoiding" the problem?</p>
+                  <p className="text-gray-700 font-semibold mb-1">Is TIPP "avoiding" the problem?</p>
                   <p className="text-gray-700 ml-4">
-                    No. TIP is a stabilizer so you can handle the problem without making it worse.
+                    No. TIPP is a stabilizer so you can handle the problem without making it worse.
                   </p>
                 </div>
                 <div>
-                  <p className="text-gray-700 font-semibold mb-1">What if TIP doesn't work?</p>
+                  <p className="text-gray-700 font-semibold mb-1">What if TIPP doesn't work?</p>
                   <p className="text-gray-700 ml-4">
                     Try a different letter (Temperature → Paced Breathing). If you're still escalating, consider whether you need <Link href="/pages/crisis-help-now" className="text-blue-600 hover:text-blue-800 underline">Crisis Help Now</Link>.
                   </p>
                 </div>
                 <div>
-                  <p className="text-gray-700 font-semibold mb-1">Can I do TIP silently in public?</p>
+                  <p className="text-gray-700 font-semibold mb-1">Can I do TIPP silently in public?</p>
                   <p className="text-gray-700 ml-4">
                     Yes: paced breathing + subtle muscle relax + cold drink held to face/hands.
                   </p>
@@ -216,7 +216,7 @@ export default function TipPage() {
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <button
-                  onClick={() => router.push('/pages/interpersonal-skills/stop')}
+                  onClick={() => router.push('/pages/distress-tolerance/stop')}
                   className="px-4 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg transition-colors duration-200 text-left shadow-md"
                 >
                   STOP
@@ -252,7 +252,7 @@ export default function TipPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

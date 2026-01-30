@@ -47,7 +47,7 @@ export default function NightmareProtocolPage() {
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-8 text-center text-orange-800">
-            <Link href="/pages/distress-tolerance/nightmare-protocol" className="text-blue-600 hover:text-blue-800 underline">Nightmare Protocol</Link> (DBT + Evidence-Based Imagery Practice)
+            Nightmare Protocol (DBT + Evidence-Based Imagery Practice)
           </h1>
 
           <div className="bg-orange-50 backdrop-blur-sm rounded-lg border border-orange-200 p-8 shadow-lg space-y-6">
@@ -56,7 +56,7 @@ export default function NightmareProtocolPage() {
                 Introduction
               </h2>
               <p className="text-gray-700 mb-4">
-                Nightmares can train your brain to fear sleep—especially when they repeat. DBT's <Link href="/pages/distress-tolerance/nightmare-protocol" className="text-blue-600 hover:text-blue-800 underline">Nightmare Protocol</Link> is a structured way to reduce nightmare intensity by rewriting the ending and repeatedly rehearsing the safer version while your brain is awake and regulated.
+                Nightmares can train your brain to fear sleep—especially when they repeat. DBT's Nightmare Protocol is a structured way to reduce nightmare intensity by rewriting the ending and repeatedly rehearsing the safer version while your brain is awake and regulated.
               </p>
               <p className="text-gray-700">
                 This overlaps with Imagery Rehearsal Therapy (IRT), a well-supported approach for nightmare disorder.
@@ -82,10 +82,10 @@ export default function NightmareProtocolPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                DBT <Link href="/pages/distress-tolerance/nightmare-protocol" className="text-blue-600 hover:text-blue-800 underline">Nightmare Protocol</Link> (Step by Step)
+                DBT Nightmare Protocol (Step by Step)
               </h2>
               <p className="text-gray-700 mb-4 text-sm italic">
-                From DBT Skills Training Handouts (<Link href="/pages/distress-tolerance/nightmare-protocol" className="text-blue-600 hover:text-blue-800 underline">Nightmare Protocol</Link>).
+                From DBT Skills Training Handouts (Nightmare Protocol).
               </p>
 
               <div className="space-y-4">
@@ -183,7 +183,7 @@ export default function NightmareProtocolPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={handleReturnToLanding}
-        className="fixed bottom-16 md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50 w-full md:w-auto"
+        className="flex flex-col gap-2 md:fixed md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
       >
         Return to Landing
       </button>

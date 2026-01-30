@@ -61,7 +61,7 @@ export default function SafetyFirstPage() {
                 DBT makes a clear distinction: when safety is on the line, you don't start with deep emotion processing or problem-solving. You start with stabilizing and getting safer. That's because intense distress can narrow attention, increase impulsivity, and make it harder to choose actions that protect your future self.
               </p>
               <p className="text-gray-700">
-                DBT <Link href="/pages/distress-tolerance/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">crisis skills</Link> are built for short-term, high-intensity moments where you need to reduce danger and intensity fast — so you can make choices from a steadier mind.
+                DBT <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">crisis skills</Link> are built for short-term, high-intensity moments where you need to reduce danger and intensity fast — so you can make choices from a steadier mind.
               </p>
             </div>
 

@@ -49,14 +49,14 @@ export default function BodyScanPage() {
         </div>
       </div>
 
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/body-scan-script.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
         >
-          Try the Worksheet
+          Try the Worksheet (pdf)
         </a>
         <a
           href="/assets/Worksheets/body-scan-interact.pdf"
@@ -64,7 +64,7 @@ export default function BodyScanPage() {
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
         >
-          Interactive Worksheet
+          Interactive Worksheet (pdf)
         </a>
       </div>
     </div>

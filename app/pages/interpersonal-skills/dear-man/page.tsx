@@ -20,7 +20,7 @@ export default function DearManPage() {
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
-            Objectives Effectiveness: <Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> (DBT)
+            Objectives Effectiveness: DEAR MAN (DBT)
           </h1>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg space-y-6">
@@ -41,10 +41,10 @@ export default function DearManPage() {
 
             <div>
               <p className="text-gray-700 mb-4">
-                DBT Interpersonal Effectiveness skills are designed to help you get what you need from relationships while respecting yourself and others. When you have a clear objective—asking for help, requesting a change, saying no, negotiating a responsibility—<Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> is the DBT "get the outcome" script.
+                DBT Interpersonal Effectiveness skills are designed to help you get what you need from relationships while respecting yourself and others. When you have a clear objective—asking for help, requesting a change, saying no, negotiating a responsibility—DEAR MAN is the DBT "get the outcome" script.
               </p>
               <p className="text-gray-700 mb-4">
-                <strong><Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> = Describe • Express • Assert • Reinforce • (stay) Mindful • Appear confident • Negotiate.</strong>
+                <strong>DEAR MAN = Describe • Express • Assert • Reinforce • (stay) Mindful • Appear confident • Negotiate.</strong>
               </p>
               <p className="text-gray-700">
                 DEAR MAN is most effective when paired with <Link href="/pages/interpersonal-skills/give" className="text-blue-600 hover:text-blue-800 underline">GIVE</Link> (protect the relationship) and <Link href="/pages/interpersonal-skills/fast" className="text-blue-600 hover:text-blue-800 underline">FAST</Link> (protect self-respect).
@@ -55,7 +55,7 @@ export default function DearManPage() {
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">
                 What is this for?
               </h2>
-              <p className="text-gray-700 mb-3">Use <Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> when you want to:</p>
+              <p className="text-gray-700 mb-3">Use DEAR MAN when you want to:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-4">
                 <li>ask for a favor or help</li>
                 <li>request a change or compromise</li>
@@ -69,7 +69,7 @@ export default function DearManPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                Step-by-step: <Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link>
+                Step-by-step: DEAR MAN
               </h2>
 
               <div className="mb-6">
@@ -118,7 +118,7 @@ export default function DearManPage() {
                   <li>"I'm feeling ___ because ___."</li>
                 </ul>
                 <p className="text-gray-700 text-sm italic">
-                  <Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">Tip</Link>: keep it short. Expression is not a debate.
+                  Tip: keep it short. Expression is not a debate.
                 </p>
               </div>
 
@@ -152,7 +152,7 @@ export default function DearManPage() {
                   <li>"It would help because ___."</li>
                 </ul>
                 <p className="text-gray-700 text-sm italic">
-                  <Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">Tip</Link>: If you promise a "reward" (gratitude, reciprocation), follow through.
+                  Tip: If you promise a "reward" (gratitude, reciprocation), follow through.
                 </p>
               </div>
 
@@ -256,23 +256,19 @@ export default function DearManPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/dbt-dear-man.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Interactive Worksheet
-        </a>
+        >Interactive Worksheet (pdf)</a>
         <a
           href="/assets/Worksheets/dearman.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          DEAR MAN Worksheet
-        </a>
+        >DEAR MAN Worksheet (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

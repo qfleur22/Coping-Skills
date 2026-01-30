@@ -20,7 +20,7 @@ export default function RadicalAcceptancePage() {
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
-            <Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">Radical Acceptance</Link> (DBT Distress Tolerance) — <Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">stop</Link> fighting reality
+            Radical Acceptance (DBT Distress Tolerance) — stop fighting reality
           </h1>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg space-y-6">
@@ -29,13 +29,13 @@ export default function RadicalAcceptancePage() {
                 Distress Tolerance skills help you get through painful moments without making things worse, especially when you can't change the situation right away.
               </p>
               <p className="text-gray-700 font-semibold">
-                <Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">Radical Acceptance</Link> is one of the most effective—and hardest—DBT skills. It means accepting reality completely (in your mind, body, and heart) and stopping the fight with what is already true.
+                Radical Acceptance is one of the most effective—and hardest—DBT skills. It means accepting reality completely (in your mind, body, and heart) and stopping the fight with what is already true.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                What <Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">Radical Acceptance</Link> is (and isn't)
+                What Radical Acceptance is (and isn't)
               </h2>
               <p className="text-gray-700 mb-2 font-medium">It IS:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-4">
@@ -62,7 +62,7 @@ export default function RadicalAcceptancePage() {
               <ol className="list-decimal list-inside space-y-1 text-gray-700 ml-4 mb-3">
                 <li>Solve the problem (if possible)</li>
                 <li>Change how you feel about it (emotion regulation)</li>
-                <li>Accept it (<Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">radical acceptance</Link>)</li>
+                <li>Accept it (radical acceptance)</li>
                 <li>Stay miserable (keep fighting reality / do nothing)</li>
               </ol>
               <p className="text-gray-700">
@@ -72,7 +72,7 @@ export default function RadicalAcceptancePage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                Step-by-step: Practice <Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">Radical Acceptance</Link>
+                Step-by-step: Practice Radical Acceptance
               </h2>
 
               <div className="mb-6">
@@ -235,15 +235,13 @@ export default function RadicalAcceptancePage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/radical-acceptance.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Try the Worksheet
-        </a>
+        >Try the Worksheet (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

@@ -236,7 +236,7 @@ export default function SelfCarePage() {
                 If you can't do any of this right now
               </h2>
               <p className="text-gray-700">
-                That's a signal you may need <Link href="/pages/distress-tolerance/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link> first (crisis-survival skills), or extra support. DBT explicitly pairs body-care (<Link href="/pages/emotional-regulation/abc-please" className="text-blue-600 hover:text-blue-800 underline">PLEASE</Link>) with skills for intense moments.
+                That's a signal you may need <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link> first (crisis-survival skills), or extra support. DBT explicitly pairs body-care (<Link href="/pages/emotional-regulation/abc-please" className="text-blue-600 hover:text-blue-800 underline">PLEASE</Link>) with skills for intense moments.
               </p>
             </div>
           </div>

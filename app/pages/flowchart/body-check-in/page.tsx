@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 export default function BodyCheckInPage() {
@@ -94,7 +95,7 @@ export default function BodyCheckInPage() {
                   <li>Interpretation: What story did my mind tell?</li>
                   <li>Emotion + body: What do I feel + where?</li>
                   <li>Urge: What do I want to do?</li>
-                  <li>Next best skill: (Check the Facts / Opposite Action / Problem Solving)</li>
+                  <li>Next best skill: (<Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link> / <Link href="/pages/emotional-regulation/opposite-action" className="text-blue-600 hover:text-blue-800 underline">Opposite Action</Link> / <Link href="/pages/flowchart/problem-solve" className="text-blue-600 hover:text-blue-800 underline">Problem Solving</Link>)</li>
                 </ul>
               </div>
             </div>
@@ -139,7 +140,7 @@ export default function BodyCheckInPage() {
                   </li>
                   <li><strong>Name the emotion</strong>
                     <p className="ml-6 mt-1">Ask: "If this sensation could talk, what emotion would it name?"</p>
-                    <p className="ml-6 mt-1">Then go to the feelings wheel.</p>
+                    <p className="ml-6 mt-1">Then go to the <Link href="/pages/flowchart/feelings" className="text-blue-600 hover:text-blue-800 underline">feelings wheel</Link>.</p>
                   </li>
                 </ol>
                 <p className="text-gray-700 ml-4 text-sm italic mt-2">
@@ -174,11 +175,11 @@ export default function BodyCheckInPage() {
                   <li>What am I thinking on repeat?</li>
                   <li>What urge is here? (hide, lash out, numb, fix, flee)</li>
                 </ul>
-                <p className="text-gray-700 ml-4 mt-2">Then choose from the feelings wheel without scanning sensations. If you'd like more information about safer alternatives to a body scan, please select the "No, it feels unsafe to check into my body" button above.</p>
+                <p className="text-gray-700 ml-4 mt-2">Then choose from the <Link href="/pages/flowchart/feelings" className="text-blue-600 hover:text-blue-800 underline">feelings wheel</Link> without scanning sensations. If you'd like more information about safer alternatives to a body scan, please select the "No, it feels unsafe to check into my body" button above.</p>
 
                 <p className="text-gray-700"><strong>Step 3: If you're overwhelmed, don't force emotion work</strong></p>
                 <p className="text-gray-700 ml-4">If you're at 8–10 intensity or at risk of impulsive behavior:</p>
-                <p className="text-gray-700 ml-8">→ use crisis skills first (STOP/TIP/ACCEPTS)</p>
+                <p className="text-gray-700 ml-8">→ use crisis skills first (<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>/<Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>/<Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link>)</p>
                 <p className="text-gray-700 ml-4 mt-2">Then come back to identify emotions when you're steadier.</p>
               </div>
             </div>
@@ -191,10 +192,10 @@ export default function BodyCheckInPage() {
                 You can't "use the right DBT skill" if you don't know what you're feeling. Emotion naming is the entry point to:
               </p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-3">
-                <li>Check the Facts</li>
-                <li>Opposite Action</li>
-                <li>Problem Solving</li>
-                <li>Boundary/Interpersonal skills</li>
+                <li><Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link></li>
+                <li><Link href="/pages/emotional-regulation/opposite-action" className="text-blue-600 hover:text-blue-800 underline">Opposite Action</Link></li>
+                <li><Link href="/pages/flowchart/problem-solve" className="text-blue-600 hover:text-blue-800 underline">Problem Solving</Link></li>
+                <li><Link href="/pages/flowchart/interpersonal-hub" className="text-blue-600 hover:text-blue-800 underline">Boundary/Interpersonal skills</Link></li>
               </ul>
               <p className="text-gray-700">Even a rough label is better than none.</p>
             </div>
@@ -211,7 +212,7 @@ export default function BodyCheckInPage() {
                 <p className="text-gray-700 ml-4">Pick the loudest one first (highest intensity). Secondary emotions can come later.</p>
 
                 <p className="text-gray-700"><strong>What if body scanning makes me spiral?</strong></p>
-                <p className="text-gray-700 ml-4">Use /safe-check-in only. Trauma-informed practice means you don't push through activation—you build tolerance slowly, with choice.</p>
+                <p className="text-gray-700 ml-4">Use <Link href="/pages/mindfulness/body-scan/unsafe-body-check" className="text-blue-600 hover:text-blue-800 underline">safe check-in</Link> only. Trauma-informed practice means you don't push through activation—you build tolerance slowly, with choice.</p>
 
                 <p className="text-gray-700"><strong>How often should I do this?</strong></p>
                 <p className="text-gray-700 ml-4">Quick check-ins work best:</p>

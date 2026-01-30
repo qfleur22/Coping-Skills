@@ -47,7 +47,7 @@ export default function TurningMindPage() {
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-8 text-center text-orange-800">
-            <Link href="/pages/distress-tolerance/turning-mind" className="text-blue-600 hover:text-blue-800 underline">Turning the Mind</Link>
+            Turning the Mind
           </h1>
 
           <div className="bg-orange-50 backdrop-blur-sm rounded-lg border border-orange-200 p-8 shadow-lg space-y-6">
@@ -59,7 +59,7 @@ export default function TurningMindPage() {
                 Turning the Mind is a DBT distress tolerance skill that helps you do <Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">Radical Acceptance</Link> on purpose—especially when your mind keeps sliding back into "this shouldn't be happening," "it's not fair," "I can't stand this," or "I refuse."
               </p>
               <p className="text-gray-700 mb-4">
-                Radical Acceptance isn't a one-time decision. For most of us, it's a repeat choice, made over and over again—sometimes dozens of times in a day. <Link href="/pages/distress-tolerance/turning-mind" className="text-blue-600 hover:text-blue-800 underline">Turning the Mind</Link> is what you do the moment you notice you've drifted away from acceptance, and you gently guide yourself back.
+                Radical Acceptance isn't a one-time decision. For most of us, it's a repeat choice, made over and over again—sometimes dozens of times in a day. Turning the Mind is what you do the moment you notice you've drifted away from acceptance, and you gently guide yourself back.
               </p>
               <p className="text-gray-700">
                 A metaphor that helps: imagine you're riding a horse. You hold the reins and pick the path (acceptance), but the horse (your mind) wanders. You don't punish the horse. You notice, and you guide it back—again and again.
@@ -68,7 +68,7 @@ export default function TurningMindPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                What "<Link href="/pages/distress-tolerance/turning-mind" className="text-blue-600 hover:text-blue-800 underline">Turning the Mind</Link>" Actually Means
+                What "Turning the Mind" Actually Means
               </h2>
               <p className="text-gray-700 mb-4">
                 Turning the Mind is choosing acceptance when your mind wants to fight reality. DBT treats this like a fork in the road:
@@ -78,7 +78,7 @@ export default function TurningMindPage() {
                 <li><strong>Non-acceptance road:</strong> "This can't be happening. It must <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">stop</Link>. I won't tolerate this."</li>
               </ul>
               <p className="text-gray-700 mb-4">
-                <Link href="/pages/distress-tolerance/turning-mind" className="text-blue-600 hover:text-blue-800 underline">Turning the Mind</Link> is the internal pivot that says: "I'm choosing the acceptance road, again."
+                Turning the Mind is the internal pivot that says: "I'm choosing the acceptance road, again."
               </p>
               <p className="text-gray-700 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
                 <strong>Important:</strong> Acceptance is not approval. Accepting reality means acknowledging what's already true—without pretending it's okay, fair, or wanted. It simply stops the extra suffering that comes from arguing with what exists.
@@ -87,7 +87,7 @@ export default function TurningMindPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                When to Use <Link href="/pages/distress-tolerance/turning-mind" className="text-blue-600 hover:text-blue-800 underline">Turning the Mind</Link>
+                When to Use Turning the Mind
               </h2>
               <p className="text-gray-700 mb-3">Use this skill when you notice:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-4">
@@ -123,7 +123,7 @@ export default function TurningMindPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                How to Do <Link href="/pages/distress-tolerance/turning-mind" className="text-blue-600 hover:text-blue-800 underline">Turning the Mind</Link> (Step-by-Step)
+                How to Do Turning the Mind (Step-by-Step)
               </h2>
               <p className="text-gray-700 mb-4">Use this mini-sequence:</p>
 
@@ -232,7 +232,7 @@ export default function TurningMindPage() {
                   <p className="text-gray-700 ml-4">No. Acceptance removes the stuckness so you can choose your next step with clarity.</p>
                 </div>
                 <div>
-                  <p className="text-gray-700 font-semibold mb-1">"I keep <Link href="/pages/distress-tolerance/turning-mind" className="text-blue-600 hover:text-blue-800 underline">turning the mind</Link> and it keeps coming back."</p>
+                  <p className="text-gray-700 font-semibold mb-1">"I keep turning the mind and it keeps coming back."</p>
                   <p className="text-gray-700 ml-4">That's the skill. Turning the Mind is often a repeat practice, not a one-and-done insight.</p>
                 </div>
                 <div>
@@ -247,7 +247,7 @@ export default function TurningMindPage() {
                 Worksheets & Resources
               </h3>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                <li><a href="/assets/Worksheets/turning-mind.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline"><Link href="/pages/distress-tolerance/turning-mind" className="text-blue-600 hover:text-blue-800 underline">Turning the Mind</Link> (PDF)</a></li>
+                <li><a href="/assets/Worksheets/turning-mind.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">Turning the Mind (pdf)</a></li>
                 <li>Related skills that pair well:</li>
                 <li className="ml-8"><Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">Radical Acceptance</Link></li>
                 <li className="ml-8"><Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Half Smile + Willing Hands</Link></li>
@@ -258,23 +258,19 @@ export default function TurningMindPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/turning-mind.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Try the Worksheet
-        </a>
+        >Try the Worksheet (pdf)</a>
         <a
           href="/assets/Worksheets/turning-willingness.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Willingness Worksheet
-        </a>
+        >Willingness Worksheet (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

@@ -15,6 +15,8 @@ const stepPathMap: Record<string, string> = {
   '/': 'feelings',
   '/pages/flowchart/body-check-in': 'feelings',
   '/pages/flowchart/feelings': 'feelings',
+  '/pages/flowchart/intensity': 'feelings',
+  '/pages/flowchart/intensity/micro-skills': 'feelings',
   '/pages/flowchart/change': 'feelings',
   '/pages/flowchart/changing-feelings': 'self-care',
   '/pages/self-care': 'self-care',

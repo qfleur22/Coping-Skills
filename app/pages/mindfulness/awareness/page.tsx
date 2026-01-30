@@ -300,7 +300,7 @@ export default function AwarenessPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={handleReturnToLanding}
-        className="fixed bottom-6 right-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
+        className="flex flex-col gap-2 md:fixed md:bottom-6 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
       >
         Return to Landing
       </button>

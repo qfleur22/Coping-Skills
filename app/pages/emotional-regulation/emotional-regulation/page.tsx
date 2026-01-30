@@ -80,7 +80,7 @@ export default function EmotionalRegulationPage() {
                   <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                     <li><Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link> - Separate facts from interpretations</li>
                     <li><Link href="/pages/emotional-regulation/cognitive-vulnerability" className="text-blue-600 hover:text-blue-800 underline">Cognitive Vulnerability</Link> - Notice distorted thoughts</li>
-                    <li><a href="/pages/emotional-regulation/mental-noting" className="text-blue-600 hover:text-blue-800 underline"><Link href="/pages/emotional-regulation/mental-noting" className="text-blue-600 hover:text-blue-800 underline">Mental Noting</Link> & Thought Defusion</a> - Unhook from thoughts</li>
+                    <li><a href="/pages/emotional-regulation/mental-noting" className="text-blue-600 hover:text-blue-800 underline"><Link href="/pages/emotional-regulation/mental-noting" className="text-blue-600 hover:text-blue-800 underline">Mental Noting</Link> & Thought Defusion (pdf)</a> - Unhook from thoughts</li>
                   </ul>
                 </div>
 
@@ -145,7 +145,7 @@ export default function EmotionalRegulationPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={handleReturnToLanding}
-        className="fixed bottom-6 right-6 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
+        className="flex flex-col gap-2 md:fixed md:bottom-6 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0 px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
       >
         Return to Landing
       </button>

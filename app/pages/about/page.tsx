@@ -28,6 +28,17 @@ export default function AboutPage() {
                 <li><strong>Interpersonal Effectiveness:</strong> get what you need while keeping self-respect + relationships intact</li>
               </ul>
             </div>
+            
+            <div className="mt-6">
+              <a
+                href="/assets/Worksheets/DBT-Cheat-Sheet.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
+              >
+                Download DBT Cheat Sheet (PDF)
+              </a>
+            </div>
           </section>
 
           <section>
@@ -119,7 +130,7 @@ export default function AboutPage() {
                   <li><strong><Link href="/pages/self-care" className="text-blue-600 hover:text-blue-800 underline">Self-Care</Link> Check:</strong> Are you hydrated, medicated, nourished, rested? → <Link href="/pages/self-care" className="text-blue-600 hover:text-blue-800 underline">Self-Care</Link></li>
                   <li><strong>Gauge Overwhelm:</strong> Are you overwhelmed? → <Link href="/pages/flowchart/gauge-overwhelm" className="text-blue-600 hover:text-blue-800 underline">Gauge Overwhelm</Link></li>
                 </ul>
-                <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/self-care" className="text-blue-600 hover:text-blue-800 underline">Self-Care</Link> (PLEASE skills), <Link href="/pages/distress-tolerance/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link></p>
+                <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/self-care" className="text-blue-600 hover:text-blue-800 underline">Self-Care</Link> (PLEASE skills), <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link></p>
               </div>
 
               <div>
@@ -141,16 +152,16 @@ export default function AboutPage() {
                   <li><strong>Yes, I can change it</strong> → <Link href="/pages/flowchart/problem-solve" className="text-blue-600 hover:text-blue-800 underline">Problem Solving</Link></li>
                   <li><strong>No, I can't change it</strong> → <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Soothe</Link></li>
                 </ul>
-                <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/flowchart/problem-solve" className="text-blue-600 hover:text-blue-800 underline">Problem Solving</Link>, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-Soothe</Link>, <Link href="/pages/distress-tolerance/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link></p>
+                <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/flowchart/problem-solve" className="text-blue-600 hover:text-blue-800 underline">Problem Solving</Link>, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-Soothe</Link>, <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link></p>
               </div>
 
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">Crisis Path</h3>
                 <p className="text-gray-700 mb-2">If overwhelmed, use crisis skills first:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                  <li><Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">Crisis Skills</Link> → STOP, TIP, ACCEPTS, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-Soothe</Link>, IMPROVE, <Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">Radical Acceptance</Link></li>
+                  <li><Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">Crisis Skills</Link> → STOP, TIPP, ACCEPTS, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-Soothe</Link>, IMPROVE, <Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">Radical Acceptance</Link></li>
                 </ul>
-                <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/distress-tolerance/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link>, <Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">Crisis Skills</Link></p>
+                <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link>, <Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">Crisis Skills</Link></p>
               </div>
             </div>
 

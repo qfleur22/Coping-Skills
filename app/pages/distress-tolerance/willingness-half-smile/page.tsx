@@ -31,7 +31,8 @@ export default function WillingnessHalfSmilePage() {
     } else {
       setActiveTooltip(tooltipId);
     }
-  };lfSmilePage() {
+  };
+
   const router = useRouter();
 
   const handleBack = () => {
@@ -46,26 +47,26 @@ export default function WillingnessHalfSmilePage() {
     <div className="container mx-auto px-4 py-8 pb-24">
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
-          <h1 className="text-4xl font-bold mb-8 text-center text-orange-800">
-            <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Willingness</Link> (do what works, even when you don't feel like it) & <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Half-Smile</Link> (accept reality with your face)
+            <h1 className="text-4xl font-bold mb-8 text-center text-orange-800">
+            Willingness (do what works, even when you don't feel like it) & Half-Smile (accept reality with your face)
           </h1>
 
           <div className="bg-orange-50 backdrop-blur-sm rounded-lg border border-orange-200 p-8 shadow-lg space-y-6">
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Willingness</Link>: Do What Works
+                Willingness: Do What Works
               </h2>
               <p className="text-gray-700 mb-4">
                 Willingness in DBT means doing what's effective—even when you don't feel like it, even when it's hard, even when you'd rather resist. It's the opposite of willfulness: digging in your heels and refusing to do what would help.
               </p>
               <p className="text-gray-700 mb-4">
-                <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Willingness</Link> isn't about wanting to do something. It's about choosing to do it anyway because it's what works.
+                Willingness isn't about wanting to do something. It's about choosing to do it anyway because it's what works.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                What is <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Willingness</Link>?
+                What is Willingness?
               </h2>
               <p className="text-gray-700 mb-3">Willingness means:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-4">
@@ -85,7 +86,7 @@ export default function WillingnessHalfSmilePage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                How to Practice <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Willingness</Link>
+                How to Practice Willingness
               </h2>
 
               <div className="mb-6">
@@ -103,7 +104,7 @@ export default function WillingnessHalfSmilePage() {
 
               <div className="mb-6">
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  Step 2: Turn the Mind to <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Willingness</Link>
+                  Step 2: Turn the Mind to Willingness
                 </h3>
                 <p className="text-gray-700 mb-2">Ask yourself:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
@@ -115,7 +116,7 @@ export default function WillingnessHalfSmilePage() {
 
               <div className="mb-6">
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  Step 3: Act from <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Willingness</Link>
+                  Step 3: Act from Willingness
                 </h3>
                 <p className="text-gray-700 mb-2">Do the effective thing:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
@@ -131,7 +132,7 @@ export default function WillingnessHalfSmilePage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Half-Smile</Link>: Accept Reality with Your Face
+                Half-Smile: Accept Reality with Your Face
               </h2>
               <p className="text-gray-700 mb-4">
                 Half-Smile is a DBT distress tolerance skill that uses your body to signal acceptance to your mind. It's not about pretending to be happy—it's about using a gentle, accepting facial expression to help your nervous system shift toward acceptance.
@@ -140,19 +141,19 @@ export default function WillingnessHalfSmilePage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                What is <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Half-Smile</Link>?
+                What is Half-Smile?
               </h2>
               <p className="text-gray-700 mb-4">
                 Half-Smile is a gentle, subtle smile—not a big grin. It's the kind of smile you might <Link href="/pages/interpersonal-skills/give" className="text-blue-600 hover:text-blue-800 underline">give</Link> when you see something peaceful or when you're accepting something difficult with grace.
               </p>
               <p className="text-gray-700 mb-4">
-                Research shows that facial expressions can influence emotions (facial feedback hypothesis). A <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">half-smile</Link> can help signal to your nervous system that you're accepting reality, even when your mind is still struggling.
+                Research shows that facial expressions can influence emotions (facial feedback hypothesis). A half-smile can help signal to your nervous system that you're accepting reality, even when your mind is still struggling.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                How to Practice <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Half-Smile</Link>
+                How to Practice Half-Smile
               </h2>
 
               <div className="mb-6">
@@ -169,7 +170,7 @@ export default function WillingnessHalfSmilePage() {
 
               <div className="mb-6">
                 <h3 className="text-xl font-semibold mb-3 text-gray-800">
-                  Step 2: Create a Gentle <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Half-Smile</Link>
+                  Step 2: Create a Gentle Half-Smile
                 </h3>
                 <p className="text-gray-700 mb-2">Lift the corners of your mouth slightly—just a little. It should feel:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
@@ -206,7 +207,7 @@ export default function WillingnessHalfSmilePage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-orange-800">
-                When to Use <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Willingness</Link> & <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Half-Smile</Link>
+                When to Use Willingness & Half-Smile
               </h2>
               <p className="text-gray-700 mb-3">Use these skills when:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-4">
@@ -232,7 +233,7 @@ export default function WillingnessHalfSmilePage() {
                 <div>
                   <p className="text-gray-700 font-semibold mb-1">"I don't feel willing"</p>
                   <p className="text-gray-700 ml-4">
-                    <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Willingness</Link> isn't a feeling—it's a choice. You can choose <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">willingness</Link> even when you don't feel willing.
+                    Willingness isn't a feeling—it's a choice. You can choose willingness even when you don't feel willing.
                   </p>
                 </div>
                 <div>
@@ -253,7 +254,7 @@ export default function WillingnessHalfSmilePage() {
               </p>
               <ol className="list-decimal list-inside space-y-1 text-gray-700 ml-4">
                 <li>Relax your face</li>
-                <li>Create a gentle <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">half-smile</Link></li>
+                <li>Create a gentle half-smile</li>
                 <li>Turn your palms up (willing hands)</li>
                 <li>Hold for 30 seconds</li>
                 <li>Notice what happens</li>
@@ -265,7 +266,7 @@ export default function WillingnessHalfSmilePage() {
                 Remember
               </h3>
               <p className="text-gray-700">
-                Willingness and <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Half-Smile</Link> are skills you practice—not things you perfect. Even a moment of <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">willingness</Link> or a brief <Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">half-smile</Link> counts.
+                Willingness and Half-Smile are skills you practice—not things you perfect. Even a moment of willingness or a brief half-smile counts.
               </p>
             </div>
           </div>
@@ -273,23 +274,19 @@ export default function WillingnessHalfSmilePage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/willingness-half-smile.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Try the Worksheet
-        </a>
+        >Try the Worksheet (pdf)</a>
         <a
           href="/assets/Worksheets/half-smile-willing.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Half-Smile Willingness Worksheet
-        </a>
+        >Half-Smile Willingness Worksheet (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

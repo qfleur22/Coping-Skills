@@ -73,7 +73,7 @@ export default function CopeAheadPage() {
                 <p className="text-gray-700 mb-2 font-medium">Good options:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-3">
                   <li><Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> (pause before reacting)</li>
-                  <li><Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIP</Link> (if body alarm is high)</li>
+                  <li><Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link> (if body alarm is high)</li>
                   <li><Link href="/pages/emotional-regulation/opposite-action" className="text-blue-600 hover:text-blue-800 underline">Opposite Action</Link> (if fear/shame urges avoidance)</li>
                   <li><Link href="/pages/flowchart/check-facts" className="text-blue-600 hover:text-blue-800 underline">Check the Facts</Link></li>
                   <li><Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> / <Link href="/pages/interpersonal-skills/give" className="text-blue-600 hover:text-blue-800 underline">GIVE</Link> / <Link href="/pages/interpersonal-skills/fast" className="text-blue-600 hover:text-blue-800 underline">FAST</Link> (if there's a conversation)</li>

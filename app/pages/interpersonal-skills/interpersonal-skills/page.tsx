@@ -240,7 +240,7 @@ export default function InterpersonalSkillsPage() {
                   rel="noopener noreferrer"
                   className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-200 text-center"
                 >
-                  Try the Worksheet
+                  Try the Worksheet (pdf)
                 </a>
                 <a
                   href="/assets/Worksheets/clarify-goals.pdf"
@@ -248,7 +248,7 @@ export default function InterpersonalSkillsPage() {
                   rel="noopener noreferrer"
                   className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-200 text-center"
                 >
-                  Clarify Interpersonal Goals
+                  Clarify Interpersonal Goals (pdf)
                 </a>
                 <a
                   href="/assets/Worksheets/int-troubleshooting.pdf"
@@ -256,7 +256,7 @@ export default function InterpersonalSkillsPage() {
                   rel="noopener noreferrer"
                   className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-200 text-center"
                 >
-                  Troubleshooting Interpersonal Skills
+                  Troubleshooting Interpersonal Skills (pdf)
                 </a>
                 <a
                   href="/assets/Worksheets/int-dialectics.pdf"
@@ -264,7 +264,7 @@ export default function InterpersonalSkillsPage() {
                   rel="noopener noreferrer"
                   className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-200 text-center"
                 >
-                  Dialectics of Interpersonal Skills
+                  Dialectics of Interpersonal Skills (pdf)
                 </a>
                 <a
                   href="/assets/Worksheets/int-opposites.pdf"
@@ -272,7 +272,7 @@ export default function InterpersonalSkillsPage() {
                   rel="noopener noreferrer"
                   className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-200 text-center"
                 >
-                  Dialectics of Interpersonal Skills (Opposites)
+                  Dialectics of Interpersonal Skills (Opposites) (pdf)
                 </a>
                 <a
                   href="/assets/Worksheets/int-priorities.pdf"
@@ -280,7 +280,7 @@ export default function InterpersonalSkillsPage() {
                   rel="noopener noreferrer"
                   className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-200 text-center"
                 >
-                  Clarifying Priorities in Interpersonal Situations
+                  Clarifying Priorities in Interpersonal Situations (pdf)
                 </a>
                 <a
                   href="/assets/Worksheets/int-effectiveness-scripts.pdf"
@@ -288,7 +288,7 @@ export default function InterpersonalSkillsPage() {
                   rel="noopener noreferrer"
                   className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-md transition-colors duration-200 text-center"
                 >
-                  Interpersonal Effectiveness Scripts
+                  Interpersonal Effectiveness Scripts (pdf)
                 </a>
               </div>
             </div>

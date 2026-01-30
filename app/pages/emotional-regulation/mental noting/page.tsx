@@ -54,7 +54,7 @@ export default function MentalNotingPage() {
                 <li>you can't <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">stop</Link> thinking, even if you know it's not helpful</li>
               </ul>
               <p className="text-gray-700 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
-                Skip or shorten this practice if you're in a high crisis state (panic, dissociation, urge to act dangerously). In crisis, use Crisis Skills first (<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>/<Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIP</Link>/grounding), then come back to this.
+                Skip or shorten this practice if you're in a high crisis state (panic, dissociation, urge to act dangerously). In crisis, use Crisis Skills first (<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>/<Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>/grounding), then come back to this.
               </p>
             </div>
 
@@ -310,7 +310,7 @@ export default function MentalNotingPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={handleReturnToLanding}
-        className="fixed bottom-16 md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50 w-full md:w-auto"
+        className="fixed bottom-16 md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
       >
         Return to Landing
       </button>

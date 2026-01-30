@@ -47,19 +47,19 @@ export default function GivePage() {
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-8 text-center text-green-800">
-            Relationship Effectiveness: <Link href="/pages/interpersonal-skills/give" className="text-blue-600 hover:text-blue-800 underline">GIVE</Link> (DBT)
+            Relationship Effectiveness: GIVE (DBT)
           </h1>
 
           <div className="bg-green-50 backdrop-blur-sm rounded-lg border border-green-200 p-8 shadow-lg space-y-6">
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-green-800">
-                What is <Link href="/pages/interpersonal-skills/give" className="text-blue-600 hover:text-blue-800 underline">GIVE</Link>?
+                What is GIVE?
               </h2>
               <p className="text-gray-700 mb-4">
-                GIVE is a DBT Interpersonal Effectiveness skill focused on maintaining and improving your relationships during difficult conversations. While <Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> helps you get what you want, <Link href="/pages/interpersonal-skills/give" className="text-blue-600 hover:text-blue-800 underline">GIVE</Link> helps you protect the relationship—even when you're asking for something or saying no.
+                GIVE is a DBT Interpersonal Effectiveness skill focused on maintaining and improving your relationships during difficult conversations. While <Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> helps you get what you want, GIVE helps you protect the relationship—even when you're asking for something or saying no.
               </p>
               <p className="text-gray-700 mb-4">
-                <strong><Link href="/pages/interpersonal-skills/give" className="text-blue-600 hover:text-blue-800 underline">GIVE</Link> = Gentle • Interested • Validate • Easy manner</strong>
+                <strong>GIVE = Gentle • Interested • Validate • Easy manner</strong>
               </p>
               <p className="text-gray-700">
                 GIVE is most effective when used alongside <Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> (for objectives) and <Link href="/pages/interpersonal-skills/fast" className="text-blue-600 hover:text-blue-800 underline">FAST</Link> (for self-respect).
@@ -68,7 +68,7 @@ export default function GivePage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-green-800">
-                When to use <Link href="/pages/interpersonal-skills/give" className="text-blue-600 hover:text-blue-800 underline">GIVE</Link>
+                When to use GIVE
               </h2>
               <p className="text-gray-700 mb-3">Use GIVE when:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
@@ -262,15 +262,13 @@ export default function GivePage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/int-give.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Try the Worksheet
-        </a>
+        >Try the Worksheet (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

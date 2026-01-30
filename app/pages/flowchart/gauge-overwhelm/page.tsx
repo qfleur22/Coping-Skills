@@ -44,7 +44,7 @@ function GaugeOverwhelmContent() {
   }, [searchParams]);
 
   const handleYes = () => {
-    router.push('/pages/distress-tolerance/distress-tolerance');
+    router.push('/pages/distress-tolerance');
   };
 
   const handleNo = () => {
@@ -129,7 +129,7 @@ function GaugeOverwhelmContent() {
               {activeTooltip === 'distress-tolerance-distress-tolerance' && (
                 <div className="mt-2 bg-white rounded-lg shadow-xl p-4 border border-gray-200 tooltip-container">
                   <p className="text-sm text-gray-700">
-                    <strong>Crisis Survival Mode</strong> — Routes to your crisis skills like: <Link href="/pages/interpersonal-skills/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>, <Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIP/TIPP</Link>, <Link href="/pages/interpersonal-skills/pros-cons" className="text-blue-600 hover:text-blue-800 underline">Pros & Cons</Link>, <Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link>, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-Soothe</Link>, <Link href="/pages/distress-tolerance/improve" className="text-blue-600 hover:text-blue-800 underline">IMPROVE</Link>, Urge Surfing, <Link href="/pages/interpersonal-skills/resistt" className="text-blue-600 hover:text-blue-800 underline">RESISTT</Link>. (These are classic crisis survival options.)
+                    <strong>Crisis Survival Mode</strong> — Routes to your crisis skills like: <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>, <Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>, <Link href="/pages/interpersonal-skills/pros-cons" className="text-blue-600 hover:text-blue-800 underline">Pros & Cons</Link>, <Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link>, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-Soothe</Link>, <Link href="/pages/distress-tolerance/improve" className="text-blue-600 hover:text-blue-800 underline">IMPROVE</Link>, Urge Surfing, <Link href="/pages/interpersonal-skills/resistt" className="text-blue-600 hover:text-blue-800 underline">RESISTT</Link>. (These are classic crisis survival options.)
                   </p>
                   <button
                     onClick={() => {

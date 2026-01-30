@@ -212,8 +212,8 @@ export default function WhatPage() {
                 Worksheets & Virtual Coach
               </h3>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                <li><a href="/assets/Worksheets/mindful-what.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">DBT Mindfulness: "What" Skills Worksheet (PDF)</a></li>
-                <li><a href="/assets/Worksheets/what-how.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">DBT Mindfulness: "What & How" Skills Quick Reference (PDF)</a></li>
+                <li><a href="/assets/Worksheets/mindful-what.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">DBT Mindfulness: "What" Skills Worksheet (pdf)</a></li>
+                <li><a href="/assets/Worksheets/what-how.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">DBT Mindfulness: "What & How" Skills Quick Reference (pdf)</a></li>
               </ul>
             </div>
 
@@ -241,23 +241,19 @@ export default function WhatPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/mindful-what.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Try the Worksheet
-        </a>
+        >Try the Worksheet (pdf)</a>
         <a
           href="/assets/Worksheets/what-how.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Interactive Worksheet
-        </a>
+        >Interactive Worksheet (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

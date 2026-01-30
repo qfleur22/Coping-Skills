@@ -217,7 +217,7 @@ export default function PositiveSelfTalkPage() {
                 If your self-talk gets unsafe
               </h3>
               <p className="text-gray-700">
-                If your inner voice is pushing you toward self-harm or you feel in danger, pause this exercise and use Crisis Skills (<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>/<Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>/Reach out for support). You deserve help and safety first.
+                If your inner voice is pushing you toward self-harm or you feel in danger, pause this exercise and use Crisis Skills (<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>/<Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>/Reach out for support). You deserve help and safety first.
               </p>
             </div>
           </div>
@@ -227,7 +227,7 @@ export default function PositiveSelfTalkPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={handleReturnToLanding}
-        className="fixed bottom-6 right-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
+        className="fixed bottom-16 md:bottom-6 md:right-6 right-0 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
       >
         Return to Landing
       </button>

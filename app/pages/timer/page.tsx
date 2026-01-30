@@ -265,7 +265,7 @@ export default function TimerPage() {
       {!isComplete && (
         <button
           onClick={() => router.push('/pages/flowchart/gauge-overwhelm')}
-          className="fixed bottom-16 md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50 w-full md:w-auto"
+          className="flex flex-col gap-2 md:fixed md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
         >
           Continue to Gauge Overwhelm
         </button>

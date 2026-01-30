@@ -136,7 +136,9 @@ export default function SafetyFirstPage() {
                 Links
               </h3>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                <li><Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">/crisis-help-now</Link></li>
+                <li><Link href="/pages/crisis-help-now" className="text-blue-600 hover:text-blue-800 underline">/crisis-help-now</Link></li>
+                <li><Link href="/pages/self-harm" className="text-blue-600 hover:text-blue-800 underline">/self-harm (Self-Harm Support Hub)</Link></li>
+                <li><Link href="/pages/addiction" className="text-blue-600 hover:text-blue-800 underline">/addiction (Addiction Recovery Hub)</Link></li>
                 <li><Link href="/pages/flowchart/body-check-in" className="text-blue-600 hover:text-blue-800 underline">/ (Can you check into your body?)</Link></li>
               </ul>
             </div>

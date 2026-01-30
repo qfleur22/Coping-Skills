@@ -259,7 +259,7 @@ export default function FindingFriendsPage() {
                   <li>Start with online communities (lower pressure)</li>
                   <li>Join groups where you don't have to talk much (hiking, art classes)</li>
                   <li>Practice <Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> scripts ahead of time</li>
-                  <li>Use distress tolerance skills (<Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link>, <Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>) before social events</li>
+                  <li>Use distress tolerance skills (<Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link>, <Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>) before social events</li>
                 </ul>
               </div>
 
@@ -314,7 +314,7 @@ export default function FindingFriendsPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={handleReturnToLanding}
-        className="fixed bottom-16 md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50 w-full md:w-auto"
+        className="flex flex-col gap-2 md:fixed md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
       >
         Return to Landing
       </button>

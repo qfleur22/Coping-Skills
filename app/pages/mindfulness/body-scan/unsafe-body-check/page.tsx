@@ -5,11 +5,19 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { BackButton } from '@/components/shared/BackButton';
 
-const tooltips = {
-  distressTolerance: 'For moments when emotions feel too big right now. Distress Tolerance skills help you get through the moment without making it worse, then come back to problem-solving later.',
-  mindfulness: 'To build the skill of noticing what\'s happening right now (thoughts, feelings, urges, surroundings) without getting swept away. If body focus feels unsafe, mindfulness can start with external anchors and choice.',
-  interpersonalSkills: 'When the feeling is connected to a situation with someone else—<Link href="/pages/interpersonal-skills/conflict" className="text-blue-600 hover:text-blue-800 underline">conflict</Link>, asking for something, saying no, or keeping self-respect. These DBT skills help you communicate clearly and reduce relationship blowups.',
-  selfCare: 'In DBT, taking care of your body lowers "emotion vulnerability" (<Link href="/pages/emotional-regulation/abc-please" className="text-blue-600 hover:text-blue-800 underline">PLEASE</Link> skills). When your body is under-resourced, emotions hit harder and coping skills get harder to use. This helps you figure out what you need right now, with small actions that don\'t feel overwhelming.',
+const TooltipContent = {
+  distressTolerance: (
+    <span>For moments when emotions feel too big right now. Distress Tolerance skills help you get through the moment without making it worse, then come back to problem-solving later.</span>
+  ),
+  mindfulness: (
+    <span>To build the skill of noticing what's happening right now (thoughts, feelings, urges, surroundings) without getting swept away. If body focus feels unsafe, mindfulness can start with external anchors and choice.</span>
+  ),
+  interpersonalSkills: (
+    <span>When the feeling is connected to a situation with someone else—<Link href="/pages/interpersonal-skills/conflict" className="text-blue-600 hover:text-blue-800 underline">conflict</Link>, asking for something, saying no, or keeping self-respect. These DBT skills help you communicate clearly and reduce relationship blowups.</span>
+  ),
+  selfCare: (
+    <span>In DBT, taking care of your body lowers "emotion vulnerability" (<Link href="/pages/emotional-regulation/abc-please" className="text-blue-600 hover:text-blue-800 underline">PLEASE</Link> skills). When your body is under-resourced, emotions hit harder and coping skills get harder to use. This helps you figure out what you need right now, with small actions that don't feel overwhelming.</span>
+  ),
 };
 
 export default function UnsafeBodyCheckPage() {
@@ -34,7 +42,7 @@ export default function UnsafeBodyCheckPage() {
   }, [activeTooltip]);
 
   const handleDistressTolerance = () => {
-    router.push('/pages/distress-tolerance/distress-tolerance');
+    router.push('/pages/distress-tolerance');
   };
 
   const handleMindfulness = () => {
@@ -233,10 +241,10 @@ export default function UnsafeBodyCheckPage() {
               </div>
               {activeTooltip === 'distressTolerance' && (
                 <div className="mt-2 bg-white rounded-lg shadow-xl p-4 border border-gray-200 tooltip-container">
-                  <p className="text-sm text-gray-700 mb-3">{tooltips.distressTolerance}</p>
+                  <p className="text-sm text-gray-700 mb-3">{TooltipContent.distressTolerance}</p>
                   <p className="text-xs font-semibold text-gray-700 mb-2">What you'll do on the next page (examples):</p>
                   <ul className="list-disc list-inside space-y-1 text-xs text-gray-600 ml-2">
-                    <li>A quick "<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">stop</Link> the spiral" skill (like <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> or <Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>)</li>
+                    <li>A quick "<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">stop</Link> the spiral" skill (like <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link> or <Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>)</li>
                     <li>Short-term coping (like <Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link> distraction tools)</li>
                     <li>Self-soothing / calming your nervous system</li>
                   </ul>
@@ -291,7 +299,7 @@ export default function UnsafeBodyCheckPage() {
               </div>
               {activeTooltip === 'mindfulness' && (
                 <div className="mt-2 bg-white rounded-lg shadow-xl p-4 border border-gray-200 tooltip-container">
-                  <p className="text-sm text-gray-700 mb-3">{tooltips.mindfulness}</p>
+                  <p className="text-sm text-gray-700 mb-3">{TooltipContent.mindfulness}</p>
                   <p className="text-xs font-semibold text-gray-700 mb-2">What you'll do on the next page (examples):</p>
                   <ul className="list-disc list-inside space-y-1 text-xs text-gray-600 ml-2">
                     <li>Mindfulness with eyes open (sight/sound anchor)</li>
@@ -349,7 +357,7 @@ export default function UnsafeBodyCheckPage() {
               </div>
               {activeTooltip === 'interpersonalSkills' && (
                 <div className="mt-2 bg-white rounded-lg shadow-xl p-4 border border-gray-200 tooltip-container">
-                  <p className="text-sm text-gray-700 mb-3">{tooltips.interpersonalSkills}</p>
+                  <p className="text-sm text-gray-700 mb-3">{TooltipContent.interpersonalSkills}</p>
                   <p className="text-xs font-semibold text-gray-700 mb-2">What you'll do on the next page (examples):</p>
                   <ul className="list-disc list-inside space-y-1 text-xs text-gray-600 ml-2">
                     <li><Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> (ask / say no / set a boundary)</li>
@@ -408,7 +416,7 @@ export default function UnsafeBodyCheckPage() {
               </div>
               {activeTooltip === 'selfCare' && (
                 <div className="mt-2 bg-white rounded-lg shadow-xl p-4 border border-gray-200 tooltip-container">
-                  <p className="text-sm text-gray-700">{tooltips.selfCare}</p>
+                  <p className="text-sm text-gray-700">{TooltipContent.selfCare}</p>
                   <button
                     onClick={() => {
                       setActiveTooltip(null);
@@ -434,7 +442,7 @@ export default function UnsafeBodyCheckPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={() => router.push('/pages/landing-page')}
-        className="fixed bottom-6 right-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
+        className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
       >
         Return to Landing
       </button>

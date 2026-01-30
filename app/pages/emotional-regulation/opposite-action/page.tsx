@@ -20,7 +20,7 @@ export default function OppositeActionPage() {
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
-            <Link href="/pages/emotional-regulation/opposite-action" className="text-blue-600 hover:text-blue-800 underline">Opposite Action</Link> (DBT Emotion Regulation)
+            Opposite Action (DBT Emotion Regulation)
           </h1>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg space-y-6">
@@ -29,7 +29,7 @@ export default function OppositeActionPage() {
                 What is this for?
               </h2>
               <p className="text-gray-700 mb-4">
-                Opposite Action is a DBT Emotion Regulation skill for when your emotion doesn't fit the facts, or when acting on the emotion would make things worse. Instead of following the emotion's urge, you do the <Link href="/pages/emotional-regulation/opposite-action" className="text-blue-600 hover:text-blue-800 underline">opposite action</Link>.
+                Opposite Action is a DBT Emotion Regulation skill for when your emotion doesn't fit the facts, or when acting on the emotion would make things worse. Instead of following the emotion's urge, you do the opposite action.
               </p>
               <p className="text-gray-700">
                 This skill helps you change emotions by changing your behavior—acting opposite to what the emotion is telling you to do.
@@ -38,7 +38,7 @@ export default function OppositeActionPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                When to use <Link href="/pages/emotional-regulation/opposite-action" className="text-blue-600 hover:text-blue-800 underline">Opposite Action</Link>
+                When to use Opposite Action
               </h2>
               <p className="text-gray-700 mb-3">Use Opposite Action when:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
@@ -51,7 +51,7 @@ export default function OppositeActionPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                Step-by-step: <Link href="/pages/emotional-regulation/opposite-action" className="text-blue-600 hover:text-blue-800 underline">Opposite Action</Link>
+                Step-by-step: Opposite Action
               </h2>
 
               <div className="mb-6">
@@ -84,7 +84,7 @@ export default function OppositeActionPage() {
                 </ul>
                 <p className="text-gray-700 mb-2 font-medium">If the emotion doesn't fit the facts:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                  <li>Continue with <Link href="/pages/emotional-regulation/opposite-action" className="text-blue-600 hover:text-blue-800 underline">Opposite Action</Link></li>
+                  <li>Continue with Opposite Action</li>
                 </ul>
               </div>
 
@@ -155,23 +155,19 @@ export default function OppositeActionPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/opposite.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Try the Worksheet
-        </a>
+        >Try the Worksheet (pdf)</a>
         <a
           href="/assets/Worksheets/opposite-action-interact.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Interactive Worksheet
-        </a>
+        >Interactive Worksheet (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

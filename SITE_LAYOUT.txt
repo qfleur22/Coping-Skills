@@ -1,0 +1,396 @@
+DBT COPING SKILLS APPLICATION - SITE LAYOUT
+============================================
+
+This document maps all pathways in the flowchart and all pages with their connections.
+
+================================================================================
+ENTRY POINTS
+================================================================================
+
+1. Root (/)
+   → Safety First page (/pages/flowchart/safety-first)
+
+2. Landing Page (/pages/landing-page)
+   → Categories: Mindfulness, Distress Tolerance, Emotional Regulation, 
+      Interpersonal Skills, Crisis Skills, Flowchart
+   → Flowchart option → Root (/)
+
+================================================================================
+FLOWCHART PATHWAYS
+================================================================================
+
+MAIN FLOWCHART PATHWAY:
+
+1. Safety First (/pages/flowchart/safety-first)
+   → "Yes, I'm in immediate danger" → Crisis Help Now (/pages/crisis-help-now)
+   → "No" → Body Check-In (/pages/flowchart/body-check-in)
+
+2. Body Check-In (/pages/flowchart/body-check-in)
+   → "Yes, I know how I'm feeling" → Feelings (/pages/flowchart/feelings)
+   → "No, please guide me through a body scan" → Body Scan Duration Selection (/pages/mindfulness/body-scan/how-long)
+   → "No, it feels unsafe to check into my body" → Unsafe Body Check (/pages/mindfulness/body-scan/unsafe-body-check)
+
+3. Feelings (/pages/flowchart/feelings)
+   → User selects emotions → Intensity (/pages/flowchart/intensity) [with emotions param]
+
+4. Intensity (/pages/flowchart/intensity)
+   → User selects intensity 0-10:
+   → 8-10 (High Intensity) → TIP (/pages/distress-tolerance/tip)
+   → 4-7 (Moderate Intensity) → Change (/pages/flowchart/change) [with emotions param]
+   → 0-3 (Low Intensity) → Micro-Skills (/pages/flowchart/intensity/micro-skills) [with emotions param]
+
+5. Micro-Skills (/pages/flowchart/intensity/micro-skills)
+   → Shows micro-skill suggestions: Check Facts Lite, Values Step, One-Mindfulness
+   → Can continue to Change (/pages/flowchart/change) [with emotions param]
+
+6. Change (/pages/flowchart/change)
+   → "Yes, I want to change this feeling" → Changing Feelings (/pages/flowchart/changing-feelings) [with emotions param]
+   → "No, I can sit with this feeling" → Sit With It (/pages/flowchart/sit-with-it)
+
+7. Changing Feelings (/pages/flowchart/changing-feelings)
+   → "Yes, I can do self-care" → Self-Care (/pages/self-care)
+   → "No, I'm too overwhelmed" → Gauge Overwhelm (/pages/flowchart/gauge-overwhelm) [with emotions param]
+
+6. Self-Care (/pages/self-care)
+   → Continue → Gauge Overwhelm (/pages/flowchart/gauge-overwhelm)
+
+9. Gauge Overwhelm (/pages/flowchart/gauge-overwhelm)
+   → "Yes, I'm overwhelmed" → Distress Tolerance Overview (/pages/distress-tolerance/distress-tolerance)
+   → "No, I'm not overwhelmed" → Regulate (/pages/flowchart/regulate)
+   → "Not sure" → Shows tooltip
+
+8. Regulate (/pages/flowchart/regulate)
+   → "Yes, I can regulate" → Reaction (/pages/flowchart/reaction)
+   → "No, I can't regulate" → Check Facts (/pages/flowchart/check-facts)
+
+11. Reaction (/pages/flowchart/reaction)
+   → "Yes, my reaction fits the context" → Emotion Driver (/pages/flowchart/emotion-driver)
+   → "Maybe/No, my reaction doesn't fit" → Check Facts (/pages/flowchart/check-facts)
+
+12. Emotion Driver (/pages/flowchart/emotion-driver)
+    → "Problem to Solve" → Problem Solve (/pages/flowchart/problem-solve) → Soothe (/pages/distress-tolerance/soothe)
+    → "Relationship Conflict" → Interpersonal Hub (/pages/flowchart/interpersonal-hub) → Soothe (/pages/distress-tolerance/soothe)
+    → "Something Unchangeable" → Reality Acceptance Hub (/pages/flowchart/reality-acceptance-hub) → Soothe (/pages/distress-tolerance/soothe)
+
+11. Check Facts (/pages/flowchart/check-facts)
+    → Links to: Opposite Action (/pages/emotional-regulation/opposite-action)
+    → Links to: Problem Solving (/pages/flowchart/problem-solve)
+    → Links to: ABC PLEASE (/pages/emotional-regulation/abc-please)
+
+14. Problem Solve (/pages/flowchart/problem-solve)
+    → Links to: Soothe (/pages/distress-tolerance/soothe)
+    → Links to: Various problem-solving resources
+
+13. Sit With It (/pages/flowchart/sit-with-it)
+    → "Emotion Exposure" → Emotion Exposure (/pages/emotional-regulation/emotion-exposure)
+    → "Self-Validation" → Self-Validation (/pages/emotional-regulation/self-validation)
+    → "Self-Compassion" → Self-Compassion (/pages/emotional-regulation/self-compassion)
+    → "Feel in Body" → Feel in Body (/pages/emotional-regulation/feel-in-body)
+    → "Not comfortable right now" → Not Comfortable (/pages/flowchart/sit-with-it/not-comfortable)
+
+16. Not Comfortable (/pages/flowchart/sit-with-it/not-comfortable)
+    → Links to: Distress Tolerance (/pages/distress-tolerance/distress-tolerance)
+    → Links to: Crisis Help (/pages/crisis-help-now)
+
+15. Interpersonal Hub (/pages/flowchart/interpersonal-hub)
+    → "DEAR MAN" → DEAR MAN (/pages/interpersonal-skills/dear-man)
+    → "GIVE" → GIVE (/pages/interpersonal-skills/give)
+    → "FAST" → FAST (/pages/interpersonal-skills/fast)
+    → "Handling Conflict" → Conflict (/pages/interpersonal-skills/conflict)
+    → "Assertive Communication" → Assertiveness (/pages/interpersonal-skills/assertiveness)
+    → "Validation Levels" → Validation Levels (/pages/interpersonal-skills/validation-levels)
+    → "Continue to Soothe" → Soothe (/pages/distress-tolerance/soothe)
+
+18. Reality Acceptance Hub (/pages/flowchart/reality-acceptance-hub)
+    → "Radical Acceptance" → Radical Acceptance (/pages/interpersonal-skills/radical-acceptance)
+    → "Turning the Mind" → Turning the Mind (/pages/distress-tolerance/turning-mind)
+    → "Willingness & Half-Smile" → Willingness & Half-Smile (/pages/distress-tolerance/willingness-half-smile)
+    → "Mindful Awareness" → Awareness (/pages/mindfulness/awareness)
+    → "Letting Go" → Letting Go (/pages/emotional-regulation/letting-go)
+    → "IMPROVE" → IMPROVE (/pages/distress-tolerance/improve)
+    → "Continue to Soothe" → Soothe (/pages/distress-tolerance/soothe)
+
+17. Soothe (/pages/distress-tolerance/soothe)
+    → Links to: Return to Landing Page (/pages/landing-page)
+    → Links to: Various self-soothing resources
+
+================================================================================
+PAGE CATEGORIES AND CONNECTIONS
+================================================================================
+
+MINDFULNESS PAGES
+-----------------
+
+1. Mindfulness Overview (/pages/mindfulness/mindfulness)
+   → Links to: Body Scan, Awareness, Breathing, Wise Mind, Meditation, What Skills, One-Mindfulness
+
+2. Body Scan Duration Selection (/pages/mindfulness/body-scan/how-long)
+   → Links to: 1-minute body scan (/pages/mindfulness/body-scan/1min)
+   → Links to: Other duration options
+   → Back → Body Check-In (/pages/flowchart/body-check-in)
+
+3. Unsafe Body Check (/pages/mindfulness/body-scan/unsafe-body-check)
+   → Links to: Alternative practices
+   → Back → Body Check-In (/pages/flowchart/body-check-in)
+
+4. Awareness (/pages/mindfulness/awareness)
+   → Links to: Other mindfulness skills
+
+5. Breathing (/pages/mindfulness/breathing)
+   → Links to: Other mindfulness skills
+
+6. Wise Mind (/pages/mindfulness/wise-mind/wise-mind)
+   → Links to: Other mindfulness skills
+
+7. Meditation (/pages/mindfulness/meditation)
+   → Links to: Other mindfulness skills
+
+8. What Skills (/pages/mindfulness/what)
+   → Links to: Other mindfulness skills
+
+9. One-Mindfulness (/pages/mindfulness/one-mindfulness)
+   → Links to: Other mindfulness skills
+
+
+DISTRESS TOLERANCE PAGES
+------------------------
+
+1. Distress Tolerance Overview (/pages/distress-tolerance/distress-tolerance)
+   → Links to: STOP, TIP, ACCEPTS, Self-Soothe, IMPROVE, Radical Acceptance, 
+      Pros & Cons, Cost-Benefit, Effective Rethinking, Muscle Relaxation, 
+      Self-Care, Turning the Mind, Willingness & Half-Smile, Nightmare Protocol
+
+2. STOP (/pages/interpersonal-skills/stop)
+   → Links to: Other distress tolerance skills
+
+3. TIP (/pages/distress-tolerance/tip)
+   → Links to: STOP, Am I Overwhelmed, Pros & Cons, Urge Surfing, Crisis Help
+
+4. ACCEPTS (/pages/distress-tolerance/accepts)
+   → Links to: Other distress tolerance skills
+
+5. Self-Soothe (/pages/distress-tolerance/soothe)
+   → Links to: Return to Landing Page
+   → Links to: Other self-soothing resources
+
+6. IMPROVE (/pages/distress-tolerance/improve)
+   → Links to: Other distress tolerance skills
+
+7. Pros & Cons (/pages/distress-tolerance/pros-cons)
+   → Links to: Other distress tolerance skills
+
+8. Cost-Benefit Analysis (/pages/distress-tolerance/cost-benefit)
+   → Links to: Other distress tolerance skills
+
+9. Effective Rethinking (/pages/distress-tolerance/effective-rethinking)
+   → Links to: Other distress tolerance skills
+
+10. Turning the Mind (/pages/distress-tolerance/turning-mind)
+    → Links to: Other reality acceptance skills
+
+11. Willingness & Half-Smile (/pages/distress-tolerance/willingness-half-smile)
+    → Links to: Other reality acceptance skills
+
+12. Nightmare Protocol (/pages/distress-tolerance/nightmare-protocol)
+    → Links to: Other distress tolerance skills
+
+
+EMOTIONAL REGULATION PAGES
+--------------------------
+
+1. Emotional Regulation Overview (/pages/emotional-regulation/emotional-regulation)
+   → Links to: Check the Facts, Problem Solving, Opposite Action, Build Mastery,
+      Cope Ahead, Pleasant Activities, Letting Go, Being Effective, Mental Noting,
+      Cognitive Vulnerability, Positive Self-Talk, Mindful Emotions, ABC PLEASE,
+      Feel in Body
+
+2. Check the Facts (/pages/emotional-regulation/check-facts)
+   → Links to: Problem Solving, Opposite Action, ABC PLEASE
+
+3. Problem Solving (/pages/emotional-regulation/problem-solve)
+   → Links to: Other problem-solving resources
+
+4. Opposite Action (/pages/emotional-regulation/opposite-action)
+   → Links to: Check the Facts, Problem Solving
+
+5. Build Mastery (/pages/emotional-regulation/build-mastery)
+   → Links to: Other emotional regulation skills
+
+6. Cope Ahead (/pages/emotional-regulation/cope-ahead)
+   → Links to: Other emotional regulation skills
+
+7. Pleasant Activities (/pages/emotional-regulation/pleasant-activities)
+   → Links to: Other emotional regulation skills
+
+8. Letting Go (/pages/emotional-regulation/letting-go)
+   → Links to: Other emotional regulation skills
+
+9. Being Effective (/pages/emotional-regulation/being-effective)
+   → Links to: Other emotional regulation skills
+
+10. Mental Noting & Thought Defusion (/pages/emotional-regulation/mental-noting)
+    → Links to: Other emotional regulation skills
+
+11. Cognitive Vulnerability (/pages/emotional-regulation/cognitive-vulnerability)
+    → Links to: Other emotional regulation skills
+
+12. Positive Self-Talk (/pages/emotional-regulation/positive-self-talk)
+    → Links to: Other emotional regulation skills
+
+13. Mindful Emotions (/pages/emotional-regulation/mindful-emotions)
+    → Links to: Other emotional regulation skills
+
+14. ABC PLEASE (/pages/emotional-regulation/abc-please)
+    → Links to: Check the Facts, Problem Solving
+
+15. Emotion Exposure (/pages/emotional-regulation/emotion-exposure)
+    → Links to: Other emotion exposure resources
+
+16. Self-Validation (/pages/emotional-regulation/self-validation)
+    → Links to: Other validation resources
+
+17. Self-Compassion (/pages/emotional-regulation/self-compassion)
+    → Links to: Other self-compassion resources
+
+18. Feel in Body (/pages/emotional-regulation/feel-in-body)
+    → Links to: Other body awareness resources
+
+
+INTERPERSONAL SKILLS PAGES
+---------------------------
+
+1. Interpersonal Skills Overview (/pages/interpersonal-skills/interpersonal-skills)
+   → Links to: DEAR MAN, GIVE, FAST, Interpersonal Intensity, Interpersonal Myths,
+      RESISTT, Communication Styles, Assertive Communication, Resistance and Conflict,
+      Ending Relationships, Interpersonal Mindfulness, Finding Friends
+
+2. DEAR MAN (/pages/interpersonal-skills/dear-man)
+   → Links to: GIVE, FAST, Other interpersonal skills
+
+3. GIVE (/pages/interpersonal-skills/give)
+   → Links to: DEAR MAN, FAST, Other interpersonal skills
+
+4. FAST (/pages/interpersonal-skills/fast)
+   → Links to: DEAR MAN, GIVE, Other interpersonal skills
+
+5. Interpersonal Intensity (/pages/interpersonal-skills/interpersonal-intensity)
+   → Links to: Other interpersonal skills
+
+6. Interpersonal Myths & Truths (/pages/interpersonal-skills/interpersonal-myths)
+   → Links to: Other interpersonal skills
+
+7. RESISTT (/pages/interpersonal-skills/resistt)
+   → Links to: Other interpersonal skills
+
+8. Communication Styles (/pages/interpersonal-skills/communication-styles)
+   → Links to: Other interpersonal skills
+
+9. Assertive Communication (/pages/interpersonal-skills/assertiveness)
+   → Links to: Other interpersonal skills
+
+10. Resistance and Conflict (/pages/interpersonal-skills/conflict)
+    → Links to: Other interpersonal skills
+
+11. Ending Relationships (/pages/interpersonal-skills/ending-relationship)
+    → Links to: Other interpersonal skills
+
+12. Interpersonal Mindfulness (/pages/interpersonal-skills/interpersonal-mindfulness)
+    → Links to: Other interpersonal skills
+
+13. Finding Friends (/pages/interpersonal-skills/finding-friends)
+    → Links to: Other interpersonal skills
+
+14. Radical Acceptance (/pages/interpersonal-skills/radical-acceptance)
+    → Links to: Other reality acceptance skills
+
+15. Muscle Relaxation (/pages/interpersonal-skills/muscle-relaxation)
+    → Links to: Other distress tolerance skills
+
+16. Validation Levels (/pages/interpersonal-skills/validation-levels)
+    → Links to: Other interpersonal skills
+
+17. Boundaries (/pages/interpersonal-skills/boundaries)
+    → Links to: Other interpersonal skills
+
+18. Problem Solve (/pages/interpersonal-skills/problem-solve)
+    → Links to: Other problem-solving resources
+
+
+CRISIS SKILLS PAGES
+--------------------
+
+1. Crisis Help Now (/pages/crisis-help-now)
+   → Links to: Safety resources, crisis hotlines
+   → Can return to flowchart after safety is addressed
+
+2. Am I Overwhelmed? (/pages/crisis)
+   → Links to: Distress Tolerance skills
+   → Links to: Crisis Help Now
+
+
+OTHER PAGES
+-----------
+
+1. Landing Page (/pages/landing-page)
+   → Entry point for browsing all skills by category
+   → Flowchart option → Root (/)
+
+2. About the Skills (/pages/about)
+   → Information about DBT skills and the application
+
+3. Self-Care (/pages/self-care)
+   → Links to: Gauge Overwhelm (/pages/flowchart/gauge-overwhelm)
+
+4. Timer (/pages/timer)
+   → Timer functionality for practices
+
+5. Sleep Hygiene (/pages/sleep-hygiene)
+   → Sleep-related resources
+
+================================================================================
+KEY NAVIGATION PATTERNS
+================================================================================
+
+1. FLOWCHART FLOW (Main Decision Tree):
+   Safety First → Body Check-In → Feelings → Intensity → 
+   [Branch A (8-10): TIP → Crisis Skills]
+   [Branch B (4-7): Change → Changing Feelings → Self-Care → Gauge Overwhelm → Regulate → Reaction → Emotion Driver → Hubs → Soothe]
+   [Branch C (0-3): Micro-Skills → Change → (continues as Branch B)]
+   [Branch D: Sit With It → Emotion Exposure/Self-Validation/etc. OR Not Comfortable → Distress Tolerance]
+
+2. HUB PATTERNS:
+   - Interpersonal Hub → DEAR MAN/GIVE/FAST → Soothe
+   - Reality Acceptance Hub → Radical Acceptance/Turning the Mind/Willingness → Soothe
+   - Emotion Driver → Problem Solve/Interpersonal Hub/Reality Acceptance Hub → Soothe
+
+3. CROSS-CATEGORY LINKS:
+   - Many pages link to related skills across categories
+   - Check Facts links to Problem Solving, Opposite Action, ABC PLEASE
+   - TIP links to STOP, Pros & Cons, Crisis Help
+   - Problem Solving appears in both Flowchart and Emotional Regulation
+
+4. RETURN PATHS:
+   - Most pages have Back buttons (router.back())
+   - Soothe page links back to Landing Page
+   - Crisis Help Now can return to flowchart after safety addressed
+
+================================================================================
+PROGRESS BAR STEPS (as defined in ProgressBar.tsx)
+================================================================================
+
+1. Know your feeling (/pages/flowchart/feelings)
+2. Self-care (/pages/flowchart/changing-feelings)
+3. Distress tolerance (/pages/flowchart/gauge-overwhelm)
+4. Check the facts (/pages/flowchart/check-facts)
+5. Problem solve (/pages/flowchart/problem-solve)
+6. Soothe (/pages/distress-tolerance/soothe)
+
+================================================================================
+NOTES
+================================================================================
+
+- Many pages use URL parameters (e.g., ?emotions=...) to pass state between pages
+- Tooltips are used throughout for additional context
+- PDF worksheets are linked from many skill pages (marked with "(pdf)" in titles)
+- Mobile and desktop layouts differ (buttons are fixed on desktop, in-flow on mobile)
+- The flowchart is the primary interactive pathway, while category pages allow direct access to specific skills

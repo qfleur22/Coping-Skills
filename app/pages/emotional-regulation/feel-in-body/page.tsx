@@ -259,7 +259,7 @@ export default function FeelInBodyPage() {
                 <p className="text-gray-700 mb-3">Now that you have a label, choose one:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                   <li>"I can sit with this feeling." → Emotion Exposure / Self-Validation / Self-Compassion / Core Belief</li>
-                  <li>"This is too big right now." → Distress Tolerance (<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>/<Link href="/pages/distress-tolerance/tip" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>)</li>
+                  <li>"This is too big right now." → Distress Tolerance (<Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>/<Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>)</li>
                   <li>"This is about a situation with someone." → Interpersonal Skills (<Link href="/pages/interpersonal-skills/dear-man" className="text-blue-600 hover:text-blue-800 underline">DEAR MAN</Link> / <Link href="/pages/interpersonal-skills/give" className="text-blue-600 hover:text-blue-800 underline">GIVE</Link> / <Link href="/pages/interpersonal-skills/fast" className="text-blue-600 hover:text-blue-800 underline">FAST</Link>)</li>
                   <li>"My body needs basics." → <Link href="/pages/self-care" className="text-blue-600 hover:text-blue-800 underline">Self-care</Link> check (hydration/food/meds/rest)</li>
                 </ul>
@@ -288,7 +288,7 @@ export default function FeelInBodyPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <button
           onClick={() => router.push('/pages/flowchart/changing-feelings')}
           className="px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

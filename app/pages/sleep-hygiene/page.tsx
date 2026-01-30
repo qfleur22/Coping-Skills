@@ -143,7 +143,7 @@ export default function SleepHygienePage() {
                 <p className="text-gray-700 font-semibold mb-2">B) If you're anxious or ruminating</p>
                 <p className="text-gray-700 mb-2 ml-4">Pick one:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-8">
-                  <li>TIP (cold water + paced <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link>) if your body is revved up.</li>
+                  <li>TIPP (cold water + paced <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link>) if your body is revved up.</li>
                   <li>9→0 <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link> countdown (then restart at 8→0, 6→0, etc.)</li>
                   <li>Focus on the bodily sensation under the rumination (often rumination is avoiding a harder body-feeling).</li>
                   <li>Label it "middle-of-the-night thinking" (your brain will think differently in the morning).</li>
@@ -197,23 +197,19 @@ export default function SleepHygienePage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/sleep-hygiene.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Try the Worksheet
-        </a>
+        >Try the Worksheet (pdf)</a>
         <a
           href="/assets/Worksheets/sleep-hygiene-interact.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Interactive Worksheet
-        </a>
+        >Interactive Worksheet (pdf)</a>
         <a
           href="/assets/Worksheets/nightmare.pdf"
           target="_blank"
@@ -222,6 +218,12 @@ export default function SleepHygienePage() {
         >
           <Link href="/pages/distress-tolerance/nightmare-protocol" className="text-blue-600 hover:text-blue-800 underline">Nightmare Protocol</Link>
         </a>
+        <button
+          onClick={() => router.push('/pages/addiction/early-warning')}
+          className="px-4 md:px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
+        >
+          Early Warning Signs (sleep loss → relapse vulnerability)
+        </button>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

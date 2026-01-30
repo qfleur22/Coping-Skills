@@ -56,7 +56,7 @@ export default function MindfulEmotionsPage() {
                 <li>You want to <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">stop</Link> reacting automatically (snapping, spiraling, self-medicating, shutting down).</li>
                 <li>You want to reduce suffering without needing the emotion to vanish first.</li>
               </ul>
-              <p className="text-gray-700 mb-3 font-semibold">Use a crisis skill first (like TIP/STOP/<Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">self-soothe</Link>) when:</p>
+              <p className="text-gray-700 mb-3 font-semibold">Use a crisis skill first (like TIPP/STOP/<Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">self-soothe</Link>) when:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4 mb-4">
                 <li>Your body is in full alarm (panic, shaking, dissociation, feeling out of control).</li>
                 <li>You're at high risk of doing something unsafe.</li>
@@ -186,7 +186,7 @@ export default function MindfulEmotionsPage() {
                 </div>
                 <div>
                   <p className="text-gray-700 font-semibold mb-1">What if the emotion gets stronger when I pay attention to it?</p>
-                  <p className="text-gray-700 ml-4">That can happen at first. If intensity rises past what you can safely hold, switch to a crisis skill (TIP, grounding, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">self-soothe</Link>), then return when you're steadier.</p>
+                  <p className="text-gray-700 ml-4">That can happen at first. If intensity rises past what you can safely hold, switch to a crisis skill (TIPP, grounding, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">self-soothe</Link>), then return when you're steadier.</p>
                 </div>
                 <div>
                   <p className="text-gray-700 font-semibold mb-1">Is this the same as "calming down"?</p>
@@ -218,15 +218,13 @@ export default function MindfulEmotionsPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/mindful-emotions-interact.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Worksheet
-        </a>
+        >Worksheet (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

@@ -247,7 +247,7 @@ export default function ResisttPage() {
                   <p className="text-gray-700"><strong>"Reframing feels fake."</strong> → Reframe to neutral, not positive: "This is painful and temporary."</p>
                   <p className="text-gray-700"><strong>Distraction becomes avoidance.</strong> → Schedule a later "solve it" block when calm.</p>
                   <p className="text-gray-700"><strong>"Someone else isn't available."</strong> → Use "neutral thoughts" + write a 5-line message you would send.</p>
-                  <p className="text-gray-700"><strong>"You keep cycling <Link href="/pages/interpersonal-skills/resistt" className="text-blue-600 hover:text-blue-800 underline">RESISTT</Link> and staying at 8–10."</strong> → Switch to your Crisis Skills page (STOP/TIP/<Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link>) and/or your Overwhelmed? decision page.</p>
+                  <p className="text-gray-700"><strong>"You keep cycling <Link href="/pages/interpersonal-skills/resistt" className="text-blue-600 hover:text-blue-800 underline">RESISTT</Link> and staying at 8–10."</strong> → Switch to your Crisis Skills page (STOP/TIPP/<Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link>) and/or your Overwhelmed? decision page.</p>
                 </div>
               </div>
             </div>
@@ -258,7 +258,7 @@ export default function ResisttPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={handleReturnToLanding}
-        className="fixed bottom-16 md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50 w-full md:w-auto"
+        className="fixed bottom-16 md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
       >
         Return to Landing
       </button>

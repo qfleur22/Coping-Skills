@@ -51,7 +51,7 @@ export default function NotComfortablePage() {
               </h2>
               <div className="space-y-4">
                 <button
-                  onClick={() => router.push('/pages/distress-tolerance/distress-tolerance')}
+                  onClick={() => router.push('/pages/distress-tolerance')}
                   className="w-full px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-md"
                 >
                   I would like to practice Distress Tolerance
@@ -89,7 +89,7 @@ export default function NotComfortablePage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={() => router.push('/pages/landing-page')}
-        className="fixed bottom-6 right-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
+        className="flex flex-col gap-2 md:fixed md:bottom-6 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
       >
         Return to Landing
       </button>

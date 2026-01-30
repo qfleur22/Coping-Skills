@@ -255,12 +255,22 @@ export default function BoundariesPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <button
-        onClick={handleReturnToLanding}
-        className="fixed bottom-16 md:bottom-20 right-0 md:right-6 px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50 w-full md:w-auto"
-      >
-        Return to Landing
-      </button>
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
+        <a
+          href="/assets/Worksheets/creating-work-life-boundaries.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="px-4 md:px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
+        >
+          Creating Work-Life Boundaries Worksheet (PDF)
+        </a>
+        <button
+          onClick={handleReturnToLanding}
+          className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"
+        >
+          Return to Landing
+        </button>
+      </div>
     </div>
   );
 }

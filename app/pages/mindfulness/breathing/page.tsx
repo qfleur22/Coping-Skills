@@ -20,19 +20,19 @@ export default function BreathingPage() {
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-8 text-center text-gray-800">
-            <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">Breathing</Link> Exercises (DBT Mindfulness) — Conscious <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">Breathing</Link>
+            Breathing Exercises (DBT Mindfulness) — Conscious Breathing
           </h1>
 
           <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg space-y-6">
             <div>
               <p className="text-gray-700 mb-4">
-                One simple way to practice mindfulness and one-mindfully is to practice <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link> on purpose. Your <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link> happens all the time—but most of the time it isn't conscious. In DBT, bringing attention to your breath is a reliable way to bring your mind and body back together.
+                One simple way to practice mindfulness and one-mindfully is to practice breathing on purpose. Your breathing happens all the time—but most of the time it isn't conscious. In DBT, bringing attention to your breath is a reliable way to bring your mind and body back together.
               </p>
               <p className="text-gray-700 mb-4">
                 Thich Nhat Hanh teaches a classic breath practice that Marsha Linehan references with respect in DBT contexts:
               </p>
               <p className="text-gray-700 font-semibold ml-4">
-                "<Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">Breathing</Link> in, I know that I am <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link> in… <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">Breathing</Link> out, I know that I am <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link> out."
+                "Breathing in, I know that I am breathing in… Breathing out, I know that I am breathing out."
               </p>
             </div>
 
@@ -49,13 +49,13 @@ export default function BreathingPage() {
                 <li>help your nervous system settle enough to choose your next skill</li>
               </ul>
               <p className="text-gray-700 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
-                <strong>Important note:</strong> Some people feel panicky with deep <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link>. If that happens, use the "exhale-first" option below and keep breaths small and gentle.
+                <strong>Important note:</strong> Some people feel panicky with deep breathing. If that happens, use the "exhale-first" option below and keep breaths small and gentle.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-gray-800">
-                Step-by-step: Pick one <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link> practice
+                Step-by-step: Pick one breathing practice
               </h2>
 
               <div className="mb-6">
@@ -208,7 +208,7 @@ export default function BreathingPage() {
       <BackButton onClick={handleBack} />
       <button
         onClick={handleReturnToLanding}
-        className="fixed bottom-6 right-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
+        className="flex flex-col gap-2 md:fixed md:bottom-6 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 z-50"
       >
         Return to Landing
       </button>

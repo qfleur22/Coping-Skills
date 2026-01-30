@@ -47,25 +47,25 @@ export default function OneMindfulnessPage() {
       <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
         <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-8 text-center text-blue-800">
-            <Link href="/pages/mindfulness/one-mindfulness" className="text-blue-600 hover:text-blue-800 underline">One-Mindfulness</Link> (DBT Mindfulness Skill)
+            One-Mindfulness (DBT Mindfulness Skill)
           </h1>
 
           <div className="bg-blue-50 backdrop-blur-sm rounded-lg border border-blue-200 p-8 shadow-lg space-y-6">
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-blue-800">
-                What is <Link href="/pages/mindfulness/one-mindfulness" className="text-blue-600 hover:text-blue-800 underline">One-Mindfulness</Link>?
+                What is One-Mindfulness?
               </h2>
               <p className="text-gray-700 mb-4">
                 One-mindfulness is a DBT mindfulness skill that means doing one thing at a time, with your full attention. It's the opposite of multitasking—instead of splitting your attention across multiple activities, you focus completely on one task, one moment, one experience.
               </p>
               <p className="text-gray-700">
-                When you practice <Link href="/pages/mindfulness/one-mindfulness" className="text-blue-600 hover:text-blue-800 underline">one-mindfulness</Link>, you're fully present with whatever you're doing—whether it's eating, walking, working, or even just <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link>.
+                When you practice one-mindfulness, you're fully present with whatever you're doing—whether it's eating, walking, working, or even just <Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">breathing</Link>.
               </p>
             </div>
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-blue-800">
-                Why Practice <Link href="/pages/mindfulness/one-mindfulness" className="text-blue-600 hover:text-blue-800 underline">One-Mindfulness</Link>?
+                Why Practice One-Mindfulness?
               </h2>
               <p className="text-gray-700 mb-3">One-mindfulness helps you:</p>
               <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
@@ -79,7 +79,7 @@ export default function OneMindfulnessPage() {
 
             <div>
               <h2 className="text-2xl font-semibold mb-4 text-blue-800">
-                How to Practice <Link href="/pages/mindfulness/one-mindfulness" className="text-blue-600 hover:text-blue-800 underline">One-Mindfulness</Link>
+                How to Practice One-Mindfulness
               </h2>
 
               <div className="mb-6">
@@ -230,15 +230,13 @@ export default function OneMindfulnessPage() {
       </div>
 
       <BackButton onClick={handleBack} />
-      <div className="fixed bottom-16 md:bottom-20 right-0 md:right-6 flex flex-col gap-2 z-50 w-full md:w-auto">
+      <div className="flex flex-col gap-2 md:fixed md:bottom-20 md:right-6 w-full md:w-auto md:z-50 mt-4 md:mt-0">
         <a
           href="/assets/Worksheets/one-mindful.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="px-4 md:px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200 text-center"
-        >
-          Worksheet
-        </a>
+        >Worksheet (pdf)</a>
         <button
           onClick={handleReturnToLanding}
           className="px-4 md:px-6 py-3 bg-gray-600 hover:bg-gray-700 text-white font-semibold rounded-lg shadow-lg transition-colors duration-200"

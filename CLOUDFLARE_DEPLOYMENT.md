@@ -14,15 +14,19 @@ This is a **fully static Next.js site** - all 120 pages are pre-rendered to HTML
 
 ## Quick Start
 
-### Via Cloudflare Pages Dashboard
+### Via Cloudflare Pages Dashboard (Recommended)
 
 1. **Connect Repository**: Link your GitHub/GitLab repository to Cloudflare Pages
-2. **Configure Build**:
-   - Framework preset: `Next.js (Static HTML Export)`
+2. **Configure Build Settings**:
+   - Framework preset: `Next.js`
    - Build command: `npm run build`
-   - Build output directory: `.next` or `out`
-   - Node version: `18` or higher
-3. **Deploy**: Cloudflare will automatically build and deploy
+   - Build output directory: `.next`
+   - Root directory: `/` (leave as default)
+   - Environment variables: None required
+   - Node version: `18` or higher (automatic)
+3. **Deploy**: Click "Save and Deploy"
+
+Cloudflare will automatically build and deploy your site.
 
 ### Via Wrangler CLI
 
@@ -135,12 +139,9 @@ The `wrangler.toml` file is minimal and doesn't require compatibility flags:
 name = "coping-skills"
 compatibility_date = "2024-01-30"
 pages_build_output_dir = ".next"
-
-[build]
-command = "npm run build"
 ```
 
-This is all you need for a static Next.js site on Cloudflare Pages.
+**Note**: Build commands are configured in the Cloudflare Pages dashboard, not in `wrangler.toml`.
 
 ## Support
 

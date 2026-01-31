@@ -166,9 +166,9 @@ function ChangeContent() {
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                   <li><Link href="/pages/emotional-regulation/mindful-emotions" className="text-blue-600 hover:text-blue-800 underline">Emotion Exposure</Link> — riding the wave of the emotion</li>
-                  <li>Self-Validation — accepting that your emotion makes sense</li>
-                  <li>Self-Compassion — treating yourself with kindness</li>
-                  <li>Feeling it in your body — gentle body awareness practices</li>
+                  <li><Link href="/pages/emotional-regulation/self-validation" className="text-blue-600 hover:text-blue-800 underline">Self-Validation</Link> — accepting that your emotion makes sense</li>
+                  <li><Link href="/pages/emotional-regulation/self-compassion" className="text-blue-600 hover:text-blue-800 underline">Self-Compassion</Link> — treating yourself with kindness</li>
+                  <li><Link href="/pages/emotional-regulation/feel-in-body" className="text-blue-600 hover:text-blue-800 underline">Feeling it in your body</Link> — gentle body awareness practices</li>
                 </ul>
               </div>
             </div>

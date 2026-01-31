@@ -56,12 +56,13 @@ function IntensityContent() {
             </p>
           </div>
 
-          <div className="bg-white backdrop-blur-sm rounded-lg border border-gray-200 p-8 shadow-lg mb-8">
+          <div className="bg-white backdrop-blur-sm rounded-lg border border-gray-200 p-4 sm:p-8 shadow-lg mb-8">
             <div className="mb-6">
               <p className="text-gray-700 mb-4 text-center">
                 Select a number that best represents how intense this feeling is right now:
               </p>
-              <div className="grid grid-cols-11 gap-2 mb-4">
+              {/* Desktop: Single row of 11 buttons */}
+              <div className="hidden md:grid md:grid-cols-11 gap-2 mb-4">
                 {Array.from({ length: 11 }, (_, i) => (
                   <button
                     key={i}
@@ -80,7 +81,51 @@ function IntensityContent() {
                   </button>
                 ))}
               </div>
-              <div className="flex justify-between text-sm text-gray-600">
+              {/* Mobile: Two rows (0-5, 6-10) */}
+              <div className="md:hidden space-y-2 mb-4">
+                <div className="grid grid-cols-6 gap-2">
+                  {Array.from({ length: 6 }, (_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => handleIntensitySelect(i)}
+                      className={`px-3 py-4 rounded-lg font-semibold transition-all duration-200 ${
+                        intensity === i
+                          ? 'bg-blue-600 text-white scale-110 shadow-lg'
+                          : i >= 8
+                          ? 'bg-red-100 hover:bg-red-200 text-red-800'
+                          : i >= 4
+                          ? 'bg-yellow-100 hover:bg-yellow-200 text-yellow-800'
+                          : 'bg-green-100 hover:bg-green-200 text-green-800'
+                      }`}
+                    >
+                      {i}
+                    </button>
+                  ))}
+                </div>
+                <div className="grid grid-cols-5 gap-2">
+                  {Array.from({ length: 5 }, (_, i) => {
+                    const value = i + 6;
+                    return (
+                      <button
+                        key={value}
+                        onClick={() => handleIntensitySelect(value)}
+                        className={`px-3 py-4 rounded-lg font-semibold transition-all duration-200 ${
+                          intensity === value
+                            ? 'bg-blue-600 text-white scale-110 shadow-lg'
+                            : value >= 8
+                            ? 'bg-red-100 hover:bg-red-200 text-red-800'
+                            : value >= 4
+                            ? 'bg-yellow-100 hover:bg-yellow-200 text-yellow-800'
+                            : 'bg-green-100 hover:bg-green-200 text-green-800'
+                        }`}
+                      >
+                        {value}
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className="flex justify-between text-xs sm:text-sm text-gray-600">
                 <span>0 - Not intense</span>
                 <span>5 - Moderate</span>
                 <span>10 - Extremely intense</span>

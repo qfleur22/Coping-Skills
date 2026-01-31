@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Optimize for Cloudflare Pages
-  output: 'standalone',
+  // Static export for Cloudflare Pages
+  output: 'export',
   
-  // Enable experimental features for better Cloudflare compatibility
-  experimental: {
-    serverActions: {
-      allowedOrigins: ['*']
-    }
+  // Disable features not supported in static export
+  images: {
+    unoptimized: true
   }
 }
 

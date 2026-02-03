@@ -114,6 +114,7 @@ const categories: Record<string, Category> = {
       { label: 'Alexithymia (Identifying Feelings)', path: '/pages/neurodivergent/alexithymia' },
       { label: 'Trouble Describing Emotions?', path: '/pages/neurodivergent/describe' },
       { label: 'Act Intentionally', path: '/pages/neurodivergent/act-intentionally' },
+      { label: 'Sensory Profile & Needs', path: '/pages/neurodivergent/sensory-profiles' },
       { label: 'Stims & Special Interests', path: '/pages/neurodivergent/stims-special-interests' },
       { label: 'Sensory Self-Soothing', path: '/pages/neurodivergent/sensory-soothing' },
       { label: 'Personal Care Plan', path: '/pages/neurodivergent/care-plan' },

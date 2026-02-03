@@ -234,10 +234,10 @@ export default function TippPage() {
                   Pros & Cons
                 </button>
                 <button
-                  onClick={() => router.push('/pages/interpersonal-skills/resistt')}
+                  onClick={() => router.push('/pages/distress-tolerance/urge-surfing')}
                   className="px-4 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold rounded-lg transition-colors duration-200 text-left shadow-md"
                 >
-                  Urge Surfing (RESISTT)
+                  Urge Surfing
                 </button>
                 <button
                   onClick={() => router.push('/pages/crisis-help-now')}

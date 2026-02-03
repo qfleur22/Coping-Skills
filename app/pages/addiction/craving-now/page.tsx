@@ -82,16 +82,16 @@ export default function CravingNowPage() {
 
                 <div className="p-4 bg-white rounded-lg border border-gray-200">
                   <h3 className="text-xl font-semibold mb-2 text-gray-800">
-                    B) "Pulled" to use → Urge Surfing
+                    B) "Pulled" to use → <Link href="/pages/distress-tolerance/urge-surfing" className="text-blue-600 hover:text-blue-800 underline">Urge Surfing</Link>
                   </h3>
                   <p className="text-gray-700 mb-3">
                     Ride the wave for 2–5 minutes.
                   </p>
                   <button
-                    onClick={() => router.push('/pages/interpersonal-skills/pros-cons')}
+                    onClick={() => router.push('/pages/distress-tolerance/urge-surfing')}
                     className="px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors duration-200"
                   >
-                    Go to Pros & Cons (Urge Surfing)
+                    Go to Urge Surfing
                   </button>
                 </div>
 

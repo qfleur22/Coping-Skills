@@ -54,7 +54,7 @@ export default function SafetyPlanPage() {
                   </p>
                   <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                     <li><Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIP / paced breathing</Link></li>
-                    <li>Urge surfing</li>
+                    <li><Link href="/pages/distress-tolerance/urge-surfing" className="text-blue-600 hover:text-blue-800 underline">Urge surfing</Link></li>
                     <li><Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link></li>
                     <li><Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-soothe</Link></li>
                   </ul>

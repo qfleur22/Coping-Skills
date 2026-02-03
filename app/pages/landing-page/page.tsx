@@ -35,6 +35,7 @@ const categories: Record<string, Category> = {
       { label: 'ACCEPTS', path: '/pages/distress-tolerance/accepts' },
       { label: 'Self-Soothe', path: '/pages/distress-tolerance/soothe' },
       { label: 'IMPROVE', path: '/pages/distress-tolerance/improve' },
+      { label: 'Urge Surfing', path: '/pages/distress-tolerance/urge-surfing' },
       { label: 'Radical Acceptance', path: '/pages/interpersonal-skills/radical-acceptance' },
       { label: 'Pros & Cons', path: '/pages/interpersonal-skills/pros-cons' },
       { label: 'Cost-Benefit Analysis', path: '/pages/distress-tolerance/cost-benefit' },

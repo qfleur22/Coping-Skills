@@ -244,7 +244,7 @@ export default function RainPage() {
                 Pairing ideas (especially for addiction + anxiety)
               </h2>
               <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                <li><strong>RAIN + <Link href="/pages/self-harm/urge-now" className="text-blue-600 hover:text-blue-800 underline">Urge Surfing</Link>:</strong> Use RAIN during the peak of an urge, then surf the wave once you're more centered.</li>
+                <li><strong>RAIN + <Link href="/pages/distress-tolerance/urge-surfing" className="text-blue-600 hover:text-blue-800 underline">Urge Surfing</Link>:</strong> Use RAIN during the peak of an urge, then surf the wave once you're more centered.</li>
                 <li><strong>RAIN + <Link href="/pages/chain-analysis" className="text-blue-600 hover:text-blue-800 underline">Chain Analysis</Link>:</strong> Use RAIN to settle your body first, then map the links with more clarity.</li>
                 <li><strong>RAIN + <Link href="/pages/emotional-regulation/self-validation" className="text-blue-600 hover:text-blue-800 underline">Self-Validation</Link>:</strong> Turn the "Nurture" step into a validation script: "Of course I feel this—given what happened."</li>
               </ul>

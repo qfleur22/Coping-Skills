@@ -109,6 +109,7 @@ const categories: Record<string, Category> = {
       { label: 'Personal Care Plan', path: '/pages/neurodivergent/care-plan' },
       { label: 'Neurodivergent Affirmations', path: '/pages/neurodivergent/affirmations' },
       { label: 'Creating a Sensory Safe Space', path: '/pages/neurodivergent/safe-space' },
+      { label: 'Accessible Mindfulness Exercises', path: '/pages/neurodivergent/mindfulness' },
     ],
   },
   'flowchart': {

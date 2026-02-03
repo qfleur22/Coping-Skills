@@ -92,6 +92,7 @@ const categories: Record<string, Category> = {
     label: 'Crisis Skills',
     pages: [
       { label: 'Crisis Help Now', path: '/pages/crisis-help-now' },
+      { label: 'Create a Crisis Plan', path: '/pages/crisis/plan' },
       { label: 'Am I Overwhelmed?', path: '/pages/crisis' },
       { label: 'Nightmare Protocol', path: '/pages/distress-tolerance/nightmare-protocol' },
       { label: 'Post-Crisis Debrief', path: '/pages/post-crisis-debrief' },

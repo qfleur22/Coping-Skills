@@ -108,8 +108,9 @@ const categories: Record<string, Category> = {
     pages: [
       { label: 'Overload Skills Menu', path: '/pages/neurodivergent/overload' },
       { label: 'Managing Meltdowns', path: '/pages/neurodivergent/meltdowns' },
-      { label: 'Emotion Regulation', path: '/pages/neurodivergent/emotion-regulation' },
+      { label: 'Neurodivergent Emotion Regulation', path: '/pages/neurodivergent/emotion-regulation' },
       { label: 'Alexithymia (Identifying Feelings)', path: '/pages/neurodivergent/alexithymia' },
+      { label: 'Trouble Describing Emotions?', path: '/pages/neurodivergent/describe' },
       { label: 'Stims & Special Interests', path: '/pages/neurodivergent/stims-special-interests' },
       { label: 'Sensory Self-Soothing', path: '/pages/neurodivergent/sensory-soothing' },
       { label: 'Personal Care Plan', path: '/pages/neurodivergent/care-plan' },

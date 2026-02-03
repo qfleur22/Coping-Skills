@@ -115,6 +115,7 @@ const categories: Record<string, Category> = {
       { label: 'Trouble Describing Emotions?', path: '/pages/neurodivergent/describe' },
       { label: 'Act Intentionally', path: '/pages/neurodivergent/act-intentionally' },
       { label: 'Sensory Profile & Needs', path: '/pages/neurodivergent/sensory-profiles' },
+      { label: 'Build a Sensory Toolkit', path: '/pages/neurodivergent/sensory-kit' },
       { label: 'Stims & Special Interests', path: '/pages/neurodivergent/stims-special-interests' },
       { label: 'Sensory Self-Soothing', path: '/pages/neurodivergent/sensory-soothing' },
       { label: 'Personal Care Plan', path: '/pages/neurodivergent/care-plan' },

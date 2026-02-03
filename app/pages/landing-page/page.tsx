@@ -96,6 +96,7 @@ const categories: Record<string, Category> = {
       { label: 'Crisis Help Now', path: '/pages/crisis-help-now' },
       { label: 'Create a Crisis Plan', path: '/pages/crisis/plan' },
       { label: 'Am I Overwhelmed?', path: '/pages/crisis' },
+      { label: 'Your Window of Tolerance', path: '/pages/crisis/tolerance-window' },
       { label: 'Nightmare Protocol', path: '/pages/distress-tolerance/nightmare-protocol' },
       { label: 'Post-Crisis Debrief', path: '/pages/post-crisis-debrief' },
       { label: 'Chain Analysis', path: '/pages/chain-analysis' },
@@ -108,6 +109,7 @@ const categories: Record<string, Category> = {
     pages: [
       { label: 'Overload Skills Menu', path: '/pages/neurodivergent/overload' },
       { label: 'Managing Meltdowns', path: '/pages/neurodivergent/meltdowns' },
+      { label: 'Your Window of Tolerance', path: '/pages/neurodivergent/tolerance-window' },
       { label: 'Neurodivergent Emotion Regulation', path: '/pages/neurodivergent/emotion-regulation' },
       { label: 'Alexithymia (Identifying Feelings)', path: '/pages/neurodivergent/alexithymia' },
       { label: 'Trouble Describing Emotions?', path: '/pages/neurodivergent/describe' },

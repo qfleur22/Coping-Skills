@@ -73,7 +73,7 @@ export const SensoryWheel = ({ type, title }: SensoryWheelProps) => {
         g.append('path')
           .attr('d', arc as any)
           .attr('fill', isFilled ? sense.color : '#f0f0f0')
-          .attr('stroke', '#ffffff')
+          .attr('stroke', '#000000')
           .attr('stroke-width', 2)
           .attr('opacity', isFilled ? 0.8 : 0.3)
           .style('cursor', 'pointer')
@@ -115,7 +115,7 @@ export const SensoryWheel = ({ type, title }: SensoryWheelProps) => {
     const centerCircle = g.append('circle')
       .attr('r', innerRadius)
       .attr('fill', '#ffffff')
-      .attr('stroke', '#cccccc')
+      .attr('stroke', '#000000')
       .attr('stroke-width', 2);
 
     // Add level indicators in center

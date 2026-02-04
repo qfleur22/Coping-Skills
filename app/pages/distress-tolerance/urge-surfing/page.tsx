@@ -249,7 +249,7 @@ export default function UrgeSurfingPage() {
                   <ul className="list-disc list-inside space-y-1 text-gray-700 ml-8">
                     <li><Link href="/pages/mindfulness/breathing" className="text-blue-600 hover:text-blue-800 underline">paced breathing</Link></li>
                     <li><Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">temperature change (TIPP)</Link></li>
-                    <li>Wise Mind check-ins</li>
+                    <li><Link href="/pages/mindfulness/wise-mind" className="text-blue-600 hover:text-blue-800 underline">Wise Mind</Link> check-ins</li>
                     <li><Link href="/pages/distress-tolerance/willingness-half-smile" className="text-blue-600 hover:text-blue-800 underline">Half Smile / willing hands</Link></li>
                     <li><Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link> distraction after you've surfed the peak (if you still need support)</li>
                   </ul>

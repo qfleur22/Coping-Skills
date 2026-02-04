@@ -40,9 +40,9 @@ export default function SensoryProfilesPage() {
                 <p className="text-gray-700 text-sm italic mb-2">
                   <strong>Worksheet Image:</strong> "My Sensory Profile" worksheet with two circular rating charts (hypersensitivity and hyposensitivity) across senses (sound, visual, smell, taste, touch, interoception, vestibular, proprioception) using a 1–5 scale, plus labeled boxes to write examples and needs for each sense.
                 </p>
-                <p className="text-gray-700 text-sm">
-                  (Visual reference: sensoryprofile.jpeg would typically be displayed here)
-                </p>
+                <button className="bg-blue-500 text-white px-4 py-2 rounded-md" onClick={() => router.push('/assets/Worksheets/sensoryprofile.jpeg')}>
+                  Download Worksheet
+                </button>
               </div>
             </div>
 

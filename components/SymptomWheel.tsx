@@ -32,6 +32,45 @@ export const symptoms = [
   { name: 'Repetitive Behavior', color: '#DC143C', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/repetitive-behavior' },
 ];
 
+// Helper function to wrap text within segment bounds
+function wrapText({ text, maxWidth }: { text: any; maxWidth: number }) {
+  text.each(function(this: any) {
+    const textElement = d3.select(this);
+    const words = textElement.text().split(/\s+/).reverse();
+    let word;
+    let line: string[] = [];
+    let lineNumber = 0;
+    const lineHeight = 1.2;
+    const y = 0;
+    const dy = 0;
+    let tspan = textElement.text(null).append('tspan').attr('x', 0).attr('y', y).attr('dy', dy + 'em');
+    
+    while ((word = words.pop())) {
+      line.push(word);
+      tspan.text(line.join(' '));
+      const tspanNode = tspan.node();
+      if (tspanNode && tspanNode.getComputedTextLength() > maxWidth) {
+        line.pop();
+        tspan.text(line.join(' '));
+        line = [word];
+        lineNumber++;
+        tspan = textElement.append('tspan')
+          .attr('x', 0)
+          .attr('y', y)
+          .attr('dy', lineNumber * lineHeight + 'em')
+          .text(word);
+      }
+    }
+    
+    // Center the wrapped text vertically
+    const numLines = lineNumber + 1;
+    const offset = -(numLines - 1) * lineHeight / 2;
+    textElement.selectAll('tspan').attr('dy', function(this: any, i: number) {
+      return (offset + i * lineHeight) + 'em';
+    });
+  });
+}
+
 export const SymptomWheel = ({ onSectionClick, showButtonGrid = true }: SymptomWheelProps) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const router = useRouter();
@@ -42,9 +81,9 @@ export const SymptomWheel = ({ onSectionClick, showButtonGrid = true }: SymptomW
       return;
     }
 
-    const width = 900;
-    const height = 900;
-    const radius = Math.min(width, height) / 2 - 100;
+    const width = 1000;
+    const height = 1000;
+    const radius = Math.min(width, height) / 2 - 120;
     const innerRadius = 80;
     const numLevels = 5;
     const numSegments = symptoms.length;
@@ -110,7 +149,7 @@ export const SymptomWheel = ({ onSectionClick, showButtonGrid = true }: SymptomW
 
       // Add symptom labels outside the wheel
       const labelAngle = startAngle + anglePerSegment / 2;
-      const labelRadius = radius + 30;
+      const labelRadius = radius + 50;
       const x = Math.cos(labelAngle) * labelRadius;
       const y = Math.sin(labelAngle) * labelRadius;
 
@@ -120,11 +159,15 @@ export const SymptomWheel = ({ onSectionClick, showButtonGrid = true }: SymptomW
         textRotation += 180;
       }
 
-      g.append('text')
+      // Calculate max width for text based on arc length at label radius
+      const arcLength = labelRadius * anglePerSegment;
+      const maxWidth = arcLength * 0.8;
+
+      const text = g.append('text')
         .attr('transform', `translate(${x},${y}) rotate(${textRotation})`)
         .attr('text-anchor', 'middle')
         .attr('dominant-baseline', 'middle')
-        .attr('font-size', '11px')
+        .attr('font-size', '10px')
         .attr('font-weight', 'bold')
         .attr('fill', '#000000')
         .style('cursor', 'pointer')
@@ -136,16 +179,17 @@ export const SymptomWheel = ({ onSectionClick, showButtonGrid = true }: SymptomW
           router.push(symptom.path);
         })
         .on('mouseover', function() {
-          d3.select(this)
-            .attr('fill', '#0066CC')
-            .attr('text-decoration', 'underline');
+          d3.select(this).selectAll('tspan')
+            .attr('fill', '#0066CC');
         })
         .on('mouseout', function() {
-          d3.select(this)
-            .attr('fill', '#000000')
-            .attr('text-decoration', 'none');
+          d3.select(this).selectAll('tspan')
+            .attr('fill', '#000000');
         })
         .text(symptom.name);
+
+      // Apply text wrapping
+      wrapText({ text, maxWidth });
     });
 
     // Add center circle with title

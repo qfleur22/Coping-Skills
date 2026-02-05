@@ -105,9 +105,12 @@ export const SensoryWheel = ({ type, title }: SensoryWheelProps) => {
         .attr('y', y)
         .attr('text-anchor', 'middle')
         .attr('dominant-baseline', 'middle')
-        .attr('font-size', '12px')
+        .attr('font-size', '13px')
         .attr('font-weight', 'bold')
         .attr('fill', sense.color)
+        .attr('stroke', '#ffffff')
+        .attr('stroke-width', 3)
+        .attr('paint-order', 'stroke')
         .text(sense.name);
     });
 

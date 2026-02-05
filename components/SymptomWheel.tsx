@@ -163,7 +163,6 @@ export const SymptomWheel = ({ onSectionClick, showButtonGrid = true }: SymptomW
       const text = g.append('text')
         .attr('transform', `translate(${x},${y}) rotate(${textRotation})`)
         .attr('text-anchor', 'middle')
-        .attr('dominant-baseline', 'middle')
         .attr('font-size', '10px')
         .attr('font-weight', 'bold')
         .attr('fill', '#000000')

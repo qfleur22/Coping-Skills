@@ -9,14 +9,14 @@ interface SensoryWheelProps {
 }
 
 const senses = [
-  { name: 'Visual', color: '#FFD700' },      // Gold
-  { name: 'Sound', color: '#4169E1' },       // Royal Blue
-  { name: 'Vestibular', color: '#9370DB' },  // Medium Purple
-  { name: 'Proprioception', color: '#FF6347' }, // Tomato Red
-  { name: 'Touch', color: '#32CD32' },       // Lime Green
-  { name: 'Interoception', color: '#FF8C00' }, // Dark Orange
-  { name: 'Taste', color: '#FF69B4' },       // Hot Pink
   { name: 'Smell', color: '#20B2AA' },       // Light Sea Green
+  { name: 'Taste', color: '#FF69B4' },       // Hot Pink
+  { name: 'Interoception', color: '#FF8C00' }, // Dark Orange
+  { name: 'Touch', color: '#32CD32' },       // Lime Green
+  { name: 'Proprioception', color: '#FF6347' }, // Tomato Red
+  { name: 'Vestibular', color: '#9370DB' },  // Medium Purple
+  { name: 'Sound', color: '#4169E1' },       // Royal Blue
+  { name: 'Visual', color: '#FFD700' },      // Gold
 ];
 
 export const SensoryWheel = ({ type, title }: SensoryWheelProps) => {

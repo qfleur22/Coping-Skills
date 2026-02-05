@@ -140,6 +140,46 @@ export default function QuizResultsPage() {
               </div>
             )}
 
+            {/* All Results */}
+            <div className="bg-gray-50 p-6 rounded-lg border-2 border-gray-300">
+              <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                All Symptoms
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {symptomOrder.map(slug => {
+                  const score = scores[slug] || 0;
+                  const level = calculateLevel({ checkedCount: score });
+                  const name = symptomNames[slug] || slug;
+                  
+                  return (
+                    <Link
+                      key={slug}
+                      href={`/pages/neurodivergent/symptom-quiz/${slug}`}
+                      className="flex items-center justify-between p-3 bg-white rounded border border-gray-200 hover:border-purple-400 hover:shadow transition-all"
+                    >
+                      <div className="flex-1">
+                        <p className="font-medium text-gray-800">{name}</p>
+                        <p className="text-sm text-gray-600">{score} / 25</p>
+                      </div>
+                      <div className="flex gap-0.5 ml-3">
+                        {[1, 2, 3, 4, 5].map(l => (
+                          <div
+                            key={l}
+                            className={`w-2 h-6 rounded-sm ${
+                              l <= level ? 'bg-purple-600' : 'bg-gray-200'
+                            }`}
+                          ></div>
+                        ))}
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+              <p className="text-sm text-gray-600 mt-4 text-center">
+                Click any symptom to review or update your answers
+              </p>
+            </div>
+
             {/* What's Next */}
             <div className="bg-green-50 p-6 rounded-lg border-2 border-green-300">
               <h3 className="text-xl font-semibold mb-4 text-gray-800">

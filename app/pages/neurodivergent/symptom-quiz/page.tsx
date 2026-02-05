@@ -65,47 +65,41 @@ export default function SymptomQuizPage() {
               </h3>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div className="p-4 bg-red-50 rounded border border-red-200">
-                  <h4 className="font-semibold text-gray-800 mb-2">AUTISM Traits</h4>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 ml-2">
-                    <li>Social Communication</li>
-                    <li>Repetitive Behaviors</li>
-                    <li>Routines & Predictability</li>
-                    <li>Meltdowns & Shutdowns</li>
-                    <li>Masking</li>
-                    <li>Special Interests</li>
-                  </ul>
-                </div>
-
                 <div className="p-4 bg-orange-50 rounded border border-orange-200">
                   <h4 className="font-semibold text-gray-800 mb-2">ADHD Traits</h4>
                   <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 ml-2">
-                    <li>Inattentiveness</li>
-                    <li>Hyperactivity</li>
+                    <li>Task Paralysis</li>
+                    <li>Object Permanence</li>
                     <li>Impulsivity</li>
-                    <li>Dopamine Seeking</li>
-                  </ul>
-                </div>
-
-                <div className="p-4 bg-purple-50 rounded border border-purple-200">
-                  <h4 className="font-semibold text-gray-800 mb-2">Overlapping Traits</h4>
-                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 ml-2">
-                    <li>Executive Function Challenges</li>
-                    <li>Sensory Sensitivities</li>
-                    <li>Alexithymia (Difficulty Identifying Emotions)</li>
-                    <li>Hyperfocus</li>
-                    <li>Interoception Differences</li>
-                    <li>Rejection Sensitivity</li>
-                    <li>Emotional Dysregulation</li>
                     <li>Time Blindness</li>
+                    <li>Dopamine Seeking</li>
+                    <li>Hyperactivity</li>
+                    <li>Executive Dysfunction</li>
                   </ul>
                 </div>
 
-                <div className="p-4 bg-blue-50 rounded border border-blue-200">
-                  <h4 className="font-semibold text-gray-800 mb-2">Anxiety Traits</h4>
+                <div className="p-4 bg-red-50 rounded border border-red-200">
+                  <h4 className="font-semibold text-gray-800 mb-2">AUTISM Traits</h4>
                   <ul className="list-disc list-inside space-y-1 text-sm text-gray-700 ml-2">
-                    <li>Panic & Anxiety</li>
-                    <li>Excessive Worrying</li>
+                    <li>Masking</li>
+                    <li>Stimming</li>
+                    <li>Routine</li>
+                    <li>Seeking Familiarity</li>
+                    <li>Difficulty with Social Cues</li>
+                    <li>Repetitive Behavior</li>
+                  </ul>
+                </div>
+
+                <div className="p-4 bg-purple-50 rounded border border-purple-200 md:col-span-2">
+                  <h4 className="font-semibold text-gray-800 mb-2">Overlapping Traits (Common in Both ADHD & Autism)</h4>
+                  <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-4 list-disc list-inside space-y-1 text-sm text-gray-700 ml-2">
+                    <li>Emotional Dysregulation</li>
+                    <li>Sensory Sensitivities</li>
+                    <li>Hyperfixation</li>
+                    <li>Difficulty Processing</li>
+                    <li>Interoception</li>
+                    <li>Rejection Sensitivity</li>
+                    <li>Sensory Overload</li>
                   </ul>
                 </div>
               </div>

@@ -9,26 +9,26 @@ interface SymptomWheelProps {
 }
 
 const symptoms = [
-  { name: 'Social Communication', color: '#FF6B9D', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/social-communication' },
-  { name: 'Repetitive Behaviors', color: '#C44569', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/repetitive' },
-  { name: 'Routines', color: '#A93F55', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/routines' },
-  { name: 'Meltdowns', color: '#8B2E3F', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/meltdowns' },
-  { name: 'Masking', color: '#6D1F2E', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/masking' },
-  { name: 'Alexithymia', color: '#8E44AD', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/alexithymia' },
-  { name: 'Executive Function', color: '#9B59B6', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/executive-function' },
-  { name: 'Sensory Issues', color: '#AF7AC5', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/sensory' },
-  { name: 'Hyperfocus', color: '#BB8FCE', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/hyperfocus' },
+  { name: 'Task Paralysis', color: '#FF6347', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/task-paralysis' },
+  { name: 'Object Permanence', color: '#FF7F50', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/object-permanence' },
+  { name: 'Impulsivity', color: '#FF9A76', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/impulsivity' },
+  { name: 'Time Blindness', color: '#FFA07A', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/time-blindness' },
+  { name: 'Dopamine Seeking', color: '#FF4500', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/dopamine-seeking' },
+  { name: 'Hyperactivity', color: '#FF6B6B', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/hyperactivity' },
+  { name: 'Executive Dysfunction', color: '#E85D75', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/executive-dysfunction' },
+  { name: 'Masking', color: '#C44569', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/masking' },
+  { name: 'Stimming', color: '#A93F55', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/stimming' },
+  { name: 'Emotional Dysregulation', color: '#8E44AD', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/emotional-dysregulation' },
+  { name: 'Sensory Sensitivities', color: '#9B59B6', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/sensory-sensitivities' },
+  { name: 'Hyperfixation', color: '#AF7AC5', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/hyperfixation' },
+  { name: 'Difficulty Processing', color: '#BB8FCE', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/difficulty-processing' },
   { name: 'Interoception', color: '#D7BDE2', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/interoception' },
   { name: 'Rejection Sensitivity', color: '#3498DB', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/rejection-sensitivity' },
-  { name: 'Emotional Dysregulation', color: '#5DADE2', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/emotional-dysregulation' },
-  { name: 'Time Blindness', color: '#85C1E2', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/time-blindness' },
-  { name: 'Panic/Anxiety', color: '#AED6F1', category: 'ANXIETY', path: '/pages/neurodivergent/symptom-quiz/anxiety' },
-  { name: 'Worrying', color: '#D6EAF8', category: 'ANXIETY', path: '/pages/neurodivergent/symptom-quiz/worrying' },
-  { name: 'Inattentiveness', color: '#FF9A76', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/inattentiveness' },
-  { name: 'Hyperactivity', color: '#FF7F50', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/hyperactivity' },
-  { name: 'Impulsivity', color: '#FF6347', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/impulsivity' },
-  { name: 'Dopamine Seeking', color: '#FF4500', category: 'ADHD', path: '/pages/neurodivergent/symptom-quiz/dopamine-seeking' },
-  { name: 'Special Interests', color: '#DC143C', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/special-interests' },
+  { name: 'Routine', color: '#8B2E3F', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/routine' },
+  { name: 'Sensory Overload', color: '#5DADE2', category: 'OVERLAP', path: '/pages/neurodivergent/symptom-quiz/sensory-overload' },
+  { name: 'Seeking Familiarity', color: '#6D1F2E', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/seeking-familiarity' },
+  { name: 'Difficulty with Social Cues', color: '#FF6B9D', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/social-cues' },
+  { name: 'Repetitive Behavior', color: '#DC143C', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/repetitive-behavior' },
 ];
 
 export const SymptomWheel = ({ onSectionClick }: SymptomWheelProps) => {
@@ -195,18 +195,15 @@ export const SymptomWheel = ({ onSectionClick }: SymptomWheelProps) => {
             <strong>Levels:</strong> 1 = rarely/minimal, 5 = very often/significant impact
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-xs">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 text-xs">
+          <div className="p-2 bg-orange-50 rounded border border-orange-200">
+            <strong>ADHD:</strong> Orange/Red tones
+          </div>
           <div className="p-2 bg-red-50 rounded border border-red-200">
             <strong>AUTISM:</strong> Pink/Red tones
           </div>
-          <div className="p-2 bg-orange-50 rounded border border-orange-200">
-            <strong>ADHD:</strong> Orange tones
-          </div>
-          <div className="p-2 bg-blue-50 rounded border border-blue-200">
-            <strong>ANXIETY:</strong> Light blue tones
-          </div>
           <div className="p-2 bg-purple-50 rounded border border-purple-200">
-            <strong>OVERLAP:</strong> Purple tones
+            <strong>OVERLAP:</strong> Purple/Blue tones
           </div>
         </div>
       </div>

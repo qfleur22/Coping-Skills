@@ -2,230 +2,269 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import { BackButton } from '@/components/shared/BackButton';
 import { QuizNavButton } from '@/components/QuizNavButton';
 import { saveQuizScore } from '@/utils/quiz-storage';
 
 export default function ObjectPermanencePage() {
-  const router = useRouter();
   const [checkedItems, setCheckedItems] = useState<{ [key: number]: boolean }>({});
   const currentSlug = 'object-permanence';
 
-  const handleBack = () => {
-    router.back();
-  };
-
-  const handleCheckboxChange = ({ id }: { id: number }) => {
+  const toggleCheck = ({ id }: { id: number }) => {
     setCheckedItems(prev => ({
       ...prev,
       [id]: !prev[id]
     }));
   };
 
-  // Save score whenever checked items change
-  useEffect(() => {
-    const checkedCount = Object.values(checkedItems).filter(Boolean).length;
-    saveQuizScore({ symptomSlug: currentSlug, score: checkedCount });
-  }, [checkedItems]);
-
-  const symptoms = [
-    {
-      section: "Out of Sight, Out of Brain",
-      description: "If you can't see it, your brain acts like it never existed in the first place.",
-      items: [
-        { id: 1, text: "You forget food exists if it's behind closed doors, not in a transparent container or sitting behind something else." },
-        { id: 2, text: "You forget you own certain clothes unless they're already out or visible. You're constantly like \"ohh I totally forgot I had this shirt.\"" },
-        { id: 3, text: "You forget to eat the leftovers, take your medications, or to drink water unless they're right there in front of you." },
-        { id: 4, text: "You lose track of half-finished projects just because you stored them away \"for later.\" Like notes in your phone, that journal you stopped using or that brilliant idea on a piece of paper under 500 other papers." },
-        { id: 5, text: "You're constantly losing things, forgetting where you put them, or even buying duplicates of items you already have because you forgot you had them." }
-      ]
-    },
-    {
-      section: "You're a Human Reminder System",
-      description: "Your life is a scavenger hunt of strategic item placement, open tabs, and digital breadcrumbs.",
-      items: [
-        { id: 6, text: "You set out items in your path (like on your desk or a bag by the door) so you'll remember them." },
-        { id: 7, text: "You leave tabs, emails, or texts on unread as \"do this later\" reminders." },
-        { id: 8, text: "You put things in weird, specific spots hoping it will \"jog your memory.\"" },
-        { id: 9, text: "You panic-clean and then forget where you put everything." },
-        { id: 10, text: "You forget to use tools or apps meant to help you remember — unless they remind you." }
-      ]
-    },
-    {
-      section: "People Fall Off the Radar Too",
-      description: "If they're not in front of you, it's like they fell off the edge of your mind's map.",
-      items: [
-        { id: 11, text: "You forget to text friends back. Another notification came up, you clicked into it mid-conversation and never returned to finish your reply." },
-        { id: 12, text: "You don't think to check in with people unless they reach out first." },
-        { id: 13, text: "You feel deep connection with someone — then totally forget they exist for weeks." },
-        { id: 14, text: "You experience guilt for not thinking about people often, or remembering birthdays etc." },
-        { id: 15, text: "You rely on seeing someone's name or face to even remember they're in your life." }
-      ]
-    },
-    {
-      section: "Tasks Vanish from Your Mind",
-      description: "They were there one minute — then poof — gone like a magician's trick your brain pulled on itself.",
-      items: [
-        { id: 16, text: "You miss important tasks just because they weren't written down or visible." },
-        { id: 17, text: "You delay small jobs (\"I'll do that later\") then completely forget they ever existed." },
-        { id: 18, text: "You'll remember a task while doing something else — and then instantly forget again." },
-        { id: 19, text: "You open a notification, read it, and forget it existed 3 seconds later." },
-        { id: 20, text: "You forget recurring things (like laundry or taking bins out) unless prompted by something visual or physical." }
-      ]
-    },
-    {
-      section: "You Feel Like a Bad Adult (But You're Not)",
-      description: "You're not broken — your brain just wasn't designed for invisible memory storage.",
-      items: [
-        { id: 21, text: "You feel guilt or embarrassment for forgetting things that seem \"basic\" — even though you meant to do them." },
-        { id: 22, text: "You know your intentions to stay connected with loved ones are solid… but it's hard not to feel like you're letting people (or yourself) down." },
-        { id: 23, text: "You've caught yourself spiralling, thinking \"what's wrong with me?\" — when really, your brain just doesn't store what it can't see." },
-        { id: 24, text: "You wish you didn't need visual reminders everywhere just to function — sticky notes, piles, alarms, open tabs…" },
-        { id: 25, text: "You feel constant guilt and frustration over misplacing things — like you're always searching, always losing, always behind… even though your brain just literally forgets they exist when they're out of sight." }
-      ]
-    }
-  ];
-
-  const totalItems = symptoms.reduce((sum, section) => sum + section.items.length, 0);
   const checkedCount = Object.values(checkedItems).filter(Boolean).length;
 
+  useEffect(() => {
+    saveQuizScore({ symptomSlug: currentSlug, score: checkedCount });
+  }, [checkedCount]);
+
   return (
-    <div className="container mx-auto px-4 py-8 pb-24">
-      <div className="flex flex-col items-center justify-center min-h-[calc(100vh-4rem)]">
-        <div className="w-full max-w-4xl">
-          <h1 className="text-4xl font-bold mb-4 text-center text-gray-800">
-            Object Permanence
-          </h1>
-          <p className="text-xl text-center text-gray-600 mb-8">
-            Check the experiences that resonate with you
-          </p>
-
-          <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg space-y-6">
-            <div className="p-4 bg-blue-50 rounded border border-blue-200">
-              <p className="text-gray-700 mb-2">
-                <strong>You've checked {checkedCount} out of {totalItems} experiences</strong>
-              </p>
-              <p className="text-gray-700 text-sm">
-                There's no "passing" number. This is about understanding your experiences, not scoring yourself.
-              </p>
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 py-8 px-4">
+      <div className="container mx-auto max-w-4xl">
+        <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg space-y-6">
+          {/* Header */}
+          <div className="text-center space-y-2">
+            <h1 className="text-3xl font-bold text-gray-800">
+              Object Permanence (IRL)
+            </h1>
+            <p className="text-gray-600">
+              Check the experiences that resonate with you
+            </p>
+            <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold">
+              {checkedCount} of 25 checked
             </div>
+          </div>
 
-            <div className="space-y-8">
-              {symptoms.map((symptomSection, sectionIdx) => (
-                <div key={sectionIdx} className="space-y-4">
-                  <div className="p-4 bg-purple-50 rounded-lg border-2 border-purple-200">
-                    <h3 className="text-xl font-bold text-gray-800 mb-2">
-                      {sectionIdx + 1}. {symptomSection.section}
-                    </h3>
-                    <p className="text-gray-700 italic">
-                      {symptomSection.description}
-                    </p>
-                  </div>
-
-                  <div className="space-y-3 ml-4">
-                    {symptomSection.items.map((item) => (
-                      <div key={item.id} className="p-4 bg-gray-50 rounded-lg border border-gray-300">
-                        <div className="flex items-start space-x-4">
-                          <input
-                            type="checkbox"
-                            id={`symptom-${item.id}`}
-                            checked={checkedItems[item.id] || false}
-                            onChange={() => handleCheckboxChange({ id: item.id })}
-                            className="mt-1 h-5 w-5 rounded border-gray-300 text-blue-600 focus:ring-blue-500"
-                          />
-                          <label
-                            htmlFor={`symptom-${item.id}`}
-                            className="flex-1 text-gray-800 cursor-pointer"
-                          >
-                            <span className="font-semibold">{item.id}.</span> {item.text}
-                          </label>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
+          {/* Section 1 */}
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-gray-800 border-b-2 border-purple-300 pb-2">
+              1. Out of Sight, Out of Brain
+            </h2>
+            <p className="text-gray-600 italic">
+              If you can't see it, your brain acts like it never existed in the first place.
+            </p>
+            <div className="space-y-3">
+              {[
+                { id: 1, text: "You forget food exists if it's behind closed doors, not in a transparent container or sitting behind something else." },
+                { id: 2, text: "You forget you own certain clothes unless they're already out or visible. You're constantly like \"ohh I totally forgot I had this shirt.\"" },
+                { id: 3, text: "You forget to eat the leftovers, take your medications, or to drink water unless they're right there in front of you." },
+                { id: 4, text: "You lose/misplace items constantly — keys, phone, wallet — because once you set them down, they vanish from your mind." },
+                { id: 5, text: "You buy duplicates of things you already own because you literally forgot they existed." }
+              ].map(({ id, text }) => (
+                <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
+                  <input
+                    type="checkbox"
+                    id={`item-${id}`}
+                    checked={checkedItems[id] || false}
+                    onChange={() => toggleCheck({ id })}
+                    className="mt-1 h-5 w-5 rounded border-gray-300 text-purple-600 focus:ring-purple-500 cursor-pointer"
+                  />
+                  <label htmlFor={`item-${id}`} className="flex-1 cursor-pointer text-gray-700">
+                    <span className="font-semibold text-purple-700">{id}.</span> {text}
+                  </label>
                 </div>
               ))}
             </div>
+          </div>
 
-            <div className="mt-8 p-6 bg-green-50 rounded-lg border-2 border-green-300">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                What This Might Mean
-              </h3>
-              <p className="text-gray-700 mb-4">
-                If many of these experiences resonate with you, you might benefit from:
-              </p>
-              <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                <li>Learning about working memory differences in ADHD and how they affect daily life</li>
-                <li>Using visual reminder systems (transparent containers, open shelves, visible notes)</li>
-                <li>Creating "visibility stations" for important items (medication by toothbrush, keys by door)</li>
-                <li>Setting up recurring alarms/reminders for routine tasks</li>
-                <li>Practicing self-compassion when forgetting happens (it's not a character flaw)</li>
-                <li>Discussing these patterns with a therapist familiar with ADHD and executive function</li>
-              </ul>
+          {/* Section 2 */}
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-gray-800 border-b-2 border-purple-300 pb-2">
+              2. People Disappear, Too
+            </h2>
+            <p className="text-gray-600 italic">
+              Your brain doesn't just forget objects — it forgets people are still real, thinking of you, and waiting.
+            </p>
+            <div className="space-y-3">
+              {[
+                { id: 6, text: "You genuinely forget to reply to texts or emails — not because you don't care, but because once you close the app, the person disappears from your mind." },
+                { id: 7, text: "You lose track of relationships — if you don't see or talk to someone regularly, you forget to check in or reach out." },
+                { id: 8, text: "You assume if you haven't heard from someone, they've moved on or forgotten you — even if they're just busy." },
+                { id: 9, text: "You feel shocked when you remember an old friend or loved one you haven't contacted in weeks or months." },
+                { id: 10, text: "You forget people have feelings about your silence — like they might be hurt, worried, or confused why you disappeared." }
+              ].map(({ id, text }) => (
+                <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
+                  <input
+                    type="checkbox"
+                    id={`item-${id}`}
+                    checked={checkedItems[id] || false}
+                    onChange={() => toggleCheck({ id })}
+                    className="mt-1 h-5 w-5 rounded border-gray-300 text-purple-600 focus:ring-purple-500 cursor-pointer"
+                  />
+                  <label htmlFor={`item-${id}`} className="flex-1 cursor-pointer text-gray-700">
+                    <span className="font-semibold text-purple-700">{id}.</span> {text}
+                  </label>
+                </div>
+              ))}
             </div>
+          </div>
 
-            <div className="bg-yellow-50 p-6 rounded-lg border-2 border-yellow-300">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Quick Strategies to Try
-              </h3>
-              <ul className="space-y-3 text-gray-700">
-                <li className="flex items-start">
-                  <span className="font-bold mr-2">•</span>
-                  <span><strong>Make It Visible:</strong> Use transparent containers, open shelving, and keep frequently-used items in sight.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold mr-2">•</span>
-                  <span><strong>Strategic Placement:</strong> Put items where you'll use them (medication by toothbrush, charger by bed, keys on hook by door).</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold mr-2">•</span>
-                  <span><strong>Digital Reminders:</strong> Set recurring phone alarms for regular tasks (meds, water, check-ins with friends).</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold mr-2">•</span>
-                  <span><strong>One Place Rule:</strong> Designate one spot for essentials (keys, wallet, phone) and always return them there.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold mr-2">•</span>
-                  <span><strong>Photos as Reminders:</strong> Take photos of half-finished projects or things to remember, then set them as phone backgrounds or pin them.</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-bold mr-2">•</span>
-                  <span><strong>Social Check-Ins:</strong> Schedule recurring reminders to text specific people, or use apps that prompt you to reach out.</span>
-                </li>
-              </ul>
+          {/* Section 3 */}
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-gray-800 border-b-2 border-purple-300 pb-2">
+              3. Responsibilities Vanish Into the Void
+            </h2>
+            <p className="text-gray-600 italic">
+              Tasks, deadlines, and commitments slip away the moment they're not actively in front of your face.
+            </p>
+            <div className="space-y-3">
+              {[
+                { id: 11, text: "You forget appointments, meetings, or deadlines unless you write them down immediately — and even then, only if you check your planner." },
+                { id: 12, text: "You intend to do something later… then forget it existed until it's too late." },
+                { id: 13, text: "You rely heavily on alarms, reminders, or other people to remember things for you." },
+                { id: 14, text: "You panic when you finally remember the thing you forgot — it's usually urgent by then." },
+                { id: 15, text: "You've missed bills, birthdays, or important events — not out of carelessness, but because they genuinely vanished from your mind." }
+              ].map(({ id, text }) => (
+                <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
+                  <input
+                    type="checkbox"
+                    id={`item-${id}`}
+                    checked={checkedItems[id] || false}
+                    onChange={() => toggleCheck({ id })}
+                    className="mt-1 h-5 w-5 rounded border-gray-300 text-purple-600 focus:ring-purple-500 cursor-pointer"
+                  />
+                  <label htmlFor={`item-${id}`} className="flex-1 cursor-pointer text-gray-700">
+                    <span className="font-semibold text-purple-700">{id}.</span> {text}
+                  </label>
+                </div>
+              ))}
             </div>
+          </div>
 
-            <div className="bg-purple-50 p-6 rounded-lg border-2 border-purple-300">
-              <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                Related Resources
-              </h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <Link href="/pages/neurodivergent/symptom-quiz/executive-function" className="p-3 bg-white rounded border border-purple-200 hover:bg-purple-100 transition-colors">
-                  <p className="text-blue-600 hover:text-blue-800 font-semibold">Executive Function</p>
-                  <p className="text-gray-600 text-sm">Explore related challenges</p>
-                </Link>
-                <Link href="/pages/neurodivergent/symptom-quiz/task-paralysis" className="p-3 bg-white rounded border border-purple-200 hover:bg-purple-100 transition-colors">
-                  <p className="text-blue-600 hover:text-blue-800 font-semibold">Task Paralysis</p>
-                  <p className="text-gray-600 text-sm">Starting & remembering tasks</p>
-                </Link>
-                <Link href="/pages/neurodivergent/symptom-quiz/inattentiveness" className="p-3 bg-white rounded border border-purple-200 hover:bg-purple-100 transition-colors">
-                  <p className="text-blue-600 hover:text-blue-800 font-semibold">Inattentiveness</p>
-                  <p className="text-gray-600 text-sm">Attention & focus patterns</p>
-                </Link>
-                <Link href="/pages/neurodivergent/symptom-quiz" className="p-3 bg-white rounded border border-purple-200 hover:bg-purple-100 transition-colors">
-                  <p className="text-blue-600 hover:text-blue-800 font-semibold">Back to Symptom Wheel</p>
-                  <p className="text-gray-600 text-sm">Explore other symptoms</p>
-                </Link>
-              </div>
+          {/* Section 4 */}
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-gray-800 border-b-2 border-purple-300 pb-2">
+              4. You're Fighting Your Brain, Not Being "Careless"
+            </h2>
+            <p className="text-gray-600 italic">
+              It's not a memory problem, willpower issue, or character flaw — it's how your brain processes what's "real" right now.
+            </p>
+            <div className="space-y-3">
+              {[
+                { id: 16, text: "You've tried lists, apps, and systems to remember things — but if you don't see them, they're useless." },
+                { id: 17, text: "You feel like you're living in \"now\" or \"not now\" — the future literally doesn't feel real until it's happening." },
+                { id: 18, text: "You've been called forgetful, flakey, or unreliable — even though you're trying as hard as you can." },
+                { id: 19, text: "You're shocked when people say you've hurt them by not checking in — it genuinely didn't cross your mind." },
+                { id: 20, text: "You wish your brain would just… remember. But it doesn't work that way." }
+              ].map(({ id, text }) => (
+                <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
+                  <input
+                    type="checkbox"
+                    id={`item-${id}`}
+                    checked={checkedItems[id] || false}
+                    onChange={() => toggleCheck({ id })}
+                    className="mt-1 h-5 w-5 rounded border-gray-300 text-purple-600 focus:ring-purple-500 cursor-pointer"
+                  />
+                  <label htmlFor={`item-${id}`} className="flex-1 cursor-pointer text-gray-700">
+                    <span className="font-semibold text-purple-700">{id}.</span> {text}
+                  </label>
+                </div>
+              ))}
             </div>
+          </div>
+
+          {/* Section 5 */}
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-gray-800 border-b-2 border-purple-300 pb-2">
+              5. The Guilt + Anxiety Spiral
+            </h2>
+            <p className="text-gray-600 italic">
+              Forgetting things creates shame, which creates anxiety, which makes you avoid the thing even more.
+            </p>
+            <div className="space-y-3">
+              {[
+                { id: 21, text: "You feel deep guilt about forgotten texts, missed calls, or neglected relationships." },
+                { id: 22, text: "You avoid opening messages or emails because you're scared of what you forgot." },
+                { id: 23, text: "You isolate more because forgetting feels like failing — and you don't want to hurt anyone else." },
+                { id: 24, text: "You beat yourself up for \"not caring enough\" — even though you do care, your brain just doesn't remind you." },
+                { id: 25, text: "You wish people understood — it's not malice, it's your brain working differently." }
+              ].map(({ id, text }) => (
+                <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
+                  <input
+                    type="checkbox"
+                    id={`item-${id}`}
+                    checked={checkedItems[id] || false}
+                    onChange={() => toggleCheck({ id })}
+                    className="mt-1 h-5 w-5 rounded border-gray-300 text-purple-600 focus:ring-purple-500 cursor-pointer"
+                  />
+                  <label htmlFor={`item-${id}`} className="flex-1 cursor-pointer text-gray-700">
+                    <span className="font-semibold text-purple-700">{id}.</span> {text}
+                  </label>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* What This Might Mean */}
+          <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-400">
+            <h2 className="text-xl font-semibold text-gray-800 mb-3">What This Might Mean</h2>
+            <p className="text-gray-700 leading-relaxed">
+              Object permanence difficulties are common in ADHD, autism, and anxiety. Your brain struggles to maintain awareness of things (or people) when they're not physically present. This isn't about not caring — it's about how your working memory and attention systems process information. Understanding this can help you build systems that work with your brain, not against it.
+            </p>
+          </div>
+
+          {/* Quick Strategies */}
+          <div className="bg-green-50 rounded-lg p-6 border-l-4 border-green-400">
+            <h2 className="text-xl font-semibold text-gray-800 mb-3">Quick Strategies to Try</h2>
+            <ul className="space-y-2 text-gray-700">
+              <li className="flex items-start">
+                <span className="text-green-600 mr-2">✓</span>
+                <span><strong>Visual Systems:</strong> Use transparent containers, open shelving, or leave items where you can see them</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-2">✓</span>
+                <span><strong>Digital Reminders:</strong> Set recurring alarms for medications, meals, and check-ins</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-2">✓</span>
+                <span><strong>Pin Important Texts:</strong> Keep key conversations at the top of your messages</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-2">✓</span>
+                <span><strong>Same-Place Rule:</strong> Always put essentials (keys, phone, wallet) in the exact same spot</span>
+              </li>
+              <li className="flex items-start">
+                <span className="text-green-600 mr-2">✓</span>
+                <span><strong>Check-in Rituals:</strong> Schedule regular times to review messages, tasks, and relationships</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Related Resources */}
+          <div className="bg-purple-50 rounded-lg p-6 border-l-4 border-purple-400">
+            <h2 className="text-xl font-semibold text-gray-800 mb-3">Related Resources</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <Link href="/pages/neurodivergent/symptom-quiz/executive-dysfunction" className="text-blue-600 hover:underline">
+                → Executive Dysfunction
+              </Link>
+              <Link href="/pages/neurodivergent/symptom-quiz/task-paralysis" className="text-blue-600 hover:underline">
+                → Task Paralysis
+              </Link>
+              <Link href="/pages/neurodivergent/symptom-quiz/time-blindness" className="text-blue-600 hover:underline">
+                → Time Blindness
+              </Link>
+              <Link href="/pages/neurodivergent/care-plan" className="text-blue-600 hover:underline">
+                → Personal Care Plan
+              </Link>
+            </div>
+          </div>
+
+          {/* Navigation */}
+          <div className="flex justify-center pt-4">
+            <Link
+              href="/pages/neurodivergent/symptom-quiz"
+              className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors"
+            >
+              ← Back to Symptom Quiz
+            </Link>
           </div>
         </div>
       </div>
-
       <QuizNavButton currentSlug={currentSlug} />
-      <BackButton onClick={handleBack} />
     </div>
   );
 }

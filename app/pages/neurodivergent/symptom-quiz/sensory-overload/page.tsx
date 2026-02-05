@@ -5,9 +5,9 @@ import Link from 'next/link';
 import { QuizNavButton } from '@/components/QuizNavButton';
 import { saveQuizScore } from '@/utils/quiz-storage';
 
-export default function InteroceptionPage() {
+export default function SensoryOverloadPage() {
   const [checkedItems, setCheckedItems] = useState<{ [key: number]: boolean }>({});
-  const currentSlug = 'interoception';
+  const currentSlug = 'sensory-overload';
 
   const toggleCheck = ({ id }: { id: number }) => {
     setCheckedItems(prev => ({
@@ -29,7 +29,7 @@ export default function InteroceptionPage() {
           {/* Header */}
           <div className="text-center space-y-2">
             <h1 className="text-3xl font-bold text-gray-800">
-              Interoception (IRL)
+              Sensory Overload (IRL)
             </h1>
             <p className="text-gray-600">
               Check the experiences that resonate with you
@@ -42,18 +42,18 @@ export default function InteroceptionPage() {
           {/* Section 1 */}
           <div className="space-y-4">
             <h2 className="text-xl font-semibold text-gray-800 border-b-2 border-purple-300 pb-2">
-              1. Body Clues? Never Heard of Her
+              1. The World Gets Too Loud, Too Bright, Too Much
             </h2>
             <p className="text-gray-600 italic">
-              Your body doesn't whisper — it screams, but only when it's nearly too late.
+              Overload often starts as "everything is intense."
             </p>
             <div className="space-y-3">
               {[
-                { id: 1, text: "You forget to eat, get a drink, or pee until your body forces the issue — headache, nausea, bladder panic, the works." },
-                { id: 2, text: "You don't realise you're tired until you physically crash — dizzy, sick, or so fried your brain just shuts down." },
-                { id: 3, text: "You either feel pain way too much or not at all — small bumps are agony, but you miss injuries entirely." },
-                { id: 4, text: "You only notice being hot, cold, or uncomfortable after everyone else has adjusted — like you missed the memo." },
-                { id: 5, text: "You swing between starving and stuffed, because that gentle 'I'm getting full' signal just doesn't show up." }
+                { id: 1, text: "Sounds feel sharper than usual — chewing, buzzing lights, notifications, traffic." },
+                { id: 2, text: "Light feels painful or \"too bright,\" even if it doesn't bother other people." },
+                { id: 3, text: "Movement in your peripheral vision makes your brain feel jumpy or nauseous." },
+                { id: 4, text: "Smells (perfume, cleaning products, food) suddenly feel unbearable." },
+                { id: 5, text: "Touch becomes \"wrong\" — clothes, hair, skin, textures, even gentle contact." }
               ].map(({ id, text }) => (
                 <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
                   <input
@@ -74,18 +74,18 @@ export default function InteroceptionPage() {
           {/* Section 2 */}
           <div className="space-y-4">
             <h2 className="text-xl font-semibold text-gray-800 border-b-2 border-purple-300 pb-2">
-              2. You Can't Tell What You're Feeling
+              2. Your Brain Can't Filter Inputs Anymore
             </h2>
             <p className="text-gray-600 italic">
-              It's not that you don't feel — it's that the signal is scrambled or it never arrives.
+              It's not attention — it's the filter breaking.
             </p>
             <div className="space-y-3">
               {[
-                { id: 6, text: "You can't tell if you're hungry or bored, anxious or excited, tired or lazy — it all blends together." },
-                { id: 7, text: "You struggle to describe how your body feels — just 'weird,' 'off,' 'meh' with no clear location or reason." },
-                { id: 8, text: "You think you're fine until pain, fatigue, or nausea hits out of nowhere — and now it's definitely not fine." },
-                { id: 9, text: "You misread physical symptoms as emergencies — like a tummy ache that spirals into 'am I dying?'" },
-                { id: 10, text: "You second-guess if you're actually unwell or just imagining it — you genuinely can't tell sometimes." }
+                { id: 6, text: "You can't follow what someone's saying if there's background noise." },
+                { id: 7, text: "You lose your words, stutter, or go blank mid-thought." },
+                { id: 8, text: "Decisions become impossible (even \"what do you want to eat?\")." },
+                { id: 9, text: "You can't switch tasks — everything feels stuck, slow, or scrambled." },
+                { id: 10, text: "You feel like you're processing one thing at a time, and everything else is piling up behind it." }
               ].map(({ id, text }) => (
                 <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
                   <input
@@ -106,18 +106,18 @@ export default function InteroceptionPage() {
           {/* Section 3 */}
           <div className="space-y-4">
             <h2 className="text-xl font-semibold text-gray-800 border-b-2 border-purple-300 pb-2">
-              3. Emotions Hijack the Body Bus
+              3. Your Body Hits Alarm Mode Before You Can Explain
             </h2>
             <p className="text-gray-600 italic">
-              Your feelings drive the vehicle, but you're not sure if it's gas, brakes, or the check engine light.
+              Your body knows before you do.
             </p>
             <div className="space-y-3">
               {[
-                { id: 11, text: "You realise you're anxious because your chest is tight and your stomach flipped — not the other way around." },
-                { id: 12, text: "You miss that you're overwhelmed until you snap, cry, or shut down and wonder 'why did that feel so big?'" },
-                { id: 13, text: "You experience emotions as full-body sensations — buzzing skin, clenching jaw, shaky hands — even before thoughts catch up." },
-                { id: 14, text: "You struggle to recognise your emotions until someone else reflects them — 'Oh… I guess I'm angry.'" },
-                { id: 15, text: "You can't always tell the difference between emotional dysregulation and sensory overload — it's just 'everything's wrong.'" }
+                { id: 11, text: "Your heart races, your chest tightens, or you feel shaky for \"no reason.\"" },
+                { id: 12, text: "You get a headache, dizziness, nausea, or sudden fatigue." },
+                { id: 13, text: "Your skin feels prickly, itchy, hot, or hypersensitive." },
+                { id: 14, text: "You clench your jaw, shoulders, hands — bracing without noticing." },
+                { id: 15, text: "You feel the urge to escape immediately (bathroom, outside, car, bed)." }
               ].map(({ id, text }) => (
                 <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
                   <input
@@ -138,18 +138,18 @@ export default function InteroceptionPage() {
           {/* Section 4 */}
           <div className="space-y-4">
             <h2 className="text-xl font-semibold text-gray-800 border-b-2 border-purple-300 pb-2">
-              4. You're the Last to Know You're Unwell
+              4. The "Overload Behaviours" People Misread
             </h2>
             <p className="text-gray-600 italic">
-              The signals were there — your brain just didn't check the inbox.
+              This can look rude or dramatic — it's nervous-system triage.
             </p>
             <div className="space-y-3">
               {[
-                { id: 16, text: "You don't realise you're sick until you're floored — fever, fatigue, and 'why didn't I notice this yesterday?'" },
-                { id: 17, text: "You ignore subtle warning signs like sore throats or aches until they're fully debilitating." },
-                { id: 18, text: "You walk around with injuries or pain for days without noticing — until someone else points it out." },
-                { id: 19, text: "You miss signs of stress or burnout until you physically can't get out of bed." },
-                { id: 20, text: "You feel surprised when people ask if you're okay — and then realise, yeah, you don't feel great." }
+                { id: 16, text: "You become irritable, snappy, or suddenly \"mean\" because your capacity is gone." },
+                { id: 17, text: "You stop making eye contact, stop responding, or go quiet and flat." },
+                { id: 18, text: "You cover your ears/eyes, put on headphones, hide under a blanket, or need darkness." },
+                { id: 19, text: "You stim more (rocking, tapping, pacing, fidgeting) to keep yourself regulated." },
+                { id: 20, text: "You cancel plans, leave early, or disappear to recover — even if you wanted to be there." }
               ].map(({ id, text }) => (
                 <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
                   <input
@@ -170,18 +170,18 @@ export default function InteroceptionPage() {
           {/* Section 5 */}
           <div className="space-y-4">
             <h2 className="text-xl font-semibold text-gray-800 border-b-2 border-purple-300 pb-2">
-              5. Your Daily Life Gets Thrown Off Course
+              5. The Crash After: Shutdown, Meltdown, or Hangover
             </h2>
             <p className="text-gray-600 italic">
-              When you can't trust your internal signals, everything takes more effort — or comes with unexpected consequences.
+              What happens next depends on your nervous system — but it's real.
             </p>
             <div className="space-y-3">
               {[
-                { id: 21, text: "You miss meals, bathroom breaks, or hydration — and only realise when your body starts glitching." },
-                { id: 22, text: "You overexert yourself or miss sleep because tiredness doesn't register until it's 3am and your body says 'nope.'" },
-                { id: 23, text: "You can't build consistent routines around food, sleep, or self-care because your internal timing feels broken." },
-                { id: 24, text: "You avoid medical appointments because you're unsure what you're feeling or how to explain it clearly." },
-                { id: 25, text: "You rely on chaos-friendly systems — timers, snacks, 'pee first' rules — because guessing what your body needs just isn't working." }
+                { id: 21, text: "You shut down: can't talk, can't move, can't make choices, just \"offline.\"" },
+                { id: 22, text: "You melt down: crying, yelling, panic, intense emotion that feels uncontrollable." },
+                { id: 23, text: "You dissociate or feel unreal, numb, floaty, or far away from your body." },
+                { id: 24, text: "You need hours (or a full day) to recover — like a sensory hangover." },
+                { id: 25, text: "You feel shame afterward and tell yourself you \"should've handled it,\" even though you hit a genuine limit." }
               ].map(({ id, text }) => (
                 <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
                   <input
@@ -203,7 +203,7 @@ export default function InteroceptionPage() {
           <div className="bg-blue-50 rounded-lg p-6 border-l-4 border-blue-400">
             <h2 className="text-xl font-semibold text-gray-800 mb-3">What This Might Mean</h2>
             <p className="text-gray-700 leading-relaxed">
-              Interoception difficulties are common in autism, ADHD, anxiety disorders, and trauma. Your brain struggles to interpret internal body signals like hunger, thirst, pain, temperature, or emotions. This isn't about being "out of touch" — it's a genuine neurological difference in how your body communicates with your brain.
+              Sensory overload happens when your nervous system receives too much input, too fast. It's common in autism, ADHD, sensory processing disorder, and trauma. Your brain's filtering system becomes overwhelmed, leading to shutdown, meltdown, or a need to escape. This isn't about being dramatic or weak — it's about your nervous system hitting a genuine limit. Understanding your sensory threshold can help you prevent overload and recover more effectively when it happens.
             </p>
           </div>
 
@@ -213,23 +213,23 @@ export default function InteroceptionPage() {
             <ul className="space-y-2 text-gray-700">
               <li className="flex items-start">
                 <span className="text-green-600 mr-2">✓</span>
-                <span>Set alarms for meals, water, and bathroom breaks throughout the day</span>
+                <span><strong>Name the Input:</strong> Identify what's overloading you (sound/light/touch/smell/movement/social)</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-600 mr-2">✓</span>
-                <span>Practice <Link href="/pages/neurodivergent/describe" className="text-blue-600 hover:underline">describing emotions</Link> and body sensations</span>
+                <span><strong>Reduce Fast:</strong> Headphones, sunglasses, step outside, bathroom break, hoodie/blanket</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-600 mr-2">✓</span>
-                <span>Use <Link href="/pages/neurodivergent/sensory-profiles" className="text-blue-600 hover:underline">sensory check-ins</Link> to tune into your body</span>
+                <span><strong>Exit Script:</strong> "I'm overloaded. I need quiet and 10 minutes."</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-600 mr-2">✓</span>
-                <span>Learn about <Link href="/pages/neurodivergent/alexithymia" className="text-blue-600 hover:underline">alexithymia</Link> (difficulty identifying emotions)</span>
+                <span><strong>Recovery Rule:</strong> Don't problem-solve while overloaded — regulate first, explain later</span>
               </li>
               <li className="flex items-start">
                 <span className="text-green-600 mr-2">✓</span>
-                <span>Keep snacks, water, and comfort items easily accessible</span>
+                <span><strong>Prevention:</strong> Learn your early warning signs with <Link href="/pages/neurodivergent/symptom-quiz/interoception" className="text-blue-600 hover:underline">Interoception</Link></span>
               </li>
             </ul>
           </div>
@@ -238,17 +238,17 @@ export default function InteroceptionPage() {
           <div className="bg-purple-50 rounded-lg p-6 border-l-4 border-purple-400">
             <h2 className="text-xl font-semibold text-gray-800 mb-3">Related Resources</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              <Link href="/pages/neurodivergent/sensory-profiles" className="text-blue-600 hover:underline">
-                → Sensory Profile & Needs
+              <Link href="/pages/neurodivergent/symptom-quiz/sensory-sensitivities" className="text-blue-600 hover:underline">
+                → Sensory Sensitivities
               </Link>
-              <Link href="/pages/neurodivergent/alexithymia" className="text-blue-600 hover:underline">
-                → Alexithymia
+              <Link href="/pages/neurodivergent/symptom-quiz/interoception" className="text-blue-600 hover:underline">
+                → Interoception
               </Link>
-              <Link href="/pages/neurodivergent/emotion-regulation" className="text-blue-600 hover:underline">
-                → Emotion Regulation
+              <Link href="/pages/neurodivergent/symptom-quiz/difficulty-processing" className="text-blue-600 hover:underline">
+                → Difficulty Processing
               </Link>
-              <Link href="/pages/neurodivergent/care-plan" className="text-blue-600 hover:underline">
-                → Personal Care Plan
+              <Link href="/pages/neurodivergent/meltdowns" className="text-blue-600 hover:underline">
+                → Meltdowns & Shutdowns
               </Link>
             </div>
           </div>

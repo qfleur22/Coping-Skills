@@ -50,10 +50,10 @@ export default function RejectionSensitivityPage() {
             <div className="space-y-3">
               {[
                 { id: 1, text: "You feel devastated by gentle critique — like it confirms your deepest fear that you're never good enough." },
-                { id: 2, text: "You spiral if a friend replies with "K" or takes too long to text back, worrying they're mad at you." },
+                { id: 2, text: "You spiral if a friend replies with 'K' or takes too long to text back, worrying they're mad at you." },
                 { id: 3, text: "You overanalyse facial expressions, texts, and tone — convinced there's judgment, even when nothing's been said." },
                 { id: 4, text: "You avoid trying new things or putting yourself out there in case someone disapproves or you embarrass yourself." },
-                { id: 5, text: "You always expect rejection — like if your boss or partner says "we need to talk," you assume the worst." }
+                { id: 5, text: "You always expect rejection — like if your boss or partner says 'we need to talk,' you assume the worst." }
               ].map(({ id, text }) => (
                 <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
                   <input
@@ -117,7 +117,7 @@ export default function RejectionSensitivityPage() {
                 { id: 12, text: "You avoid people for days after a perceived slight — even if they don't know you're upset." },
                 { id: 13, text: "You get defensive over suggestions, reacting like it's an attack — then feel guilty and misunderstood afterward." },
                 { id: 14, text: "You make fun of yourself before anyone else can — like a pre-emptive strike against judgment." },
-                { id: 15, text: "You become the "perfect" employee, friend, or partner — bending over backwards to avoid letting anyone down." }
+                { id: 15, text: "You become the 'perfect' employee, friend, or partner — bending over backwards to avoid letting anyone down." }
               ].map(({ id, text }) => (
                 <div key={id} className="flex items-start space-x-3 p-3 bg-gray-50 rounded hover:bg-gray-100 transition-colors">
                   <input
@@ -147,7 +147,7 @@ export default function RejectionSensitivityPage() {
               {[
                 { id: 16, text: "You constantly question if people actually want you around, even after reassurance." },
                 { id: 17, text: "You ask for validation often — not because you're needy, but because silence feels like abandonment." },
-                { id: 18, text: "You fear people won't like the "real you," so you mask your personality to stay liked." },
+                { id: 18, text: "You fear people won't like the 'real you,' so you mask your personality to stay liked." },
                 { id: 19, text: "You find relationships exhausting — constantly trying to maintain the connection while hiding how anxious or insecure you feel." },
                 { id: 20, text: "You avoid dating or friendship opportunities altogether to protect yourself from the crash of eventual rejection." }
               ].map(({ id, text }) => (

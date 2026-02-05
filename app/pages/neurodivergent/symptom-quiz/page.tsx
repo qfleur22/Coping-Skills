@@ -37,11 +37,14 @@ export default function SymptomQuizPage() {
                   <strong>How it works:</strong>
                 </p>
                 <ol className="list-decimal list-inside space-y-2 text-gray-700 ml-4">
-                  <li>Click on any section of the wheel below</li>
-                  <li>Read through real-life examples of that symptom</li>
+                  <li>Rate symptoms on the wheel (1-5 scale) by clicking ring levels</li>
+                  <li>Click any section to read detailed real-life examples</li>
                   <li>Check the boxes next to experiences that resonate with you</li>
-                  <li>Explore as many or as few sections as you like</li>
+                  <li>Return to the wheel to explore other symptoms</li>
                 </ol>
+                <p className="text-gray-700 text-sm mt-3">
+                  <strong>Rating guide:</strong> 1 = rarely/minimal impact, 5 = very often/significant impact
+                </p>
               </div>
 
               <div className="p-4 bg-yellow-50 rounded border border-yellow-200 mb-6">

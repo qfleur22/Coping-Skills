@@ -7,6 +7,7 @@ import * as d3 from 'd3';
 interface SymptomWheelProps {
   onSectionClick?: ({ section }: { section: string }) => void;
   showButtonGrid?: boolean;
+  initialLevels?: number[];
 }
 
 export const symptoms = [
@@ -60,10 +61,14 @@ function wrapText({ text, maxWidth }: { text: any; maxWidth: number }) {
   });
 }
 
-export const SymptomWheel = ({ onSectionClick, showButtonGrid = true }: SymptomWheelProps) => {
+export const SymptomWheel = ({ onSectionClick, showButtonGrid = true, initialLevels }: SymptomWheelProps) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const router = useRouter();
-  const [levels, setLevels] = useState<number[]>(new Array(symptoms.length).fill(0));
+  const [levels, setLevels] = useState<number[]>(
+    initialLevels && initialLevels.length === symptoms.length 
+      ? initialLevels 
+      : new Array(symptoms.length).fill(0)
+  );
 
   useEffect(() => {
     if (!svgRef.current) {

@@ -1,13 +1,15 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { BackButton } from '@/components/shared/BackButton';
+import { saveQuizScore, getNextSymptom, calculateLevel } from '@/utils/quiz-storage';
 
 export default function TaskParalysisPage() {
   const router = useRouter();
   const [checkedItems, setCheckedItems] = useState<{ [key: number]: boolean }>({});
+  const currentSlug = 'task-paralysis';
 
   const handleBack = () => {
     router.back();
@@ -18,6 +20,21 @@ export default function TaskParalysisPage() {
       ...prev,
       [id]: !prev[id]
     }));
+  };
+
+  // Save score whenever checked items change
+  useEffect(() => {
+    const checkedCount = Object.values(checkedItems).filter(Boolean).length;
+    saveQuizScore({ symptomSlug: currentSlug, score: checkedCount });
+  }, [checkedItems]);
+
+  const handleNext = () => {
+    const nextSlug = getNextSymptom({ currentSlug });
+    if (nextSlug) {
+      router.push(`/pages/neurodivergent/symptom-quiz/${nextSlug}`);
+    } else {
+      router.push('/pages/neurodivergent/symptom-quiz/results');
+    }
   };
 
   const symptoms = [
@@ -209,6 +226,16 @@ export default function TaskParalysisPage() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Quiz Navigation */}
+      <div className="fixed bottom-8 right-8 z-50">
+        <button
+          onClick={handleNext}
+          className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition-colors flex items-center gap-2"
+        >
+          Next Symptom →
+        </button>
       </div>
 
       <BackButton onClick={handleBack} />

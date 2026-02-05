@@ -34,17 +34,40 @@ export default function SymptomQuizPage() {
                   This interactive tool helps you explore common neurodivergent experiences across ADHD, Autism, and overlapping traits.
                 </p>
                 <p className="text-gray-700 mb-3">
-                  <strong>How it works:</strong>
+                  <strong>Two ways to explore:</strong>
                 </p>
-                <ol className="list-decimal list-inside space-y-2 text-gray-700 ml-4">
-                  <li>Rate symptoms on the wheel (1-5 scale) by clicking the ring levels</li>
-                  <li>Click on label names or use the button grid to explore detailed examples</li>
-                  <li>Check boxes next to experiences that resonate with you</li>
-                  <li>Return to explore other symptoms</li>
-                </ol>
-                <p className="text-gray-700 text-sm mt-3">
-                  <strong>Rating guide:</strong> 1 = rarely/minimal impact, 5 = very often/significant impact
-                </p>
+                
+                <div className="mb-4 p-3 bg-white rounded border border-green-300">
+                  <p className="font-semibold text-gray-800 mb-2">Option 1: Guided Quiz Flow</p>
+                  <p className="text-gray-700 text-sm mb-2">
+                    Take the complete symptom quiz to get personalized results:
+                  </p>
+                  <ol className="list-decimal list-inside space-y-1 text-gray-700 ml-4 text-sm">
+                    <li>Click "Start Quiz" below to begin with Task Paralysis</li>
+                    <li>Check boxes for experiences that resonate (0-25 per symptom)</li>
+                    <li>Use the "Next" button to move through all 20 symptoms</li>
+                    <li>View your results wheel showing your symptom profile</li>
+                  </ol>
+                  <p className="text-gray-700 text-xs mt-2 italic">
+                    Scoring: 25/25 checked = level 5 (high impact), 5/25 = level 1 (low impact)
+                  </p>
+                  <Link 
+                    href="/pages/neurodivergent/symptom-quiz/task-paralysis"
+                    className="mt-3 inline-block bg-purple-600 hover:bg-purple-700 text-white font-semibold py-2 px-6 rounded-lg transition-colors"
+                  >
+                    Start Quiz →
+                  </Link>
+                </div>
+
+                <div className="p-3 bg-white rounded border border-green-300">
+                  <p className="font-semibold text-gray-800 mb-2">Option 2: Free Exploration</p>
+                  <ol className="list-decimal list-inside space-y-1 text-gray-700 ml-4 text-sm">
+                    <li>Rate symptoms on the wheel (1-5 scale) by clicking the ring levels</li>
+                    <li>Click on label names or use the button grid to explore specific symptoms</li>
+                    <li>Check boxes next to experiences that resonate with you</li>
+                    <li>Return anytime to explore other symptoms</li>
+                  </ol>
+                </div>
               </div>
 
               <div className="p-4 bg-yellow-50 rounded border border-yellow-200 mb-6">

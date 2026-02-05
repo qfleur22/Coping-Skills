@@ -107,6 +107,7 @@ const categories: Record<string, Category> = {
   'neurodivergent': {
     label: 'Neurodivergent Support',
     pages: [
+      { label: 'Symptom Explorer Quiz', path: '/pages/neurodivergent/symptom-quiz' },
       { label: 'Overload Skills Menu', path: '/pages/neurodivergent/overload' },
       { label: 'Managing Meltdowns', path: '/pages/neurodivergent/meltdowns' },
       { label: 'Your Window of Tolerance', path: '/pages/neurodivergent/tolerance-window' },

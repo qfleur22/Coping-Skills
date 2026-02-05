@@ -31,32 +31,6 @@ const symptoms = [
   { name: 'Special Interests', color: '#DC143C', category: 'AUTISM', path: '/pages/neurodivergent/symptom-quiz/special-interests' },
 ];
 
-// Helper function to wrap text
-function wrapText({ text, maxWidth }: { text: any; maxWidth: number }) {
-  text.each(function(this: any) {
-    const textElement = d3.select(this);
-    const words = textElement.text().split(/\s+/).reverse();
-    let word;
-    let line: string[] = [];
-    let lineNumber = 0;
-    const lineHeight = 1.1;
-    const y = textElement.attr('y');
-    const dy = parseFloat(textElement.attr('dy') || 0);
-    let tspan = textElement.text(null).append('tspan').attr('x', 0).attr('y', y).attr('dy', dy + 'em');
-    
-    while ((word = words.pop())) {
-      line.push(word);
-      tspan.text(line.join(' '));
-      if (tspan.node()!.getComputedTextLength() > maxWidth) {
-        line.pop();
-        tspan.text(line.join(' '));
-        line = [word];
-        tspan = textElement.append('tspan').attr('x', 0).attr('y', y).attr('dy', ++lineNumber * lineHeight + dy + 'em').text(word);
-      }
-    }
-  });
-}
-
 export const SymptomWheel = ({ onSectionClick }: SymptomWheelProps) => {
   const svgRef = useRef<SVGSVGElement>(null);
   const router = useRouter();
@@ -67,9 +41,9 @@ export const SymptomWheel = ({ onSectionClick }: SymptomWheelProps) => {
       return;
     }
 
-    const width = 800;
-    const height = 800;
-    const radius = Math.min(width, height) / 2 - 40;
+    const width = 900;
+    const height = 900;
+    const radius = Math.min(width, height) / 2 - 100;
     const innerRadius = 80;
     const numLevels = 5;
     const numSegments = symptoms.length;
@@ -138,9 +112,9 @@ export const SymptomWheel = ({ onSectionClick }: SymptomWheelProps) => {
           });
       }
 
-      // Add symptom labels inside segments (at mid-radius)
+      // Add symptom labels outside the wheel
       const labelAngle = startAngle + anglePerSegment / 2;
-      const labelRadius = innerRadius + (radius - innerRadius) * 0.5;
+      const labelRadius = radius + 30;
       const x = Math.cos(labelAngle) * labelRadius;
       const y = Math.sin(labelAngle) * labelRadius;
 
@@ -150,23 +124,15 @@ export const SymptomWheel = ({ onSectionClick }: SymptomWheelProps) => {
         textRotation += 180;
       }
 
-      const textGroup = g.append('g')
-        .attr('transform', `translate(${x},${y}) rotate(${textRotation})`);
-
-      const text = textGroup.append('text')
+      g.append('text')
+        .attr('transform', `translate(${x},${y}) rotate(${textRotation})`)
         .attr('text-anchor', 'middle')
         .attr('dominant-baseline', 'middle')
-        .attr('font-size', '10px')
+        .attr('font-size', '11px')
         .attr('font-weight', 'bold')
         .attr('fill', '#000000')
-        .attr('y', 0)
-        .attr('dy', '-0.3em')
         .style('pointer-events', 'none')
         .text(symptom.name);
-
-      // Wrap text to fit within segment width
-      const segmentWidth = Math.abs(2 * labelRadius * Math.sin(anglePerSegment / 2)) * 0.7;
-      wrapText({ text, maxWidth: segmentWidth });
     });
 
     // Add center circle with title

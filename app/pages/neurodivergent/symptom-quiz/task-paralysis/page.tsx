@@ -26,7 +26,7 @@ export default function TaskParalysisPage() {
   return (
     <>
       <SymptomQuizProgressBar currentSlug={currentSlug} />
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 py-8 px-4 pt-32">
+    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 py-8 px-4 pb-32">
       <div className="container mx-auto max-w-4xl">
         <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg space-y-6">
           {/* Header */}

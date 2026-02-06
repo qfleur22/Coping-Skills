@@ -269,5 +269,6 @@ export default function TaskParalysisPage() {
       </div>
       <QuizNavButton currentSlug={currentSlug} />
     </div>
+    </>
   );
 }

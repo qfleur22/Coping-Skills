@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { QuizNavButton } from '@/components/QuizNavButton';
+import { SymptomQuizProgressBar } from '@/components/SymptomQuizProgressBar';
 import { saveQuizScore } from '@/utils/quiz-storage';
 
 export default function RepetitiveBehaviorPage() {
@@ -23,8 +24,10 @@ export default function RepetitiveBehaviorPage() {
   }, [checkedCount]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 py-8 px-4">
-      <div className="container mx-auto max-w-4xl">
+    <>
+      <SymptomQuizProgressBar currentSlug={currentSlug} />
+      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 py-8 px-4 pt-32">
+        <div className="container mx-auto max-w-4xl">
         <div className="bg-white/80 backdrop-blur-sm rounded-lg p-8 shadow-lg space-y-6">
           {/* Header */}
           <div className="text-center space-y-2">
@@ -263,8 +266,9 @@ export default function RepetitiveBehaviorPage() {
             </Link>
           </div>
         </div>
+        </div>
+        <QuizNavButton currentSlug={currentSlug} />
       </div>
-      <QuizNavButton currentSlug={currentSlug} />
-    </div>
+    </>
   );
 }

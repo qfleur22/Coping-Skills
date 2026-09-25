@@ -22,10 +22,10 @@ export default function AboutPage() {
             <div className="mt-4">
               <h3 className="text-xl font-semibold mb-3 text-gray-800">The 4 DBT skill modules</h3>
               <ul className="list-disc list-inside space-y-2 text-gray-700 ml-4">
-                <li><strong>Mindfulness:</strong> notice what's happening (without getting swallowed by it)</li>
-                <li><strong>Distress Tolerance:</strong> survive the moment without making it worse</li>
-                <li><strong>Emotion Regulation:</strong> reduce vulnerability + shape emotions over time</li>
-                <li><strong>Interpersonal Effectiveness:</strong> get what you need while keeping self-respect + relationships intact</li>
+                <li><strong><Link href="/pages/mindfulness/mindfulness" className="text-blue-600 hover:text-blue-800 underline">Mindfulness</Link>:</strong> notice what's happening (without getting swallowed by it)</li>
+                <li><strong><Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link>:</strong> survive the moment without making it worse</li>
+                <li><strong><Link href="/pages/emotional-regulation/emotional-regulation" className="text-blue-600 hover:text-blue-800 underline">Emotion Regulation</Link>:</strong> reduce vulnerability + shape emotions over time</li>
+                <li><strong><Link href="/pages/interpersonal-skills/interpersonal-skills" className="text-blue-600 hover:text-blue-800 underline">Interpersonal Effectiveness</Link>:</strong> get what you need while keeping self-respect + relationships intact</li>
               </ul>
             </div>
             
@@ -56,8 +56,8 @@ export default function AboutPage() {
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-800">2) Stabilization (Distress Tolerance / Crisis Skills)</h3>
-                <p className="text-gray-700 mb-2">When you're in "hot brain" mode, reasoning is hard. Crisis skills help you:</p>
+                <h3 className="text-xl font-semibold mb-2 text-gray-800">2) Stabilization (<Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link> / <Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">Crisis Skills</Link>)</h3>
+                <p className="text-gray-700 mb-2">When you're in "hot brain" mode, reasoning is hard. <Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">Crisis skills</Link> help you:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
                   <li>lower physiological arousal</li>
                   <li>interrupt impulsive actions</li>
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">Step 1: Body Check-In</h3>
                 <p className="text-gray-700 mb-2">Start by checking into your body. Options:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                  <li><strong>Yes, I know how I'm feeling</strong> → Go to Feelings Wheel</li>
+                  <li><strong>Yes, I know how I'm feeling</strong> → Go to <Link href="/pages/flowchart/feelings" className="text-blue-600 hover:text-blue-800 underline">Feelings Wheel</Link></li>
                   <li><strong>No, <Link href="/pages/emotional-regulation/abc-please" className="text-blue-600 hover:text-blue-800 underline">please</Link> guide me through a body scan</strong> → <Link href="/pages/mindfulness/body-scan/how-long" className="text-blue-600 hover:text-blue-800 underline">Body Scan</Link> (1, 5, or 15 minutes)</li>
                   <li><strong>No, it feels unsafe</strong> → <Link href="/pages/mindfulness/body-scan/unsafe-body-check" className="text-blue-600 hover:text-blue-800 underline">Unsafe Body Check</Link> page with alternative options</li>
                 </ul>
@@ -108,7 +108,7 @@ export default function AboutPage() {
               <div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">Step 2: Identify Feelings</h3>
                 <p className="text-gray-700 mb-2">Use the interactive Feelings Wheel to select your emotions.</p>
-                <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/mindfulness/mindfulness" className="text-blue-600 hover:text-blue-800 underline">Mindfulness</Link> (Observe, Describe), Emotion Identification</p>
+                <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/mindfulness/mindfulness" className="text-blue-600 hover:text-blue-800 underline">Mindfulness</Link> (<Link href="/pages/mindfulness/what" className="text-blue-600 hover:text-blue-800 underline">Observe</Link>, <Link href="/pages/mindfulness/what" className="text-blue-600 hover:text-blue-800 underline">Describe</Link>), Emotion Identification</p>
               </div>
 
               <div>
@@ -130,7 +130,7 @@ export default function AboutPage() {
                   <li><strong><Link href="/pages/self-care" className="text-blue-600 hover:text-blue-800 underline">Self-Care</Link> Check:</strong> Are you hydrated, medicated, nourished, rested? → <Link href="/pages/self-care" className="text-blue-600 hover:text-blue-800 underline">Self-Care</Link></li>
                   <li><strong>Gauge Overwhelm:</strong> Are you overwhelmed? → <Link href="/pages/flowchart/gauge-overwhelm" className="text-blue-600 hover:text-blue-800 underline">Gauge Overwhelm</Link></li>
                 </ul>
-                <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/self-care" className="text-blue-600 hover:text-blue-800 underline">Self-Care</Link> (PLEASE skills), <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link></p>
+                <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/self-care" className="text-blue-600 hover:text-blue-800 underline">Self-Care</Link> (<Link href="/pages/emotional-regulation/abc-please" className="text-blue-600 hover:text-blue-800 underline">PLEASE</Link> skills), <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link></p>
               </div>
 
               <div>
@@ -159,7 +159,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">Crisis Path</h3>
                 <p className="text-gray-700 mb-2">If overwhelmed, use crisis skills first:</p>
                 <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-                  <li><Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">Crisis Skills</Link> → STOP, TIPP, ACCEPTS, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-Soothe</Link>, IMPROVE, <Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">Radical Acceptance</Link></li>
+                  <li><Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">Crisis Skills</Link> → <Link href="/pages/distress-tolerance/stop" className="text-blue-600 hover:text-blue-800 underline">STOP</Link>, <Link href="/pages/distress-tolerance/tipp" className="text-blue-600 hover:text-blue-800 underline">TIPP</Link>, <Link href="/pages/distress-tolerance/accepts" className="text-blue-600 hover:text-blue-800 underline">ACCEPTS</Link>, <Link href="/pages/distress-tolerance/soothe" className="text-blue-600 hover:text-blue-800 underline">Self-Soothe</Link>, <Link href="/pages/distress-tolerance/improve" className="text-blue-600 hover:text-blue-800 underline">IMPROVE</Link>, <Link href="/pages/interpersonal-skills/radical-acceptance" className="text-blue-600 hover:text-blue-800 underline">Radical Acceptance</Link></li>
                 </ul>
                 <p className="text-gray-700 mt-2 text-sm italic">Skills: <Link href="/pages/distress-tolerance" className="text-blue-600 hover:text-blue-800 underline">Distress Tolerance</Link>, <Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">Crisis Skills</Link></p>
               </div>
@@ -171,6 +171,27 @@ export default function AboutPage() {
                 The flow chart adapts to your needs. If you're in crisis, use <Link href="/pages/crisis" className="text-blue-600 hover:text-blue-800 underline">crisis skills</Link> first. If you're stable, you can work through emotion regulation and problem-solving. The goal is to match the skill to your current state and needs.
               </p>
             </div>
+          </section>
+
+          <section>
+            <h2 className="text-2xl font-semibold mb-4 text-gray-800">About This Website</h2>
+            <p className="text-gray-700 mb-4">
+              This website was created by Quinn Fleur in February 2026 as a free resource for learning and practicing coping skills based on DBT, CBT, and other evidence-based approaches.
+            </p>
+            <p className="text-gray-700 mb-4">
+              For questions, feedback, or suggestions, Quinn can be reached at{' '}
+              <a href="mailto:quinndelafleur@gmail.com" className="text-blue-600 hover:text-blue-800 underline">
+                quinndelafleur@gmail.com
+              </a>
+              .
+            </p>
+            <p className="text-gray-700">
+              More of Quinn's projects can be found at{' '}
+              <a href="https://quinnfleur.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
+                quinnfleur.com
+              </a>
+              .
+            </p>
           </section>
         </div>
         </div>

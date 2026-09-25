@@ -156,6 +156,25 @@ const categories: Record<string, Category> = {
   },
 };
 
+const standaloneBuilders = [
+  {
+    label: 'Care Plan Builder',
+    path: '/pages/neurodivergent/care-plan/builder',
+    description: 'Create a shareable care guide for supporters and providers.',
+    cardClass: 'bg-purple-50 border-purple-200 hover:bg-purple-100',
+    textClass: 'text-purple-800',
+    buttonClass: 'bg-purple-700 hover:bg-purple-800 text-white',
+  },
+  {
+    label: 'Sleep Hygiene Builder',
+    path: '/pages/sleep-hygiene/builder',
+    description: 'Build a bedtime routine and menu for when you cannot sleep.',
+    cardClass: 'bg-indigo-50 border-indigo-200 hover:bg-indigo-100',
+    textClass: 'text-indigo-800',
+    buttonClass: 'bg-indigo-700 hover:bg-indigo-800 text-white',
+  },
+];
+
 export default function LandingPage() {
   const router = useRouter();
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
@@ -188,6 +207,31 @@ export default function LandingPage() {
             >
               DBT Cheat Sheet (PDF)
             </a>
+          </div>
+
+          <div className="mb-6 space-y-3">
+            {standaloneBuilders.map((builder) => (
+              <div
+                key={builder.path}
+                className={`rounded-lg border p-5 shadow-lg backdrop-blur-sm ${builder.cardClass}`}
+              >
+                <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+                  <div>
+                    <h2 className={`text-lg font-semibold ${builder.textClass}`}>{builder.label}</h2>
+                    <p className="mt-1 text-sm text-gray-700">{builder.description}</p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      router.push(builder.path);
+                    }}
+                    className={`shrink-0 rounded-lg px-5 py-3 font-semibold shadow-md transition-colors duration-200 ${builder.buttonClass}`}
+                  >
+                    Open {builder.label}
+                  </button>
+                </div>
+              </div>
+            ))}
           </div>
 
           <div className="space-y-3">
